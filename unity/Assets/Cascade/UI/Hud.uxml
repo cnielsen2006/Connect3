@@ -1,0 +1,42 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project:/Assets/Cascade/UI/Hud.uss" />
+    <!-- The play screen (style K: Pebbles): HUD and the pause overlay. The layout class (layout wide / layout tall) sits on the
+         shell root. BoardSlot is the empty element the board camera fits the board into. -->
+    <ui:VisualElement name="hud" class="hud" picking-mode="Ignore">
+        <ui:VisualElement name="BoardSlot" class="hud__board" picking-mode="Ignore" />
+
+        <ui:VisualElement name="side" class="hud__side" picking-mode="Ignore">
+            <ui:Label name="title" class="display-title hud__title" picking-mode="Ignore" />
+            <ui:Label name="level-label" class="hud__level" picking-mode="Ignore" />
+            <ui:VisualElement name="stats" class="hud__stats" picking-mode="Ignore">
+                <ui:VisualElement class="stat" picking-mode="Ignore">
+                    <ui:Label name="moves-value" class="stat__value stat__value--moves" picking-mode="Ignore" />
+                    <ui:Label name="moves-caption" class="stat__caption" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:VisualElement class="stat" picking-mode="Ignore">
+                    <ui:Label name="score-value" class="stat__value stat__value--score" picking-mode="Ignore" />
+                    <ui:Label name="score-caption" class="stat__caption" picking-mode="Ignore" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label name="combo-value" class="hud__combo" picking-mode="Ignore" />
+            <ui:VisualElement name="star-markers" class="hud__markers" picking-mode="Ignore" />
+            <ui:VisualElement name="goals" class="hud__goals" picking-mode="Ignore" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="buttons" class="hud__buttons">
+            <ui:Button name="button-pause" class="pebble-button pebble-button--sage pebble-button--small" />
+            <ui:Button name="button-hint" class="pebble-button pebble-button--sand pebble-button--small" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="popups" class="hud__popups" picking-mode="Ignore" />
+
+        <ui:VisualElement name="pause" class="overlay pause">
+            <ui:VisualElement name="pause-scrim" class="pause__scrim bleed" />
+            <ui:VisualElement class="pause__card">
+                <ui:Label name="pause-title" class="display-title pause__title" picking-mode="Ignore" />
+                <ui:Button name="pause-resume" class="pebble-button pebble-button--sage" />
+                <ui:Button name="pause-quit" class="pebble-button pebble-button--sand" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <!-- The one document of the game (TRD 12.2). The root carries layout wide or layout tall (UiRoot, from ScreenFlow); the
+         'safe' element is inset by the safe area (UiRoot, from IAppLifecycle.ScreenChanged); every screen is a child that UiRoot shows or hides, exactly one at a time. -->
+    <Style src="project:/Assets/Cascade/UI/Theme.uss" />
+    <ui:Template name="Title" src="project:/Assets/Cascade/UI/Title.uxml" />
+    <ui:Template name="Map" src="project:/Assets/Cascade/UI/Map.uxml" />
+    <ui:Template name="Loading" src="project:/Assets/Cascade/UI/Loading.uxml" />
+    <ui:Template name="Intro" src="project:/Assets/Cascade/UI/Intro.uxml" />
+    <ui:Template name="Hud" src="project:/Assets/Cascade/UI/Hud.uxml" />
+    <ui:Template name="Result" src="project:/Assets/Cascade/UI/Result.uxml" />
+    <ui:Template name="Settings" src="project:/Assets/Cascade/UI/Settings.uxml" />
+    <ui:Template name="Dev" src="project:/Assets/Cascade/UI/Dev.uxml" />
+    <ui:VisualElement name="shell" class="shell layout--wide" picking-mode="Ignore">
+        <ui:VisualElement name="safe" class="safe" picking-mode="Ignore">
+        <ui:Instance template="Title" name="screen-title" class="screen" />
+        <ui:Instance template="Map" name="screen-map" class="screen" />
+        <ui:Instance template="Loading" name="screen-loading" class="screen" />
+        <ui:Instance template="Intro" name="screen-intro" class="screen" />
+        <ui:Instance template="Hud" name="screen-play" class="screen" />
+        <ui:Instance template="Result" name="screen-result" class="screen" />
+        <ui:Instance template="Settings" name="screen-settings" class="screen" />
+        <ui:Instance template="Dev" name="overlay-dev" class="overlay" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

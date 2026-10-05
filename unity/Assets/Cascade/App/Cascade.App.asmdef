@@ -1,0 +1,28 @@
+{
+    "name": "Cascade.App",
+    "rootNamespace": "Cascade.App",
+    "references": [
+        "Cascade.Core",
+        "Cascade.Config",
+        "Cascade.Platform.Abstractions",
+        "Cascade.Gameplay",
+        "Cascade.Generation",
+        "Cascade.Persistence",
+        "Cascade.Presentation",
+        "Cascade.Unity.Platform",
+        "Cascade.Unity.View",
+        "Unity.RenderPipelines.Universal.Runtime"
+    ],
+    "includePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Tomlyn.dll",
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false,
+    "excludePlatforms": []
+}

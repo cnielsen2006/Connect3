@@ -1,0 +1,59 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Unity: open editor",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/unity.ps1 -Action Editor"
+    },
+    {
+      "name": "Unity: play in editor",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/unity.ps1 -Action Play"
+    },
+    {
+      "name": "Unity: stop play mode",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/unity.ps1 -Action Stop"
+    },
+    {
+      "name": "Unity: toggle pause",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/unity.ps1 -Action Pause"
+    },
+    {
+      "name": "Android device: build, push, run",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/android.ps1 -Target device"
+    },
+    {
+      "name": "Android device: push and run last build",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/android.ps1 -Target device -SkipBuild"
+    },
+    {
+      "name": "Android emulator: build, push, run",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/android.ps1 -Target emulator"
+    },
+    {
+      "name": "Android emulator: push and run last build",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/android.ps1 -Target emulator -SkipBuild"
+    },
+    {
+      "name": "Tests: logic (dotnet test)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "dotnet test tools/Cascade.Tests.Headless"
+    }
+  ]
+}

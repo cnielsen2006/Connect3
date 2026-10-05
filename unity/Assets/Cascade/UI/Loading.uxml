@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project:/Assets/Cascade/UI/Loading.uss" />
+    <ui:VisualElement name="loading-root" class="screen-fill">
+        <ui:Label name="loading-text" class="display-title loading__text" picking-mode="Ignore" />
+        <ui:VisualElement class="loading__pebbles" picking-mode="Ignore">
+            <ui:VisualElement name="loading-pebble-0" class="loading__pebble loading__pebble--0" picking-mode="Ignore" />
+            <ui:VisualElement name="loading-pebble-1" class="loading__pebble loading__pebble--1" picking-mode="Ignore" />
+            <ui:VisualElement name="loading-pebble-2" class="loading__pebble loading__pebble--2" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:Button name="loading-back" class="pebble-button pebble-button--sand pebble-button--small" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project:/Assets/Cascade/UI/Result.uss" />
+    <ui:VisualElement name="result-root" class="screen-fill">
+        <ui:VisualElement class="result__column">
+            <ui:Label name="result-headline" class="display-title result__headline" picking-mode="Ignore" />
+            <ui:VisualElement name="result-stars" class="result__stars" picking-mode="Ignore" />
+            <ui:Label name="result-best" class="result__best" picking-mode="Ignore" />
+            <ui:Label name="result-score" class="result__score" picking-mode="Ignore" />
+            <ui:VisualElement name="result-goals" class="result__goals" picking-mode="Ignore" />
+            <ui:VisualElement class="result__buttons">
+                <ui:Button name="result-next" class="pebble-button pebble-button--sage" />
+                <ui:Button name="result-retry" class="pebble-button pebble-button--sage" />
+                <ui:Button name="result-map" class="pebble-button pebble-button--sand" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

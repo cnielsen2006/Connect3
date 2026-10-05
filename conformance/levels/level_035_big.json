@@ -1,0 +1,33 @@
+{
+ "level": {
+  "colors": 5,
+  "difficulty": 0.4512693121931444,
+  "generator_version": 2,
+  "goals": [
+   {
+    "colors": [
+     3
+    ],
+    "kind": "collect",
+    "target": 38
+   }
+  ],
+  "height": 8,
+  "holes": [],
+  "intro": null,
+  "measured_win_rate": 0.75,
+  "move_limit": 25,
+  "number": 35,
+  "seed": "16045690984503111693",
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "star2": 4623,
+  "star3": 5194,
+  "target_win_rate": 0.6902130264402504,
+  "width": 8
+ },
+ "n": 35,
+ "seed": "16045690984503111693"
+}

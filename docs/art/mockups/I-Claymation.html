@@ -1,0 +1,79 @@
+<!doctype html>
+<!-- Cascade art style mockup I-Claymation. Standalone: open in any browser. Rendered to ../img/I-Claymation.png -->
+<html lang="en"><head><meta charset="utf-8"><title>Claymation</title>
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#5d7a8c}a:hover{color:#3b2d24}
+</style>
+</head>
+<body><template id="t">
+<div style="position: relative; width: 1280px; height: 800px; box-sizing: border-box; padding: 40px 56px; display: flex; gap: 52px; align-items: center; overflow: hidden; background: radial-gradient(ellipse at 45% 35%, #e3d6bf, #c9b89c 70%, #a8977a); font-family: 'Shantell Sans', sans-serif; color: #3b2d24">
+  <div style="width: 320px; display: flex; flex-direction: column; gap: 22px">
+    <div style="font-size: 54px; font-weight: 800; line-height: 1; color: #b8613f; transform: rotate(-2deg); text-shadow: 1px 1px 0 #f1e3cf, 0 5px 0 #7a3d26, 0 10px 14px rgba(60,40,20,0.35)">Cascade</div>
+    <div style="font-size: 19px; font-weight: 500; color: #6e5744; transform: rotate(-1deg)">Level 24 · Potter's Shelf</div>
+    <div style="background: #e9dcc6; border-radius: 44% 56% 48% 52% / 38px 34px 40px 36px; padding: 20px 22px; transform: rotate(1deg); box-shadow: inset 5px 5px 8px rgba(255,250,240,0.8), inset -8px -10px 14px rgba(110,80,50,0.35), 0 12px 0 #a8906f, 0 24px 30px rgba(60,40,20,0.3)">
+      <div style="font-size: 14px; letter-spacing: 2px; color: #6e5744">GOALS</div>
+      <div style="display: flex; align-items: center; gap: 12px; margin-top: 10px; font-size: 24px; font-weight: 800"><div style="width: 34px; height: 34px; border-radius: 48% 52% 45% 55% / 55% 45% 55% 45%; background: #b8613f; transform: rotate(8deg); box-shadow: inset 4px 4px 6px rgba(255,220,190,0.5), inset -4px -5px 8px rgba(0,0,0,0.3)"></div>18 / 30</div>
+      <div style="display: flex; align-items: center; gap: 12px; margin-top: 6px; font-size: 24px; font-weight: 800"><div style="width: 34px; height: 34px; border-radius: 52% 48% 55% 45% / 45% 55% 45% 55%; background: rgba(240,240,232,0.85); transform: rotate(-6deg); box-shadow: inset 3px 3px 6px #fff, inset -4px -5px 8px rgba(100,110,110,0.45)"></div>3 / 6 ice</div>
+    </div>
+    <div style="display: flex; gap: 16px">
+      <div style="flex-grow: 1; background: #c89b3c; border-radius: 40% 60% 50% 50% / 34px 38px 32px 36px; padding: 14px 20px; transform: rotate(-1.5deg); box-shadow: inset 4px 4px 8px rgba(255,240,200,0.6), inset -6px -8px 12px rgba(0,0,0,0.25), 0 10px 0 #7d5e1c, 0 20px 26px rgba(60,40,20,0.3)"><div style="font-size: 14px; letter-spacing: 2px; color: #5a4210">MOVES</div><div style="font-size: 48px; font-weight: 800; line-height: 1; color: #3b2d10">12</div></div>
+      <div style="flex-grow: 1; background: #e9dcc6; border-radius: 55% 45% 50% 50% / 36px 32px 38px 34px; padding: 14px 20px; transform: rotate(1deg); box-shadow: inset 4px 4px 8px rgba(255,250,240,0.8), inset -6px -8px 12px rgba(110,80,50,0.35), 0 10px 0 #a8906f"><div style="font-size: 14px; letter-spacing: 2px; color: #6e5744">SCORE</div><div style="font-size: 32px; font-weight: 800; line-height: 1.5">8,450</div></div>
+    </div>
+    <div style="display: flex; gap: 14px">
+      <button type="button" style="font: inherit; font-weight: 800; font-size: 20px; padding: 12px 28px; border: 0; border-radius: 48% 52% 50% 50% / 26px 24px 28px 26px; background: #6b7d46; color: #f1e3cf; transform: rotate(-1deg); box-shadow: inset 3px 3px 6px rgba(220,240,180,0.45), inset -4px -5px 8px rgba(0,0,0,0.3), 0 7px 0 #3f4a28">Pause</button>
+      <button type="button" style="font: inherit; font-weight: 800; font-size: 20px; padding: 12px 28px; border: 0; border-radius: 52% 48% 50% 50% / 24px 28px 24px 28px; background: #e9dcc6; color: #3b2d24; transform: rotate(1.5deg); box-shadow: inset 3px 3px 6px #fff, inset -4px -5px 8px rgba(110,80,50,0.35), 0 7px 0 #a8906f">Hint</button>
+    </div>
+  </div>
+  <div style="padding: 24px; border-radius: 30px 36px 28px 40px / 36px 28px 40px 30px; background: radial-gradient(circle at 30% 20%, #8c6a4e, #6b4e3a 70%); transform: rotate(0.6deg); box-shadow: inset 6px 6px 10px rgba(200,160,120,0.35), inset -10px -12px 20px rgba(0,0,0,0.4), 0 18px 0 #45311f, 0 36px 50px rgba(40,25,10,0.5); display: grid; grid-template-columns: repeat(8, 72px); gap: 6px">
+    <sc-for list="{{cells}}" as="c" hint-placeholder-count="64">
+      <div style="{{c.cell}}">
+        <div style="{{c.tile}}"></div>
+        <div style="{{c.dent}}"></div>
+        <sc-if value="{{c.line}}" hint-placeholder-val="{{ false }}"><div style="position: absolute; left: 12px; right: 10px; top: 30px; height: 12px; border-radius: 8px 6px 9px 5px; background: #e9dcc6; transform: rotate(-3deg); box-shadow: inset 2px 2px 3px #fff, inset -2px -3px 4px rgba(0,0,0,0.3), 0 3px 3px rgba(0,0,0,0.35)"></div></sc-if>
+        <sc-if value="{{c.bomb}}" hint-placeholder-val="{{ false }}"><div style="position: absolute; inset: 20px; border-radius: 52% 48% 50% 50% / 48% 52% 48% 52%; background: radial-gradient(circle at 35% 30%, #5b4f48, #2a211c 65%); box-shadow: 0 4px 6px rgba(0,0,0,0.45)"></div><div style="position: absolute; left: 44px; top: 14px; width: 6px; height: 14px; border-radius: 3px; background: #c89b3c; transform: rotate(25deg)"></div></sc-if>
+        <sc-if value="{{c.ice}}" hint-placeholder-val="{{ false }}"><div style="position: absolute; inset: -2px; border-radius: 46% 54% 50% 50% / 52% 48% 54% 46%; background: rgba(240,240,232,0.72); transform: rotate(4deg); box-shadow: inset 5px 5px 10px #fff, inset -5px -7px 12px rgba(100,110,110,0.5), 0 4px 8px rgba(60,40,20,0.3)"></div><div style="position: absolute; left: 18px; top: 22px; width: 36px; height: 3px; background: rgba(120,130,130,0.5); transform: rotate(-28deg)"></div></sc-if>
+        <sc-if value="{{c.chain}}" hint-placeholder-val="{{ false }}"><div style="position: absolute; inset: 1px; border-radius: 50% 48% 52% 50% / 48% 52% 48% 52%; border: 8px dashed #4a3728; transform: rotate(-7deg); box-shadow: inset 0 2px 3px rgba(0,0,0,0.3), 0 3px 3px rgba(0,0,0,0.3)"></div></sc-if>
+      </div>
+    </sc-for>
+  </div>
+  <svg style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; mix-blend-mode: multiply; opacity: 0.22" aria-hidden="true">
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter>
+    <rect width="100%" height="100%" filter="url(#grain)"></rect>
+  </svg>
+</div>
+</template>
+<script>class DCLogic{}
+class Component extends DCLogic {
+  renderVals() {
+    // Earth pigments: terracotta, ochre, moss, slate, mulberry. [body, shadow]
+    const P = [['#b8613f','#7a3d26'],['#c89b3c','#7d5e1c'],['#6b7d46','#3f4a28'],['#5d7a8c','#354a56'],['#7d4e63','#4a2c3b']];
+    const cells = [];
+    for (let r = 0; r < 8; r++) for (let c = 0; c < 8; c++) {
+      const id = r * 8 + c, k = (r * 3 + c * 2 + ((r * c) % 3)) % 5, p = P[k], sel = id === 27;
+      // Deterministic wobble per cell: rotation, blob radii, brightness, thumbprint position.
+      const s = (id * 7919) % 97;
+      const rot = ((s % 13) - 6) * 1.1;
+      const a = 42 + (s % 9), b = 100 - a, d = 44 + ((s * 3) % 11), e = 100 - d;
+      const bright = 0.92 + ((s % 7) / 7) * 0.14;
+      const dx = 18 + (s % 24), dy = 20 + ((s * 5) % 22);
+      cells.push({
+        cell: `position: relative; width: 72px; height: 72px; border-radius: 48% 52% 46% 54% / 50% 46% 54% 50%; background: rgba(0,0,0,0.18); box-shadow: inset 2px 3px 5px rgba(0,0,0,0.45)`,
+        tile: `position: absolute; inset: 5px; border-radius: ${a}% ${b}% ${d}% ${e}% / ${e}% ${d}% ${b}% ${a}%; background: ${p[0]}; filter: brightness(${bright.toFixed(2)}); transform: rotate(${rot}deg)${sel ? ' translateY(-8px) scale(1.08)' : ''}; box-shadow: inset 5px 5px 9px rgba(255,235,210,0.45), inset -7px -9px 12px rgba(0,0,0,0.35), 0 ${sel ? 16 : 7}px ${sel ? 18 : 10}px rgba(40,25,10,0.4)${sel ? ', 0 0 0 4px #f1e3cf' : ''}`,
+        dent: `position: absolute; left: ${dx}px; top: ${dy}px; width: 22px; height: 18px; border-radius: 50%; background: radial-gradient(ellipse at 40% 35%, rgba(0,0,0,0.22), rgba(0,0,0,0) 70%); transform: rotate(${rot * 3}deg)`,
+        line: id === 19, bomb: id === 44, ice: [9, 10, 53, 54].includes(id), chain: [30, 37].includes(id)
+      });
+    }
+    return { cells };
+  }
+}
+
+
+const tpl=document.getElementById('t').innerHTML;
+const {cells}=new Component().renderVals();
+const html=tpl.replace(/<sc-for[^>]*>([\s\S]*?)<\/sc-for>/,(m,body)=>cells.map(c=>
+  body.replace(/<sc-if value="\{\{c\.(\w+)\}\}"[^>]*>([\s\S]*?)<\/sc-if>/g,(m2,k,b)=>c[k]?b:'')
+      .replace(/\{\{c\.(\w+)\}\}/g,(m3,k)=>c[k])).join(''));
+document.body.innerHTML=html;
+</script></body></html>

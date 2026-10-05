@@ -1,0 +1,21 @@
+{
+    "name": "Cascade.Generation",
+    "rootNamespace": "Cascade.Generation",
+    "references": [
+        "Cascade.Core",
+        "Cascade.Config",
+        "Cascade.Gameplay",
+        "Cascade.Platform.Abstractions"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Tomlyn.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}

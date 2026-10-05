@@ -1,0 +1,79 @@
+<!doctype html>
+<!-- Cascade art style mockup K-Pebbles. Standalone: open in any browser. Rendered to ../img/K-Pebbles.png -->
+<html lang="en"><head><meta charset="utf-8"><title>Pebbles</title>
+<link href="https://fonts.googleapis.com/css2?family=Delius&amp;family=Delius+Swash+Caps&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#7b8794}a:hover{color:#4f4a46}
+</style>
+</head>
+<body><template id="t">
+<div style="position: relative; width: 1280px; height: 800px; box-sizing: border-box; padding: 40px 64px; display: flex; gap: 56px; align-items: center; overflow: hidden; background: radial-gradient(ellipse at 50% 40%, #efe8db, #dfd4c1 80%); font-family: Delius, sans-serif; color: #4f4a46">
+  <div style="padding: 26px; border-radius: 38px 46px 40px 50px / 44px 36px 48px 40px; background: repeating-linear-gradient(88deg, #d9c7a6 0 11px, #cdb995 11px 13px, #ddcbab 13px 27px, #c9b48f 27px 29px); transform: rotate(-0.5deg); box-shadow: inset 0 0 0 10px rgba(255,255,255,0.18), inset 0 14px 30px rgba(120,95,60,0.3), 0 14px 0 #a89470, 0 30px 40px rgba(110,90,60,0.3); display: grid; grid-template-columns: repeat(8, 72px); gap: 6px">
+    <sc-for list="{{cells}}" as="c" hint-placeholder-count="64">
+      <div style="{{c.cell}}">
+        <div style="{{c.tile}}"></div>
+        <div style="{{c.fleck}}"></div>
+        <sc-if value="{{c.line}}" hint-placeholder-val="{{ false }}"><div style="position: absolute; left: 10px; right: 10px; top: 32px; height: 8px; border-radius: 4px; background: #f3efe6; transform: rotate(-2deg); box-shadow: inset 0 1px 2px #fff, inset 0 -2px 3px rgba(0,0,0,0.25), 0 2px 3px rgba(0,0,0,0.3)"></div></sc-if>
+        <sc-if value="{{c.bomb}}" hint-placeholder-val="{{ false }}"><div style="position: absolute; inset: 22px; border-radius: 52% 48% 50% 50% / 48% 52% 48% 52%; background: radial-gradient(circle at 35% 30%, #6a6460, #2a2624 65%); box-shadow: 0 4px 6px rgba(0,0,0,0.4)"></div></sc-if>
+        <sc-if value="{{c.ice}}" hint-placeholder-val="{{ false }}"><div style="position: absolute; inset: -1px; border-radius: 46% 54% 50% 50% / 52% 48% 54% 46%; background: rgba(246,246,242,0.78); transform: rotate(4deg); box-shadow: inset 5px 5px 10px #fff, inset -5px -7px 12px rgba(120,130,130,0.45), 0 4px 8px rgba(80,70,60,0.25)"></div></sc-if>
+        <sc-if value="{{c.chain}}" hint-placeholder-val="{{ false }}"><div style="position: absolute; inset: 2px; border-radius: 50% 48% 52% 50% / 48% 52% 48% 52%; border: 7px dashed #6e5744; transform: rotate(-7deg); box-shadow: 0 2px 3px rgba(0,0,0,0.3)"></div></sc-if>
+      </div>
+    </sc-for>
+  </div>
+  <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 26px">
+    <div style="font-family: 'Delius Swash Caps', sans-serif; font-size: 56px; line-height: 1; color: #b98468; transform: rotate(-1.5deg); text-shadow: 0 3px 0 #8a5f47, 0 8px 12px rgba(80,60,40,0.3)">Cascade</div>
+    <div style="font-size: 20px; color: #857c74">Level 24 · Low Tide</div>
+    <div style="display: flex; gap: 36px; align-items: baseline">
+      <div><div style="font-size: 72px; line-height: 1; color: #4f4a46">12</div><div style="font-size: 16px; color: #857c74">moves left</div></div>
+      <div><div style="font-size: 40px; line-height: 1; color: #7b8794">8,450</div><div style="font-size: 16px; color: #857c74">score</div></div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 14px; padding: 18px 0; border-top: 3px solid #c9b48f; border-bottom: 3px solid #c9b48f; font-size: 22px">
+      <div style="display: flex; align-items: center; gap: 14px"><div style="width: 32px; height: 26px; border-radius: 55% 45% 50% 50% / 60% 60% 40% 40%; background: #b98468; transform: rotate(-8deg); box-shadow: inset 3px 3px 5px rgba(255,240,225,0.5), inset -4px -4px 7px rgba(0,0,0,0.25), 0 3px 4px rgba(0,0,0,0.25)"></div><div style="flex-grow: 1">Collect clay pebbles</div><div>18 / 30</div></div>
+      <div style="display: flex; align-items: center; gap: 14px"><div style="width: 32px; height: 26px; border-radius: 45% 55% 50% 50% / 40% 40% 60% 60%; background: rgba(246,246,242,0.9); transform: rotate(6deg); box-shadow: inset 3px 3px 5px #fff, inset -4px -4px 7px rgba(120,130,130,0.4), 0 3px 4px rgba(0,0,0,0.2)"></div><div style="flex-grow: 1">Crack the ice</div><div>3 / 6</div></div>
+    </div>
+    <div style="display: flex; gap: 14px">
+      <button type="button" style="font: inherit; font-size: 22px; padding: 10px 30px; border: 0; border-radius: 55% 45% 50% 50% / 50% 50% 50% 50%; background: #8fa08a; color: #f3efe6; transform: rotate(-1deg); box-shadow: inset 3px 3px 6px rgba(230,240,225,0.5), inset -4px -5px 8px rgba(0,0,0,0.25), 0 6px 0 #5f6e5b, 0 12px 14px rgba(80,70,60,0.3)">Pause</button>
+      <button type="button" style="font: inherit; font-size: 22px; padding: 10px 30px; border: 0; border-radius: 45% 55% 50% 50% / 50% 50% 50% 50%; background: #e4dccd; color: #4f4a46; transform: rotate(1deg); box-shadow: inset 3px 3px 6px #fff, inset -4px -5px 8px rgba(120,100,80,0.35), 0 6px 0 #a89470, 0 12px 14px rgba(80,70,60,0.25)">Hint</button>
+    </div>
+  </div>
+  <svg style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; mix-blend-mode: multiply; opacity: 0.16" aria-hidden="true">
+    <filter id="grain3"><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" stitchTiles="stitch"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter>
+    <rect width="100%" height="100%" filter="url(#grain3)"></rect>
+  </svg>
+</div>
+</template>
+<script>class DCLogic{}
+class Component extends DCLogic {
+  renderVals() {
+    // Beach-stone clay: sand, sage, clay, slate, charcoal. Lightness steps so the quiet palette still reads.
+    const P = ['#cdb48d', '#8fa08a', '#b98468', '#7b8794', '#4f4a46'];
+    const cells = [];
+    for (let r = 0; r < 8; r++) for (let c = 0; c < 8; c++) {
+      const id = r * 8 + c, k = (r * 3 + c * 2 + ((r * c) % 3)) % 5, sel = id === 27;
+      const s = (id * 7919) % 97;
+      const rot = ((s % 13) - 6) * 2.2;
+      // Pebbles: flatter, wider, more elongated than the tiles in I.
+      const a = 44 + (s % 9), b = 100 - a, d = 36 + ((s * 3) % 15), e = 100 - d;
+      const sq = 0.82 + ((s % 5) / 5) * 0.16;
+      const bright = 0.94 + ((s % 7) / 7) * 0.12;
+      const fx = 12 + (s % 30), fy = 14 + ((s * 5) % 30);
+      cells.push({
+        cell: `position: relative; width: 72px; height: 72px`,
+        tile: `position: absolute; inset: 3px; border-radius: ${a}% ${b}% ${d}% ${e}% / ${e}% ${d}% ${b}% ${a}%; background: ${P[k]}; filter: brightness(${bright.toFixed(2)}); transform: rotate(${rot}deg) scaleY(${sq.toFixed(2)})${sel ? ' translateY(-8px) scale(1.1)' : ''}; box-shadow: inset 6px 6px 9px rgba(255,250,240,0.4), inset -8px -10px 14px rgba(0,0,0,0.28), 0 ${sel ? 14 : 5}px ${sel ? 16 : 6}px rgba(80,60,40,0.35)${sel ? ', 0 0 0 4px #f3efe6' : ''}`,
+        fleck: `position: absolute; left: ${fx}px; top: ${fy}px; width: 5px; height: 4px; border-radius: 50%; background: rgba(0,0,0,0.18); box-shadow: ${(s % 9) - 4}px ${(s % 11) + 4}px 0 rgba(0,0,0,0.14), ${(s % 7) + 6}px ${(s % 5) - 6}px 0 rgba(255,255,255,0.35)`,
+        line: id === 19, bomb: id === 44, ice: [9, 10, 53, 54].includes(id), chain: [30, 37].includes(id)
+      });
+    }
+    return { cells };
+  }
+}
+
+
+const tpl=document.getElementById('t').innerHTML;
+const {cells}=new Component().renderVals();
+const html=tpl.replace(/<sc-for[^>]*>([\s\S]*?)<\/sc-for>/,(m,body)=>cells.map(c=>
+  body.replace(/<sc-if value="\{\{c\.(\w+)\}\}"[^>]*>([\s\S]*?)<\/sc-if>/g,(m2,k,b)=>c[k]?b:'')
+      .replace(/\{\{c\.(\w+)\}\}/g,(m3,k)=>c[k])).join(''));
+document.body.innerHTML=html;
+</script></body></html>

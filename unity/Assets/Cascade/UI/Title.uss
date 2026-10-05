@@ -1,0 +1,25 @@
+/* Tall: name, pebbles and buttons stacked. Wide: the name block on the left, the buttons on the right, so it fits a short window. */
+
+.title { flex-direction: column; }
+.title__head { align-items: center; }
+.title__name { font-size: 200px; margin-bottom: 0; }
+.title__tagline { font-size: 46px; color: var(--slate); margin-top: 4px; }
+
+.title__pebbles { flex-direction: row; margin: 80px 0 120px 0; align-items: center; }
+.title__pebble { width: 76px; height: 60px; margin: 0 14px; border-radius: 52% 48% 55% 45%; }
+.title__pebble--0 { background-color: var(--sand); }
+.title__pebble--1 { background-color: var(--sage); border-radius: 46% 54% 48% 52%; }
+.title__pebble--2 { background-color: var(--clay); border-radius: 55% 45% 52% 48%; }
+.title__pebble--3 { background-color: var(--slate); border-radius: 48% 52% 45% 55%; }
+.title__pebble--4 { background-color: var(--ink); border-radius: 52% 48% 50% 50%; }
+
+.title__buttons { align-items: center; }
+.title__buttons .pebble-button { width: 660px; height: 170px; font-size: 64px; margin: 14px; }
+
+.layout--wide .title { flex-direction: row; }
+.layout--wide .title__head { margin-right: 100px; }
+.layout--wide .title__name { font-size: 180px; }
+.layout--wide .title__tagline { font-size: 50px; }
+.layout--wide .title__pebbles { margin: 56px 0 0 0; }
+.layout--wide .title__pebble { width: 64px; height: 50px; }
+.layout--wide .title__buttons .pebble-button { width: 470px; height: 136px; font-size: 56px; margin: 12px; }

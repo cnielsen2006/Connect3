@@ -1,0 +1,162 @@
+[
+ {
+  "moves": 20,
+  "n": 3,
+  "run": 0,
+  "score": 6965,
+  "seed": "1000006",
+  "won": true
+ },
+ {
+  "moves": 24,
+  "n": 3,
+  "run": 1,
+  "score": 5225,
+  "seed": "1000006",
+  "won": true
+ },
+ {
+  "moves": 22,
+  "n": 8,
+  "run": 0,
+  "score": 5310,
+  "seed": "1000011",
+  "won": true
+ },
+ {
+  "moves": 17,
+  "n": 8,
+  "run": 1,
+  "score": 5467,
+  "seed": "1000011",
+  "won": true
+ },
+ {
+  "moves": 29,
+  "n": 11,
+  "run": 0,
+  "score": 6800,
+  "seed": "1000014",
+  "won": true
+ },
+ {
+  "moves": 25,
+  "n": 11,
+  "run": 1,
+  "score": 10338,
+  "seed": "1000014",
+  "won": true
+ },
+ {
+  "moves": 26,
+  "n": 21,
+  "run": 0,
+  "score": 4275,
+  "seed": "1000024",
+  "won": true
+ },
+ {
+  "moves": 17,
+  "n": 21,
+  "run": 1,
+  "score": 4385,
+  "seed": "1000024",
+  "won": true
+ },
+ {
+  "moves": 19,
+  "n": 36,
+  "run": 0,
+  "score": 5020,
+  "seed": "1000039",
+  "won": true
+ },
+ {
+  "moves": 23,
+  "n": 36,
+  "run": 1,
+  "score": 4490,
+  "seed": "1000039",
+  "won": true
+ },
+ {
+  "moves": 25,
+  "n": 51,
+  "run": 0,
+  "score": 4777,
+  "seed": "1000054",
+  "won": true
+ },
+ {
+  "moves": 33,
+  "n": 51,
+  "run": 1,
+  "score": 4425,
+  "seed": "1000054",
+  "won": true
+ },
+ {
+  "moves": 20,
+  "n": 64,
+  "run": 0,
+  "score": 2885,
+  "seed": "1000067",
+  "won": true
+ },
+ {
+  "moves": 26,
+  "n": 64,
+  "run": 1,
+  "score": 2725,
+  "seed": "1000067",
+  "won": false
+ },
+ {
+  "moves": 22,
+  "n": 76,
+  "run": 0,
+  "score": 2190,
+  "seed": "1000079",
+  "won": true
+ },
+ {
+  "moves": 21,
+  "n": 76,
+  "run": 1,
+  "score": 1885,
+  "seed": "1000079",
+  "won": true
+ },
+ {
+  "moves": 15,
+  "n": 100,
+  "run": 0,
+  "score": 1580,
+  "seed": "1000103",
+  "won": true
+ },
+ {
+  "moves": 17,
+  "n": 100,
+  "run": 1,
+  "score": 1795,
+  "seed": "1000103",
+  "won": false
+ },
+ {
+  "moves": 14,
+  "n": 150,
+  "run": 0,
+  "score": 2515,
+  "seed": "1000153",
+  "won": true
+ },
+ {
+  "moves": 16,
+  "n": 150,
+  "run": 1,
+  "score": 1500,
+  "seed": "1000153",
+  "won": true
+ }
+]

@@ -1,0 +1,67 @@
+/* The level map: a path of pebbles, level 1 at the bottom. MapScreen places the nodes; this file says how big things are. */
+
+.map { align-items: stretch; justify-content: flex-start; }
+
+.map__total { font-size: 46px; color: var(--slate); }
+
+.map__viewport { flex-grow: 1; overflow: hidden; }
+.map__content { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+
+.map__metric { position: absolute; visibility: hidden; left: 0; top: 0; }
+.map__metric--spacing { height: 222px; width: 10px; }
+.map__metric--lane { width: 44%; height: 10px; }
+.map__metric--wheel { height: 90px; width: 10px; }
+.map__metric--slop { height: 22px; width: 10px; }
+
+/* a node is a pebble button with its stars under it; MapScreen sets left/top (the node's middle) */
+.map-node {
+    position: absolute;
+    width: 150px; height: 150px;
+    translate: -50% -50%;
+}
+.map-node__button {
+    width: 150px; height: 150px;
+    margin: 0; padding: 0;
+    border-width: 0 0 9px 0;
+    border-radius: 55% 45% 52% 48%;
+    font-size: 60px;
+    -unity-text-align: middle-center;
+    transition-property: scale;
+    transition-duration: 0.12s;
+}
+.map-node--shape1 .map-node__button { border-radius: 46% 54% 48% 52%; }
+.map-node--shape2 .map-node__button { border-radius: 52% 48% 56% 44%; }
+
+.map-node--completed .map-node__button, .map-node--completed .map-node__button:hover, .map-node--completed .map-node__button:focus, .map-node--completed .map-node__button:active {
+    background-color: var(--sage); border-color: var(--sage-dark); color: var(--on-dark);
+}
+.map-node--current .map-node__button, .map-node--current .map-node__button:hover, .map-node--current .map-node__button:focus, .map-node--current .map-node__button:active {
+    background-color: var(--clay); border-color: var(--clay-dark); color: var(--on-dark);
+}
+.map-node--locked .map-node__button, .map-node--locked .map-node__button:hover, .map-node--locked .map-node__button:focus, .map-node--locked .map-node__button:active {
+    background-color: var(--locked); border-color: var(--star-off); color: rgb(168, 158, 140);
+}
+.map-node--current { width: 190px; height: 190px; }
+.map-node--current .map-node__button { width: 190px; height: 190px; font-size: 76px; }
+.map-node--completed .map-node__button:hover, .map-node--current .map-node__button:hover { scale: 1.06 1.06; }
+
+.map-node__stars {
+    position: absolute;
+    left: 0; right: 0; top: 100%;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+.map-node--current .map-node__stars { margin-top: 12px; }
+
+.map-dot {
+    position: absolute;
+    width: 20px; height: 18px;
+    translate: -50% -50%;
+    background-color: var(--driftwood);
+    border-radius: 50%;
+}
+
+.layout--tall .map__metric--spacing { height: 270px; }
+.layout--tall .map__metric--lane { width: 62%; }
+.layout--tall .map__metric--wheel { height: 130px; }

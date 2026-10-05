@@ -1,0 +1,5 @@
+<linker>
+  <!-- TRD §13.1: keep the data layer's parsers intact under Medium stripping. -->
+  <assembly fullname="Tomlyn" preserve="all"/>
+  <assembly fullname="Newtonsoft.Json" preserve="all"/>
+</linker>

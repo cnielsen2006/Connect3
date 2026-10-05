@@ -1,0 +1,1466 @@
+[
+ {
+  "events": [
+   {
+    "a": 17,
+    "b": 25,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     25,
+     33,
+     41
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     17,
+     33,
+     41
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 1,
+    "color": 1,
+    "source_id": 1,
+    "tile_id": 64,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 2,
+    "source_id": 1,
+    "tile_id": 65,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 1,
+    "source_id": 1,
+    "tile_id": 66,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     17,
+     25,
+     33,
+     41
+    ],
+    "tile_id": 25,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     9,
+     17,
+     25,
+     33
+    ],
+    "tile_id": 9,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9,
+     17,
+     25
+    ],
+    "tile_id": 1,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9,
+     17
+    ],
+    "tile_id": 64,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 65,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   17,
+   25
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 59,
+    "b": 60,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     43,
+     51,
+     59
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     43,
+     51,
+     60
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 3,
+    "color": 2,
+    "source_id": 3,
+    "tile_id": 67,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 3,
+    "source_id": 3,
+    "tile_id": 68,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 1,
+    "source_id": 3,
+    "tile_id": 69,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     35,
+     43,
+     51,
+     59
+    ],
+    "tile_id": 35,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     27,
+     35,
+     43,
+     51
+    ],
+    "tile_id": 27,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     19,
+     27,
+     35,
+     43
+    ],
+    "tile_id": 19,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     11,
+     19,
+     27,
+     35
+    ],
+    "tile_id": 11,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11,
+     19,
+     27
+    ],
+    "tile_id": 3,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11,
+     19
+    ],
+    "tile_id": 67,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11
+    ],
+    "tile_id": 68,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   59,
+   60
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 15,
+    "b": 23,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     13,
+     14,
+     15
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     13,
+     14,
+     23
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 5,
+    "color": 4,
+    "source_id": 5,
+    "tile_id": 70,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 3,
+    "source_id": 6,
+    "tile_id": 71,
+    "type": "Spawned"
+   },
+   {
+    "cell": 7,
+    "color": 2,
+    "source_id": 7,
+    "tile_id": 72,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     5,
+     13
+    ],
+    "tile_id": 5,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14
+    ],
+    "tile_id": 6,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     7,
+     15
+    ],
+    "tile_id": 7,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   15,
+   23
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 40,
+    "b": 41,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     40,
+     48,
+     56
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     25,
+     48,
+     56
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 0,
+    "color": 3,
+    "source_id": 0,
+    "tile_id": 73,
+    "type": "Spawned"
+   },
+   {
+    "cell": 0,
+    "color": 0,
+    "source_id": 0,
+    "tile_id": 74,
+    "type": "Spawned"
+   },
+   {
+    "cell": 0,
+    "color": 4,
+    "source_id": 0,
+    "tile_id": 75,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     32,
+     40,
+     48,
+     56
+    ],
+    "tile_id": 32,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     24,
+     32,
+     40,
+     48
+    ],
+    "tile_id": 24,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     16,
+     24,
+     32,
+     40
+    ],
+    "tile_id": 16,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     8,
+     16,
+     24,
+     32
+    ],
+    "tile_id": 8,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8,
+     16,
+     24
+    ],
+    "tile_id": 0,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8,
+     16
+    ],
+    "tile_id": 73,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8
+    ],
+    "tile_id": 74,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   40,
+   41
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 46,
+    "b": 47,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     38,
+     46,
+     54
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     38,
+     47,
+     54
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 6,
+    "color": 1,
+    "source_id": 6,
+    "tile_id": 76,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 4,
+    "source_id": 6,
+    "tile_id": 77,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 2,
+    "source_id": 6,
+    "tile_id": 78,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     30,
+     38,
+     46,
+     54
+    ],
+    "tile_id": 30,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     22,
+     30,
+     38,
+     46
+    ],
+    "tile_id": 22,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     14,
+     22,
+     30,
+     38
+    ],
+    "tile_id": 6,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14,
+     22,
+     30
+    ],
+    "tile_id": 71,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14,
+     22
+    ],
+    "tile_id": 76,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14
+    ],
+    "tile_id": 77,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   46,
+   47
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 24,
+    "b": 32,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     32,
+     40,
+     48
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     0,
+     16,
+     24
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 0,
+    "color": 4,
+    "source_id": 0,
+    "tile_id": 79,
+    "type": "Spawned"
+   },
+   {
+    "cell": 0,
+    "color": 0,
+    "source_id": 0,
+    "tile_id": 80,
+    "type": "Spawned"
+   },
+   {
+    "cell": 0,
+    "color": 2,
+    "source_id": 0,
+    "tile_id": 81,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     24,
+     32,
+     40,
+     48
+    ],
+    "tile_id": 8,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     16,
+     24,
+     32,
+     40
+    ],
+    "tile_id": 73,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     8,
+     16,
+     24,
+     32
+    ],
+    "tile_id": 74,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8,
+     16,
+     24
+    ],
+    "tile_id": 75,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8,
+     16
+    ],
+    "tile_id": 79,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8
+    ],
+    "tile_id": 80,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   24,
+   32
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 43,
+    "b": 44,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     28,
+     36,
+     44
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     28,
+     36,
+     19
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 4,
+    "color": 0,
+    "source_id": 4,
+    "tile_id": 82,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 4,
+    "source_id": 4,
+    "tile_id": 83,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 3,
+    "source_id": 4,
+    "tile_id": 84,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     20,
+     28,
+     36,
+     44
+    ],
+    "tile_id": 20,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     12,
+     20,
+     28,
+     36
+    ],
+    "tile_id": 12,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12,
+     20,
+     28
+    ],
+    "tile_id": 4,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12,
+     20
+    ],
+    "tile_id": 82,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12
+    ],
+    "tile_id": 83,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   43,
+   44
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 9,
+    "b": 17,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     17,
+     18,
+     19
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     65,
+     18,
+     67
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 1,
+    "color": 3,
+    "source_id": 1,
+    "tile_id": 85,
+    "type": "Spawned"
+   },
+   {
+    "cell": 2,
+    "color": 4,
+    "source_id": 2,
+    "tile_id": 86,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 0,
+    "source_id": 3,
+    "tile_id": 87,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     9,
+     17
+    ],
+    "tile_id": 64,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     10,
+     18
+    ],
+    "tile_id": 10,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     11,
+     19
+    ],
+    "tile_id": 68,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 66,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     2,
+     10
+    ],
+    "tile_id": 2,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11
+    ],
+    "tile_id": 69,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   9,
+   17
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 40,
+    "b": 41,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     41,
+     42,
+     43
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     73,
+     42,
+     44
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 1,
+    "color": 4,
+    "source_id": 1,
+    "tile_id": 88,
+    "type": "Spawned"
+   },
+   {
+    "cell": 2,
+    "color": 0,
+    "source_id": 2,
+    "tile_id": 89,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 4,
+    "source_id": 3,
+    "tile_id": 90,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     33,
+     41
+    ],
+    "tile_id": 9,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     34,
+     42
+    ],
+    "tile_id": 34,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     35,
+     43
+    ],
+    "tile_id": 11,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     25,
+     33
+    ],
+    "tile_id": 1,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     26,
+     34
+    ],
+    "tile_id": 26,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     27,
+     35
+    ],
+    "tile_id": 3,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     17,
+     25
+    ],
+    "tile_id": 64,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     18,
+     26
+    ],
+    "tile_id": 10,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     19,
+     27
+    ],
+    "tile_id": 68,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     9,
+     17
+    ],
+    "tile_id": 66,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     10,
+     18
+    ],
+    "tile_id": 2,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     11,
+     19
+    ],
+    "tile_id": 69,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 85,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     2,
+     10
+    ],
+    "tile_id": 86,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11
+    ],
+    "tile_id": 87,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   40,
+   41
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 21,
+    "b": 29,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     27,
+     28,
+     29,
+     30
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run4",
+      "length": 4
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     68,
+     4,
+     21,
+     71
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 120,
+    "type": "Scored"
+   },
+   {
+    "cell": 3,
+    "color": 1,
+    "source_id": 3,
+    "tile_id": 91,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 3,
+    "source_id": 4,
+    "tile_id": 92,
+    "type": "Spawned"
+   },
+   {
+    "cell": 5,
+    "color": 4,
+    "source_id": 5,
+    "tile_id": 93,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 4,
+    "source_id": 6,
+    "tile_id": 94,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     19,
+     27
+    ],
+    "tile_id": 69,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     20,
+     28
+    ],
+    "tile_id": 82,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     21,
+     29
+    ],
+    "tile_id": 29,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     22,
+     30
+    ],
+    "tile_id": 76,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     11,
+     19
+    ],
+    "tile_id": 87,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     12,
+     20
+    ],
+    "tile_id": 83,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     13,
+     21
+    ],
+    "tile_id": 5,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     14,
+     22
+    ],
+    "tile_id": 77,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11
+    ],
+    "tile_id": 90,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12
+    ],
+    "tile_id": 84,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     5,
+     13
+    ],
+    "tile_id": 70,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14
+    ],
+    "tile_id": 78,
+    "type": "Moved"
+   },
+   {
+    "special": {
+     "axis": 1,
+     "kind": "Line"
+    },
+    "tile_id": 66,
+    "type": "SpecialCreated"
+   }
+  ],
+  "swap": [
+   21,
+   29
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 32,
+    "b": 40,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     16,
+     24,
+     32
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     79,
+     75,
+     40
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 0,
+    "color": 1,
+    "source_id": 0,
+    "tile_id": 95,
+    "type": "Spawned"
+   },
+   {
+    "cell": 0,
+    "color": 2,
+    "source_id": 0,
+    "tile_id": 96,
+    "type": "Spawned"
+   },
+   {
+    "cell": 0,
+    "color": 4,
+    "source_id": 0,
+    "tile_id": 97,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     8,
+     16,
+     24,
+     32
+    ],
+    "tile_id": 80,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8,
+     16,
+     24
+    ],
+    "tile_id": 81,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8,
+     16
+    ],
+    "tile_id": 95,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8
+    ],
+    "tile_id": 96,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   32,
+   40
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 1,
+    "b": 9,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     9,
+     10,
+     11
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     88,
+     86,
+     90
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 1,
+    "color": 4,
+    "source_id": 1,
+    "tile_id": 98,
+    "type": "Spawned"
+   },
+   {
+    "cell": 2,
+    "color": 2,
+    "source_id": 2,
+    "tile_id": 99,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 1,
+    "source_id": 3,
+    "tile_id": 100,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 85,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     2,
+     10
+    ],
+    "tile_id": 89,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11
+    ],
+    "tile_id": 91,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   1,
+   9
+  ]
+ }
+]

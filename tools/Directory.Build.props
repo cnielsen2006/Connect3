@@ -1,0 +1,12 @@
+<Project>
+  <!-- Headless runner (TRD §2.2): compiles the Unity project's logic sources by glob, one
+       assembly per layer, with the same allowed references as the asmdefs. -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LogicRoot>$(MSBuildThisFileDirectory)..\unity\Assets\Cascade\Logic\</LogicRoot>
+  </PropertyGroup>
+</Project>

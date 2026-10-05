@@ -1,0 +1,32 @@
+{
+ "level": {
+  "colors": 6,
+  "difficulty": 0.6009301382820593,
+  "generator_version": 2,
+  "goals": [
+   {
+    "colors": [],
+    "kind": "score",
+    "target": 3000
+   }
+  ],
+  "height": 8,
+  "holes": [],
+  "intro": null,
+  "measured_win_rate": 0.55,
+  "move_limit": 26,
+  "number": 56,
+  "seed": "1000059",
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "star2": 3090,
+  "star3": 3210,
+  "target_win_rate": 0.5974233142651232,
+  "width": 8
+ },
+ "n": 56,
+ "seed": "1000059"
+}

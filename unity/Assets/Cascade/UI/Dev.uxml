@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project:/Assets/Cascade/UI/Dev.uss" />
+    <!-- The dev settings page (PRD 5.2, TRD 12.2). Only the frame is here; DevScreen (compiled into Editor and Development builds
+         only) generates the foldouts and fields from DialRegistry.Metadata. -->
+    <ui:VisualElement name="dev-root" class="dev" picking-mode="Ignore">
+        <ui:VisualElement name="dev-panel" class="dev__panel">
+            <ui:VisualElement class="dev__head">
+                <ui:Label name="dev-title" class="dev__title" picking-mode="Ignore" />
+                <ui:Button name="dev-close" class="dev-button" />
+            </ui:VisualElement>
+            <ui:Label name="dev-level-info" class="dev__info" picking-mode="Ignore" />
+            <ui:VisualElement class="dev__row">
+                <ui:Label text="Jump to level" class="dev__row-label" picking-mode="Ignore" />
+                <ui:IntegerField name="dev-jump-field" class="dev__jump" value="1" />
+                <ui:Button name="dev-jump" class="dev-button" />
+            </ui:VisualElement>
+            <ui:VisualElement class="dev__row">
+                <ui:Button name="dev-save" class="dev-button" />
+                <ui:Button name="dev-reset-all" class="dev-button" />
+                <ui:Label name="dev-changed" class="dev__row-label" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:Label name="dev-message" class="dev__message" picking-mode="Ignore" />
+            <ui:ScrollView name="dev-scroll" class="dev__scroll" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

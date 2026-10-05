@@ -1,0 +1,24 @@
+{
+    "name": "Cascade.Unity.View",
+    "rootNamespace": "Cascade.Unity.View",
+    "references": [
+        "Cascade.Core",
+        "Cascade.Config",
+        "Cascade.Platform.Abstractions",
+        "Cascade.Gameplay",
+        "Cascade.Generation",
+        "Cascade.Persistence",
+        "Cascade.Presentation",
+        "Cascade.Unity.Platform",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false,
+    "excludePlatforms": []
+}

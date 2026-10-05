@@ -1,0 +1,43 @@
+/Builds/
+/unity/Library/
+/unity/Temp/
+/unity/Logs/
+/unity/UserSettings/
+/unity/obj/
+/unity/Build/
+*.csproj
+*.sln
+*.keystore
+*.apk
+*.aab
+
+/tools/**/bin/
+/tools/**/obj/
+
+# More Unity temporaries
+/unity/build/
+/unity/.utmp/
+/unity/ProfilerCaptures/
+/unity/UpgradeLog*.htm
+/unity/MemoryCaptures/
+*.slnx
+*.pidb
+*.suo
+*.user
+.vs/
+
+# Local sandbox, logs and build scratch
+/.sandbox/
+/Builds$log/
+*.log
+*.pid
+__pycache__/
+*.pyc
+
+# Tools build output (any depth)
+**/bin/
+**/obj/
+
+# OS / editor
+Thumbs.db
+.DS_Store

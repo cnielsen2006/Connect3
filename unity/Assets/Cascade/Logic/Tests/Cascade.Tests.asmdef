@@ -1,0 +1,31 @@
+{
+    "name": "Cascade.Tests",
+    "rootNamespace": "Cascade.Tests",
+    "references": [
+        "Cascade.Core",
+        "Cascade.Config",
+        "Cascade.Platform.Abstractions",
+        "Cascade.Gameplay",
+        "Cascade.Generation",
+        "Cascade.Persistence",
+        "Cascade.Presentation",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

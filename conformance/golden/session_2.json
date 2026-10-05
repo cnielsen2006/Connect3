@@ -1,0 +1,2564 @@
+[
+ {
+  "events": [
+   {
+    "a": 55,
+    "b": 63,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     53,
+     54,
+     55
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     53,
+     54,
+     63
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 5,
+    "color": 2,
+    "source_id": 5,
+    "tile_id": 64,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 2,
+    "source_id": 6,
+    "tile_id": 65,
+    "type": "Spawned"
+   },
+   {
+    "cell": 7,
+    "color": 4,
+    "source_id": 7,
+    "tile_id": 66,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     45,
+     53
+    ],
+    "tile_id": 45,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     46,
+     54
+    ],
+    "tile_id": 46,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     47,
+     55
+    ],
+    "tile_id": 47,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     37,
+     45
+    ],
+    "tile_id": 37,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     38,
+     46
+    ],
+    "tile_id": 38,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     39,
+     47
+    ],
+    "tile_id": 39,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     29,
+     37
+    ],
+    "tile_id": 29,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     30,
+     38
+    ],
+    "tile_id": 30,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     31,
+     39
+    ],
+    "tile_id": 31,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     21,
+     29
+    ],
+    "tile_id": 21,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     22,
+     30
+    ],
+    "tile_id": 22,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     23,
+     31
+    ],
+    "tile_id": 23,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     13,
+     21
+    ],
+    "tile_id": 13,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     14,
+     22
+    ],
+    "tile_id": 14,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     15,
+     23
+    ],
+    "tile_id": 15,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     5,
+     13
+    ],
+    "tile_id": 5,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14
+    ],
+    "tile_id": 6,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     7,
+     15
+    ],
+    "tile_id": 7,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   55,
+   63
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 37,
+    "b": 38,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     38,
+     46,
+     54
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     29,
+     38,
+     46
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 6,
+    "color": 3,
+    "source_id": 6,
+    "tile_id": 67,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 2,
+    "source_id": 6,
+    "tile_id": 68,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 2,
+    "source_id": 6,
+    "tile_id": 69,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     30,
+     38,
+     46,
+     54
+    ],
+    "tile_id": 22,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     22,
+     30,
+     38,
+     46
+    ],
+    "tile_id": 14,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     14,
+     22,
+     30,
+     38
+    ],
+    "tile_id": 6,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14,
+     22,
+     30
+    ],
+    "tile_id": 65,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14,
+     22
+    ],
+    "tile_id": 67,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14
+    ],
+    "tile_id": 68,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   37,
+   38
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 2,
+    "b": 10,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     8,
+     9,
+     10
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     8,
+     9,
+     2
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 0,
+    "color": 1,
+    "source_id": 0,
+    "tile_id": 70,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 0,
+    "source_id": 1,
+    "tile_id": 71,
+    "type": "Spawned"
+   },
+   {
+    "cell": 2,
+    "color": 1,
+    "source_id": 2,
+    "tile_id": 72,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     0,
+     8
+    ],
+    "tile_id": 0,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 1,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     2,
+     10
+    ],
+    "tile_id": 10,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   2,
+   10
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 43,
+    "b": 44,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     41,
+     42,
+     43
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     41,
+     42,
+     44
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 1,
+    "color": 2,
+    "source_id": 1,
+    "tile_id": 73,
+    "type": "Spawned"
+   },
+   {
+    "cell": 2,
+    "color": 2,
+    "source_id": 2,
+    "tile_id": 74,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 3,
+    "source_id": 3,
+    "tile_id": 75,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     33,
+     41
+    ],
+    "tile_id": 33,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     34,
+     42
+    ],
+    "tile_id": 34,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     35,
+     43
+    ],
+    "tile_id": 35,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     25,
+     33
+    ],
+    "tile_id": 25,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     26,
+     34
+    ],
+    "tile_id": 26,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     27,
+     35
+    ],
+    "tile_id": 27,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     17,
+     25
+    ],
+    "tile_id": 17,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     18,
+     26
+    ],
+    "tile_id": 18,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     19,
+     27
+    ],
+    "tile_id": 19,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     9,
+     17
+    ],
+    "tile_id": 1,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     10,
+     18
+    ],
+    "tile_id": 10,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     11,
+     19
+    ],
+    "tile_id": 11,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 71,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     2,
+     10
+    ],
+    "tile_id": 72,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11
+    ],
+    "tile_id": 3,
+    "type": "Moved"
+   },
+   {
+    "cells": [
+     35,
+     43,
+     51
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     27,
+     35,
+     51
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 1,
+    "multiplier": 1.5,
+    "points": 90,
+    "type": "Scored"
+   },
+   {
+    "cell": 3,
+    "color": 2,
+    "source_id": 3,
+    "tile_id": 76,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 4,
+    "source_id": 3,
+    "tile_id": 77,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 4,
+    "source_id": 3,
+    "tile_id": 78,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     27,
+     35,
+     43,
+     51
+    ],
+    "tile_id": 19,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     19,
+     27,
+     35,
+     43
+    ],
+    "tile_id": 11,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     11,
+     19,
+     27,
+     35
+    ],
+    "tile_id": 3,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11,
+     19,
+     27
+    ],
+    "tile_id": 75,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11,
+     19
+    ],
+    "tile_id": 76,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11
+    ],
+    "tile_id": 77,
+    "type": "Moved"
+   },
+   {
+    "cells": [
+     25,
+     26,
+     27,
+     28
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run4",
+      "length": 4
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     17,
+     18,
+     75,
+     28
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 2,
+    "multiplier": 2.0,
+    "points": 240,
+    "type": "Scored"
+   },
+   {
+    "cell": 1,
+    "color": 4,
+    "source_id": 1,
+    "tile_id": 79,
+    "type": "Spawned"
+   },
+   {
+    "cell": 2,
+    "color": 3,
+    "source_id": 2,
+    "tile_id": 80,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 0,
+    "source_id": 3,
+    "tile_id": 81,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 1,
+    "source_id": 4,
+    "tile_id": 82,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     17,
+     25
+    ],
+    "tile_id": 1,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     18,
+     26
+    ],
+    "tile_id": 10,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     19,
+     27
+    ],
+    "tile_id": 76,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     20,
+     28
+    ],
+    "tile_id": 20,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     9,
+     17
+    ],
+    "tile_id": 71,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     10,
+     18
+    ],
+    "tile_id": 72,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     11,
+     19
+    ],
+    "tile_id": 77,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     12,
+     20
+    ],
+    "tile_id": 12,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 73,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     2,
+     10
+    ],
+    "tile_id": 74,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11
+    ],
+    "tile_id": 78,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12
+    ],
+    "tile_id": 4,
+    "type": "Moved"
+   },
+   {
+    "special": {
+     "axis": 0,
+     "kind": "Line"
+    },
+    "tile_id": 82,
+    "type": "SpecialCreated"
+   },
+   {
+    "cells": [
+     25,
+     33,
+     41
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "cells": [
+     28,
+     36,
+     44
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     1,
+     20,
+     25,
+     36,
+     33,
+     43
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 3,
+    "multiplier": 2.5,
+    "points": 150,
+    "type": "Scored"
+   },
+   {
+    "depth": 3,
+    "multiplier": 2.75,
+    "points": 165,
+    "type": "Scored"
+   },
+   {
+    "cell": 1,
+    "color": 1,
+    "source_id": 1,
+    "tile_id": 83,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 3,
+    "source_id": 4,
+    "tile_id": 84,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 3,
+    "source_id": 1,
+    "tile_id": 85,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 1,
+    "source_id": 4,
+    "tile_id": 86,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 4,
+    "source_id": 1,
+    "tile_id": 87,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 3,
+    "source_id": 4,
+    "tile_id": 88,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     17,
+     25,
+     33,
+     41
+    ],
+    "tile_id": 71,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     20,
+     28,
+     36,
+     44
+    ],
+    "tile_id": 12,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     9,
+     17,
+     25,
+     33
+    ],
+    "tile_id": 73,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     12,
+     20,
+     28,
+     36
+    ],
+    "tile_id": 4,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9,
+     17,
+     25
+    ],
+    "tile_id": 79,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12,
+     20,
+     28
+    ],
+    "tile_id": 82,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9,
+     17
+    ],
+    "tile_id": 83,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12,
+     20
+    ],
+    "tile_id": 84,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 85,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12
+    ],
+    "tile_id": 86,
+    "type": "Moved"
+   },
+   {
+    "cells": [
+     40,
+     41,
+     42,
+     49,
+     57
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     },
+     {
+      "kind": "Run3",
+      "length": 3
+     },
+     {
+      "kind": "Cross",
+      "length": 0
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     40,
+     71,
+     34,
+     49,
+     57
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 4,
+    "multiplier": 3.0,
+    "points": 810,
+    "type": "Scored"
+   },
+   {
+    "cell": 0,
+    "color": 0,
+    "source_id": 0,
+    "tile_id": 89,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 0,
+    "source_id": 1,
+    "tile_id": 90,
+    "type": "Spawned"
+   },
+   {
+    "cell": 2,
+    "color": 2,
+    "source_id": 2,
+    "tile_id": 91,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 1,
+    "source_id": 1,
+    "tile_id": 92,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 1,
+    "source_id": 1,
+    "tile_id": 93,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     32,
+     40
+    ],
+    "tile_id": 32,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     33,
+     41,
+     49,
+     57
+    ],
+    "tile_id": 73,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     34,
+     42
+    ],
+    "tile_id": 26,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     24,
+     32
+    ],
+    "tile_id": 24,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     25,
+     33,
+     41,
+     49
+    ],
+    "tile_id": 79,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     26,
+     34
+    ],
+    "tile_id": 10,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     16,
+     24
+    ],
+    "tile_id": 16,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     17,
+     25,
+     33,
+     41
+    ],
+    "tile_id": 83,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     18,
+     26
+    ],
+    "tile_id": 72,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     8,
+     16
+    ],
+    "tile_id": 0,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     9,
+     17,
+     25,
+     33
+    ],
+    "tile_id": 85,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     10,
+     18
+    ],
+    "tile_id": 74,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8
+    ],
+    "tile_id": 70,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9,
+     17,
+     25
+    ],
+    "tile_id": 87,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     2,
+     10
+    ],
+    "tile_id": 80,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9,
+     17
+    ],
+    "tile_id": 90,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 92,
+    "type": "Moved"
+   },
+   {
+    "special": {
+     "kind": "Bomb"
+    },
+    "tile_id": 90,
+    "type": "SpecialCreated"
+   },
+   {
+    "cells": [
+     49,
+     50,
+     51
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     79,
+     50,
+     19
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 5,
+    "multiplier": 3.5,
+    "points": 210,
+    "type": "Scored"
+   },
+   {
+    "cell": 1,
+    "color": 0,
+    "source_id": 1,
+    "tile_id": 94,
+    "type": "Spawned"
+   },
+   {
+    "cell": 2,
+    "color": 2,
+    "source_id": 2,
+    "tile_id": 95,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 1,
+    "source_id": 3,
+    "tile_id": 96,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     41,
+     49
+    ],
+    "tile_id": 83,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     42,
+     50
+    ],
+    "tile_id": 26,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     43,
+     51
+    ],
+    "tile_id": 11,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     33,
+     41
+    ],
+    "tile_id": 85,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     34,
+     42
+    ],
+    "tile_id": 10,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     35,
+     43
+    ],
+    "tile_id": 3,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     25,
+     33
+    ],
+    "tile_id": 87,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     26,
+     34
+    ],
+    "tile_id": 72,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     27,
+     35
+    ],
+    "tile_id": 76,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     17,
+     25
+    ],
+    "tile_id": 90,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     18,
+     26
+    ],
+    "tile_id": 74,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     19,
+     27
+    ],
+    "tile_id": 77,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     9,
+     17
+    ],
+    "tile_id": 92,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     10,
+     18
+    ],
+    "tile_id": 80,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     11,
+     19
+    ],
+    "tile_id": 78,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 93,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     2,
+     10
+    ],
+    "tile_id": 91,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11
+    ],
+    "tile_id": 81,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   43,
+   44
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 12,
+    "b": 20,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     20,
+     28,
+     36
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     86,
+     82,
+     4
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "cells": [
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "tile_id": 82,
+    "type": "SpecialFired"
+   },
+   {
+    "tile_ids": [
+     16,
+     90,
+     74,
+     77,
+     21,
+     65,
+     23
+    ],
+    "type": "Cleared",
+    "wave": 1
+   },
+   {
+    "cells": [
+     16,
+     17,
+     18,
+     24,
+     25,
+     26,
+     32,
+     33,
+     34
+    ],
+    "tile_id": 90,
+    "type": "SpecialFired"
+   },
+   {
+    "tile_ids": [
+     0,
+     92,
+     80,
+     24,
+     87,
+     72
+    ],
+    "type": "Cleared",
+    "wave": 2
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 260,
+    "type": "Scored"
+   },
+   {
+    "cell": 0,
+    "color": 4,
+    "source_id": 0,
+    "tile_id": 97,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 2,
+    "source_id": 1,
+    "tile_id": 98,
+    "type": "Spawned"
+   },
+   {
+    "cell": 2,
+    "color": 1,
+    "source_id": 2,
+    "tile_id": 99,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 2,
+    "source_id": 4,
+    "tile_id": 100,
+    "type": "Spawned"
+   },
+   {
+    "cell": 0,
+    "color": 2,
+    "source_id": 0,
+    "tile_id": 101,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 3,
+    "source_id": 1,
+    "tile_id": 102,
+    "type": "Spawned"
+   },
+   {
+    "cell": 2,
+    "color": 3,
+    "source_id": 2,
+    "tile_id": 103,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 2,
+    "source_id": 3,
+    "tile_id": 104,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 4,
+    "source_id": 4,
+    "tile_id": 105,
+    "type": "Spawned"
+   },
+   {
+    "cell": 5,
+    "color": 4,
+    "source_id": 5,
+    "tile_id": 106,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 0,
+    "source_id": 6,
+    "tile_id": 107,
+    "type": "Spawned"
+   },
+   {
+    "cell": 7,
+    "color": 2,
+    "source_id": 7,
+    "tile_id": 108,
+    "type": "Spawned"
+   },
+   {
+    "cell": 0,
+    "color": 0,
+    "source_id": 0,
+    "tile_id": 109,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 2,
+    "source_id": 1,
+    "tile_id": 110,
+    "type": "Spawned"
+   },
+   {
+    "cell": 2,
+    "color": 0,
+    "source_id": 2,
+    "tile_id": 111,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 4,
+    "source_id": 4,
+    "tile_id": 112,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     8,
+     16,
+     24,
+     32
+    ],
+    "tile_id": 70,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     9,
+     17,
+     25,
+     33
+    ],
+    "tile_id": 93,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     10,
+     18,
+     26,
+     34
+    ],
+    "tile_id": 91,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     12,
+     20,
+     28,
+     36
+    ],
+    "tile_id": 84,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     19,
+     27
+    ],
+    "tile_id": 78,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     21,
+     29
+    ],
+    "tile_id": 13,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     22,
+     30
+    ],
+    "tile_id": 67,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     23,
+     31
+    ],
+    "tile_id": 15,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8,
+     16,
+     24
+    ],
+    "tile_id": 89,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9,
+     17,
+     25
+    ],
+    "tile_id": 94,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     2,
+     10,
+     18,
+     26
+    ],
+    "tile_id": 95,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12,
+     20,
+     28
+    ],
+    "tile_id": 88,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     11,
+     19
+    ],
+    "tile_id": 81,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     13,
+     21
+    ],
+    "tile_id": 5,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     14,
+     22
+    ],
+    "tile_id": 68,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     15,
+     23
+    ],
+    "tile_id": 7,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8,
+     16
+    ],
+    "tile_id": 97,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9,
+     17
+    ],
+    "tile_id": 98,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     2,
+     10,
+     18
+    ],
+    "tile_id": 99,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12,
+     20
+    ],
+    "tile_id": 100,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11
+    ],
+    "tile_id": 96,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     5,
+     13
+    ],
+    "tile_id": 64,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14
+    ],
+    "tile_id": 69,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     7,
+     15
+    ],
+    "tile_id": 66,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     0,
+     8
+    ],
+    "tile_id": 101,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 102,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     2,
+     10
+    ],
+    "tile_id": 103,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12
+    ],
+    "tile_id": 105,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   12,
+   20
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 12,
+    "b": 20,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     12,
+     13,
+     14
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     100,
+     64,
+     69
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 4,
+    "color": 3,
+    "source_id": 4,
+    "tile_id": 113,
+    "type": "Spawned"
+   },
+   {
+    "cell": 5,
+    "color": 2,
+    "source_id": 5,
+    "tile_id": 114,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 3,
+    "source_id": 6,
+    "tile_id": 115,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     4,
+     12
+    ],
+    "tile_id": 112,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     5,
+     13
+    ],
+    "tile_id": 106,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14
+    ],
+    "tile_id": 107,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   12,
+   20
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 20,
+    "b": 28,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     27,
+     28,
+     29
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     78,
+     105,
+     13
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 3,
+    "color": 2,
+    "source_id": 3,
+    "tile_id": 116,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 2,
+    "source_id": 4,
+    "tile_id": 117,
+    "type": "Spawned"
+   },
+   {
+    "cell": 5,
+    "color": 4,
+    "source_id": 5,
+    "tile_id": 118,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     19,
+     27
+    ],
+    "tile_id": 81,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     20,
+     28
+    ],
+    "tile_id": 88,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     21,
+     29
+    ],
+    "tile_id": 5,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     11,
+     19
+    ],
+    "tile_id": 96,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     12,
+     20
+    ],
+    "tile_id": 112,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     13,
+     21
+    ],
+    "tile_id": 106,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     3,
+     11
+    ],
+    "tile_id": 104,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     4,
+     12
+    ],
+    "tile_id": 113,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     5,
+     13
+    ],
+    "tile_id": 114,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   20,
+   28
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 8,
+    "b": 9,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     1,
+     9,
+     17
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     110,
+     101,
+     98
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 1,
+    "color": 4,
+    "source_id": 1,
+    "tile_id": 119,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 0,
+    "source_id": 1,
+    "tile_id": 120,
+    "type": "Spawned"
+   },
+   {
+    "cell": 1,
+    "color": 2,
+    "source_id": 1,
+    "tile_id": 121,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     1,
+     9,
+     17
+    ],
+    "tile_id": 119,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     1,
+     9
+    ],
+    "tile_id": 120,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   8,
+   9
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 46,
+    "b": 54,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     30,
+     38,
+     46
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     67,
+     6,
+     22
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 6,
+    "color": 2,
+    "source_id": 6,
+    "tile_id": 122,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 2,
+    "source_id": 6,
+    "tile_id": 123,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 0,
+    "source_id": 6,
+    "tile_id": 124,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     22,
+     30,
+     38,
+     46
+    ],
+    "tile_id": 68,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     14,
+     22,
+     30,
+     38
+    ],
+    "tile_id": 107,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14,
+     22,
+     30
+    ],
+    "tile_id": 115,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14,
+     22
+    ],
+    "tile_id": 122,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14
+    ],
+    "tile_id": 123,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   46,
+   54
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 7,
+    "b": 15,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     13,
+     14,
+     15
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     114,
+     123,
+     108
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 5,
+    "color": 3,
+    "source_id": 5,
+    "tile_id": 125,
+    "type": "Spawned"
+   },
+   {
+    "cell": 6,
+    "color": 3,
+    "source_id": 6,
+    "tile_id": 126,
+    "type": "Spawned"
+   },
+   {
+    "cell": 7,
+    "color": 1,
+    "source_id": 7,
+    "tile_id": 127,
+    "type": "Spawned"
+   },
+   {
+    "path": [
+     5,
+     13
+    ],
+    "tile_id": 118,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     6,
+     14
+    ],
+    "tile_id": 124,
+    "type": "Moved"
+   },
+   {
+    "path": [
+     7,
+     15
+    ],
+    "tile_id": 66,
+    "type": "Moved"
+   }
+  ],
+  "swap": [
+   7,
+   15
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 1,
+    "b": 2,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     2,
+     3,
+     4
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     121,
+     116,
+     117
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 2,
+    "color": 3,
+    "source_id": 2,
+    "tile_id": 128,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 3,
+    "source_id": 3,
+    "tile_id": 129,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 1,
+    "source_id": 4,
+    "tile_id": 130,
+    "type": "Spawned"
+   }
+  ],
+  "swap": [
+   1,
+   2
+  ]
+ },
+ {
+  "events": [
+   {
+    "a": 4,
+    "b": 5,
+    "type": "Swapped"
+   },
+   {
+    "cells": [
+     2,
+     3,
+     4
+    ],
+    "qualifiers": [
+     {
+      "kind": "Run3",
+      "length": 3
+     }
+    ],
+    "type": "Matched"
+   },
+   {
+    "tile_ids": [
+     128,
+     129,
+     125
+    ],
+    "type": "Cleared",
+    "wave": 0
+   },
+   {
+    "depth": 0,
+    "multiplier": 1.0,
+    "points": 60,
+    "type": "Scored"
+   },
+   {
+    "cell": 2,
+    "color": 4,
+    "source_id": 2,
+    "tile_id": 131,
+    "type": "Spawned"
+   },
+   {
+    "cell": 3,
+    "color": 0,
+    "source_id": 3,
+    "tile_id": 132,
+    "type": "Spawned"
+   },
+   {
+    "cell": 4,
+    "color": 3,
+    "source_id": 4,
+    "tile_id": 133,
+    "type": "Spawned"
+   }
+  ],
+  "swap": [
+   4,
+   5
+  ]
+ }
+]

@@ -1,0 +1,229 @@
+{
+ "difficulty": {
+  "amplitude": {
+   "curve": "linear",
+   "points": [
+    [
+     1,
+     0.1
+    ],
+    [
+     150,
+     0.18
+    ]
+   ]
+  },
+  "cycle_length": 7,
+  "easiest_win_rate": 0.97,
+  "hardest_win_rate": 0.35,
+  "intro_level_difficulty": 0.1,
+  "ramp_power": 1.6,
+  "release_depth": 0.6,
+  "trend": {
+   "curve": "ease_out",
+   "points": [
+    [
+     1,
+     0.05
+    ],
+    [
+     150,
+     0.75
+    ]
+   ]
+  }
+ },
+ "goal_weights": {
+  "1": {
+   "score": 1.0
+  },
+  "11": {
+   "collect": 0.6,
+   "score": 0.4
+  },
+  "76": {
+   "collect": 0.4,
+   "combo": 0.3,
+   "score": 0.3
+  }
+ },
+ "meta": {
+  "version": 2
+ },
+ "params": {
+  "board_size": {
+   "curve": "step",
+   "points": [
+    [
+     1,
+     7
+    ],
+    [
+     11,
+     8
+    ]
+   ]
+  },
+  "collect_per_move": {
+   "curve": "linear",
+   "points": [
+    [
+     1,
+     5.5
+    ],
+    [
+     10,
+     5.3
+    ],
+    [
+     11,
+     8.1
+    ],
+    [
+     20,
+     8.1
+    ],
+    [
+     21,
+     5.6
+    ],
+    [
+     35,
+     6.0
+    ],
+    [
+     36,
+     4.8
+    ],
+    [
+     50,
+     4.3
+    ],
+    [
+     51,
+     4.0
+    ],
+    [
+     75,
+     3.3
+    ],
+    [
+     76,
+     2.7
+    ],
+    [
+     150,
+     2.7
+    ]
+   ]
+  },
+  "colors": {
+   "curve": "step",
+   "points": [
+    [
+     1,
+     4
+    ],
+    [
+     21,
+     5
+    ],
+    [
+     51,
+     6
+    ],
+    [
+     76,
+     7
+    ]
+   ]
+  },
+  "goal_amount": {
+   "curve": "linear",
+   "points": [
+    [
+     1,
+     1.0
+    ],
+    [
+     150,
+     1.6
+    ]
+   ]
+  },
+  "move_limit": {
+   "curve": "linear",
+   "points": [
+    [
+     1,
+     30
+    ],
+    [
+     150,
+     20
+    ]
+   ]
+  },
+  "score_per_move": {
+   "curve": "linear",
+   "points": [
+    [
+     1,
+     165.0
+    ],
+    [
+     10,
+     170.0
+    ],
+    [
+     11,
+     235.0
+    ],
+    [
+     20,
+     240.0
+    ],
+    [
+     21,
+     152.0
+    ],
+    [
+     35,
+     165.0
+    ],
+    [
+     36,
+     125.0
+    ],
+    [
+     50,
+     115.0
+    ],
+    [
+     51,
+     98.0
+    ],
+    [
+     75,
+     78.0
+    ],
+    [
+     76,
+     60.0
+    ],
+    [
+     150,
+     62.0
+    ]
+   ]
+  }
+ },
+ "unlocks": {
+  "combo_goals": 76,
+  "goal_collect": 11,
+  "holes": 36,
+  "special_bomb": 21,
+  "special_color": 51,
+  "special_line": 11
+ }
+}

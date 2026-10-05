@@ -1,0 +1,83 @@
+{
+ "level": {
+  "colors": 7,
+  "difficulty": 0.5764197108238368,
+  "generator_version": 2,
+  "goals": [
+   {
+    "colors": [
+     3
+    ],
+    "kind": "collect",
+    "target": 12
+   }
+  ],
+  "height": 8,
+  "holes": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    7
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    6,
+    0
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    0
+   ],
+   [
+    7,
+    1
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    7
+   ]
+  ],
+  "intro": null,
+  "measured_win_rate": 0.65,
+  "move_limit": 19,
+  "number": 99,
+  "seed": "1000102",
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "star2": 2105,
+  "star3": 2495,
+  "target_win_rate": 0.6126197792892212,
+  "width": 8
+ },
+ "n": 99,
+ "seed": "1000102"
+}

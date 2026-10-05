@@ -1,0 +1,20 @@
+{
+    "name": "Cascade.Presentation",
+    "rootNamespace": "Cascade.Presentation",
+    "references": [
+        "Cascade.Core",
+        "Cascade.Config",
+        "Cascade.Gameplay",
+        "Cascade.Generation",
+        "Cascade.Platform.Abstractions"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}

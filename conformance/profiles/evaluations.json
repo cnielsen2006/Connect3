@@ -1,0 +1,6112 @@
+[
+ {
+  "board_size": 7,
+  "collect_per_move": 5.5,
+  "colors": 4,
+  "difficulty": 0.0,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0,
+  "goal_pool": [
+   [
+    "score",
+    1.0
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 30,
+  "number": 1,
+  "score_per_move": 165.0,
+  "shaped": false,
+  "specials": [],
+  "target_win_rate": 0.97,
+  "unlocked": []
+ },
+ {
+  "board_size": 7,
+  "collect_per_move": 5.477777777777778,
+  "colors": 4,
+  "difficulty": 0.059364443043106174,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0040268456375838,
+  "goal_pool": [
+   [
+    "score",
+    1.0
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 30,
+  "number": 2,
+  "score_per_move": 165.55555555555554,
+  "shaped": false,
+  "specials": [],
+  "target_win_rate": 0.9331940453132741,
+  "unlocked": []
+ },
+ {
+  "board_size": 7,
+  "collect_per_move": 5.455555555555556,
+  "colors": 4,
+  "difficulty": 0.0763622093045216,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0080536912751679,
+  "goal_pool": [
+   [
+    "score",
+    1.0
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 30,
+  "number": 3,
+  "score_per_move": 166.11111111111111,
+  "shaped": false,
+  "specials": [],
+  "target_win_rate": 0.9226554302311966,
+  "unlocked": []
+ },
+ {
+  "board_size": 7,
+  "collect_per_move": 5.433333333333334,
+  "colors": 4,
+  "difficulty": 0.10135915686493291,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0120805369127517,
+  "goal_pool": [
+   [
+    "score",
+    1.0
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 30,
+  "number": 4,
+  "score_per_move": 166.66666666666666,
+  "shaped": false,
+  "specials": [],
+  "target_win_rate": 0.9071573227437416,
+  "unlocked": []
+ },
+ {
+  "board_size": 7,
+  "collect_per_move": 5.411111111111111,
+  "colors": 4,
+  "difficulty": 0.13218915714052049,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0161073825503355,
+  "goal_pool": [
+   [
+    "score",
+    1.0
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 30,
+  "number": 5,
+  "score_per_move": 167.22222222222223,
+  "shaped": false,
+  "specials": [],
+  "target_win_rate": 0.8880427225728773,
+  "unlocked": []
+ },
+ {
+  "board_size": 7,
+  "collect_per_move": 5.388888888888888,
+  "colors": 4,
+  "difficulty": 0.16804531384981905,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0201342281879195,
+  "goal_pool": [
+   [
+    "score",
+    1.0
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 30,
+  "number": 6,
+  "score_per_move": 167.77777777777777,
+  "shaped": false,
+  "specials": [],
+  "target_win_rate": 0.8658119054131121,
+  "unlocked": []
+ },
+ {
+  "board_size": 7,
+  "collect_per_move": 5.366666666666666,
+  "colors": 4,
+  "difficulty": 0.20846223143101655,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0241610738255034,
+  "goal_pool": [
+   [
+    "score",
+    1.0
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 30,
+  "number": 7,
+  "score_per_move": 168.33333333333334,
+  "shaped": false,
+  "specials": [],
+  "target_win_rate": 0.8407534165127697,
+  "unlocked": []
+ },
+ {
+  "board_size": 7,
+  "collect_per_move": 5.344444444444444,
+  "colors": 4,
+  "difficulty": 0.05197180307193372,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0281879194630872,
+  "goal_pool": [
+   [
+    "score",
+    1.0
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 30,
+  "number": 8,
+  "score_per_move": 168.88888888888889,
+  "shaped": false,
+  "specials": [],
+  "target_win_rate": 0.937777482095401,
+  "unlocked": []
+ },
+ {
+  "board_size": 7,
+  "collect_per_move": 5.322222222222222,
+  "colors": 4,
+  "difficulty": 0.12314985811449937,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0322147651006712,
+  "goal_pool": [
+   [
+    "score",
+    1.0
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 9,
+  "score_per_move": 169.44444444444446,
+  "shaped": false,
+  "specials": [],
+  "target_win_rate": 0.8936470879690104,
+  "unlocked": []
+ },
+ {
+  "board_size": 7,
+  "collect_per_move": 5.3,
+  "colors": 4,
+  "difficulty": 0.13999238971918126,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.036241610738255,
+  "goal_pool": [
+   [
+    "score",
+    1.0
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 10,
+  "score_per_move": 170.0,
+  "shaped": false,
+  "specials": [],
+  "target_win_rate": 0.8832047183741076,
+  "unlocked": []
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 8.1,
+  "colors": 4,
+  "difficulty": 0.1,
+  "force_goal": "collect",
+  "force_holes": false,
+  "goal_amount": 1.0402684563758389,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": "Collect goals and Line pieces",
+  "is_intro": true,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 11,
+  "score_per_move": 235.0,
+  "shaped": false,
+  "specials": [
+   "Line"
+  ],
+  "target_win_rate": 0.9079999999999999,
+  "unlocked": [
+   "goal_collect",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 8.1,
+  "colors": 4,
+  "difficulty": 0.19631006167382767,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.044295302013423,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 12,
+  "score_per_move": 235.55555555555554,
+  "shaped": false,
+  "specials": [
+   "Line"
+  ],
+  "target_win_rate": 0.8482877617622269,
+  "unlocked": [
+   "goal_collect",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 8.1,
+  "colors": 4,
+  "difficulty": 0.2326949820687232,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0483221476510067,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 13,
+  "score_per_move": 236.11111111111111,
+  "shaped": false,
+  "specials": [
+   "Line"
+  ],
+  "target_win_rate": 0.8257291111173916,
+  "unlocked": [
+   "goal_collect",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 8.1,
+  "colors": 4,
+  "difficulty": 0.27379892797621724,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0523489932885906,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 14,
+  "score_per_move": 236.66666666666666,
+  "shaped": false,
+  "specials": [
+   "Line"
+  ],
+  "target_win_rate": 0.8002446646547453,
+  "unlocked": [
+   "goal_collect",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 8.1,
+  "colors": 4,
+  "difficulty": 0.11085365524075491,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0563758389261746,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 29,
+  "number": 15,
+  "score_per_move": 237.22222222222223,
+  "shaped": false,
+  "specials": [
+   "Line"
+  ],
+  "target_win_rate": 0.901270733750732,
+  "unlocked": [
+   "goal_collect",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 8.1,
+  "colors": 4,
+  "difficulty": 0.18384532228278,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0604026845637584,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 16,
+  "score_per_move": 237.77777777777777,
+  "shaped": false,
+  "specials": [
+   "Line"
+  ],
+  "target_win_rate": 0.8560159001846763,
+  "unlocked": [
+   "goal_collect",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 8.1,
+  "colors": 4,
+  "difficulty": 0.20053261923072827,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0644295302013422,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 17,
+  "score_per_move": 238.33333333333334,
+  "shaped": false,
+  "specials": [
+   "Line"
+  ],
+  "target_win_rate": 0.8456697760769485,
+  "unlocked": [
+   "goal_collect",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 8.1,
+  "colors": 4,
+  "difficulty": 0.22580946278122696,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0684563758389263,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 18,
+  "score_per_move": 238.88888888888889,
+  "shaped": false,
+  "specials": [
+   "Line"
+  ],
+  "target_win_rate": 0.8299981330756393,
+  "unlocked": [
+   "goal_collect",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 8.1,
+  "colors": 4,
+  "difficulty": 0.25734101530402237,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.07248322147651,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 19,
+  "score_per_move": 239.44444444444446,
+  "shaped": false,
+  "specials": [
+   "Line"
+  ],
+  "target_win_rate": 0.8104485705115061,
+  "unlocked": [
+   "goal_collect",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 8.1,
+  "colors": 4,
+  "difficulty": 0.2942546993845148,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.076510067114094,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 20,
+  "score_per_move": 240.0,
+  "shaped": false,
+  "specials": [
+   "Line"
+  ],
+  "target_win_rate": 0.7875620863816009,
+  "unlocked": [
+   "goal_collect",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.6,
+  "colors": 5,
+  "difficulty": 0.1,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.080536912751678,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": "Bomb pieces",
+  "is_intro": true,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 21,
+  "score_per_move": 152.0,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.9079999999999999,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.628571428571428,
+  "colors": 5,
+  "difficulty": 0.16664555650646368,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0845637583892618,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 29,
+  "number": 22,
+  "score_per_move": 152.92857142857142,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.8666797549659925,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.657142857142857,
+  "colors": 5,
+  "difficulty": 0.24145083554794833,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0885906040268456,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 29,
+  "number": 23,
+  "score_per_move": 153.85714285714286,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.8203004819602719,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.685714285714285,
+  "colors": 5,
+  "difficulty": 0.25798289783916306,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0926174496644296,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 24,
+  "score_per_move": 154.78571428571428,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.8100506033397189,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.714285714285714,
+  "colors": 5,
+  "difficulty": 0.28339968938470544,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.0966442953020135,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 25,
+  "score_per_move": 155.71428571428572,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7942921925814825,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.742857142857143,
+  "colors": 5,
+  "difficulty": 0.3152820180311045,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1006711409395973,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 26,
+  "score_per_move": 156.64285714285714,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7745251488207152,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.771428571428571,
+  "colors": 5,
+  "difficulty": 0.3527244657971939,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1046979865771813,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 27,
+  "score_per_move": 157.57142857142858,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7513108312057397,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.8,
+  "colors": 5,
+  "difficulty": 0.3952024683572811,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1087248322147651,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 28,
+  "score_per_move": 158.5,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7249744696184857,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.828571428571428,
+  "colors": 5,
+  "difficulty": 0.2193475068690599,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.112751677852349,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 28,
+  "number": 29,
+  "score_per_move": 159.42857142857142,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.8340045457411829,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.857142857142857,
+  "colors": 5,
+  "difficulty": 0.2959663979100041,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1167785234899328,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 30,
+  "score_per_move": 160.35714285714286,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7865008332957975,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.885714285714285,
+  "colors": 5,
+  "difficulty": 0.3123432255444851,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1208053691275168,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 31,
+  "score_per_move": 161.28571428571428,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7763472001624192,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.914285714285715,
+  "colors": 5,
+  "difficulty": 0.3378999650850714,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1248322147651006,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 32,
+  "score_per_move": 162.21428571428572,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7605020216472557,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.942857142857143,
+  "colors": 5,
+  "difficulty": 0.37013306985507427,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1288590604026845,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 33,
+  "score_per_move": 163.14285714285714,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7405174966898539,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 5.9714285714285715,
+  "colors": 5,
+  "difficulty": 0.4081042813067606,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1328859060402685,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 34,
+  "score_per_move": 164.07142857142858,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7169753455898085,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 6.0,
+  "colors": 5,
+  "difficulty": 0.4512693121931444,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1369127516778523,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 35,
+  "score_per_move": 165.0,
+  "shaped": false,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.6902130264402504,
+  "unlocked": [
+   "goal_collect",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.8,
+  "colors": 5,
+  "difficulty": 0.1,
+  "force_goal": null,
+  "force_holes": true,
+  "goal_amount": 1.1409395973154361,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": "Shaped boards",
+  "is_intro": true,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 28,
+  "number": 36,
+  "score_per_move": 125.0,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.9079999999999999,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.764285714285714,
+  "colors": 5,
+  "difficulty": 0.3473920093689473,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1449664429530202,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 37,
+  "score_per_move": 124.28571428571429,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7546169541912526,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.728571428571429,
+  "colors": 5,
+  "difficulty": 0.36361360234669493,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.148993288590604,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 28,
+  "number": 38,
+  "score_per_move": 123.57142857142857,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7445595665450491,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.692857142857143,
+  "colors": 5,
+  "difficulty": 0.38931028988232486,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1530201342281878,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 39,
+  "score_per_move": 122.85714285714286,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7286276202729586,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.657142857142857,
+  "colors": 5,
+  "difficulty": 0.4218941707759315,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1570469798657719,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 40,
+  "score_per_move": 122.14285714285714,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7084256141189225,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.621428571428571,
+  "colors": 5,
+  "difficulty": 0.4603941459132148,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1610738255033557,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 41,
+  "score_per_move": 121.42857142857143,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.6845556295338068,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.585714285714285,
+  "colors": 5,
+  "difficulty": 0.5042462051258951,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1651006711409395,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 42,
+  "score_per_move": 120.71428571428571,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.657367352821945,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.55,
+  "colors": 5,
+  "difficulty": 0.3154815548849151,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1691275167785236,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 27,
+  "number": 43,
+  "score_per_move": 120.0,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7744014359713527,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.514285714285714,
+  "colors": 5,
+  "difficulty": 0.39572766992477815,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1731543624161074,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 44,
+  "score_per_move": 119.28571428571429,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7246488446466375,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.478571428571429,
+  "colors": 5,
+  "difficulty": 0.4117940282457922,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1771812080536912,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 45,
+  "score_per_move": 118.57142857142857,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7146877024876088,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.442857142857143,
+  "colors": 5,
+  "difficulty": 0.43763066377646587,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1812080536912752,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 46,
+  "score_per_move": 117.85714285714286,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.6986689884585912,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.407142857142857,
+  "colors": 5,
+  "difficulty": 0.4705653207936762,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.185234899328859,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 47,
+  "score_per_move": 117.14285714285714,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.6782495011079208,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.371428571428571,
+  "colors": 5,
+  "difficulty": 0.5095940596165565,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1892617449664429,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 48,
+  "score_per_move": 116.42857142857143,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.654051683037735,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.335714285714285,
+  "colors": 5,
+  "difficulty": 0.5541331471555335,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.193288590604027,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 49,
+  "score_per_move": 115.71428571428571,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.6264374487635692,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.3,
+  "colors": 5,
+  "difficulty": 0.35891365253817403,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.1973154362416107,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 27,
+  "number": 50,
+  "score_per_move": 115.0,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "target_win_rate": 0.7474735354263321,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 4.0,
+  "colors": 6,
+  "difficulty": 0.1,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2013422818791946,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": "Color pieces",
+  "is_intro": true,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 51,
+  "score_per_move": 98.0,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.9079999999999999,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.970833333333333,
+  "colors": 6,
+  "difficulty": 0.456884503241777,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2053691275167786,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 52,
+  "score_per_move": 97.16666666666667,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6867316079900982,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.9416666666666664,
+  "colors": 6,
+  "difficulty": 0.4828610867674942,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2093959731543624,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 27,
+  "number": 53,
+  "score_per_move": 96.33333333333333,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6706261262041535,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.9125,
+  "colors": 6,
+  "difficulty": 0.5161465199083086,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2134228187919462,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 54,
+  "score_per_move": 95.5,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6499891576568486,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.8833333333333333,
+  "colors": 6,
+  "difficulty": 0.5557040224167855,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2174496644295303,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 55,
+  "score_per_move": 94.66666666666667,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.625463506101593,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.8541666666666665,
+  "colors": 6,
+  "difficulty": 0.6009301382820593,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.221476510067114,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 56,
+  "score_per_move": 93.83333333333333,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5974233142651232,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.825,
+  "colors": 6,
+  "difficulty": 0.3992557992883203,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.225503355704698,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 26,
+  "number": 57,
+  "score_per_move": 93.0,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.7224614044412414,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.7958333333333334,
+  "colors": 6,
+  "difficulty": 0.48312913832710236,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.229530201342282,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 58,
+  "score_per_move": 92.16666666666667,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6704599342371965,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.7666666666666666,
+  "colors": 6,
+  "difficulty": 0.49888502733464923,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2335570469798658,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 59,
+  "score_per_move": 91.33333333333333,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6606912830525175,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.7375,
+  "colors": 6,
+  "difficulty": 0.5250015588554103,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2375838926174496,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 60,
+  "score_per_move": 90.5,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6444990335096455,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.708333333333333,
+  "colors": 6,
+  "difficulty": 0.5586377681198285,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2416107382550337,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 61,
+  "score_per_move": 89.66666666666667,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6236445837657063,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.6791666666666667,
+  "colors": 6,
+  "difficulty": 0.5987240343139024,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2456375838926175,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 62,
+  "score_per_move": 88.83333333333333,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5987910987253805,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.65,
+  "colors": 6,
+  "difficulty": 0.6446371785054729,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2496644295302013,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 63,
+  "score_per_move": 88.0,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5703249493266068,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.620833333333333,
+  "colors": 6,
+  "difficulty": 0.4365079951353542,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2536912751677853,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 26,
+  "number": 64,
+  "score_per_move": 87.16666666666667,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6993650430160804,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.591666666666667,
+  "colors": 6,
+  "difficulty": 0.5221949461735957,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2577181208053692,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 65,
+  "score_per_move": 86.33333333333333,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6462391333723706,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.5625,
+  "colors": 6,
+  "difficulty": 0.5377956005244091,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.261744966442953,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 66,
+  "score_per_move": 85.5,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6365667276748663,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.533333333333333,
+  "colors": 6,
+  "difficulty": 0.5640520800402139,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.265771812080537,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 67,
+  "score_per_move": 84.66666666666667,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6202877103750674,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.5041666666666664,
+  "colors": 6,
+  "difficulty": 0.5980390654282358,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2697986577181208,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 26,
+  "number": 68,
+  "score_per_move": 83.83333333333333,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5992157794344938,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.4749999999999996,
+  "colors": 6,
+  "difficulty": 0.6386540953079068,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2738255033557047,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 69,
+  "score_per_move": 83.0,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5740344609090977,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.4458333333333333,
+  "colors": 6,
+  "difficulty": 0.6852542678257736,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2778523489932887,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 70,
+  "score_per_move": 82.16666666666667,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5451423539480204,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.4166666666666665,
+  "colors": 6,
+  "difficulty": 0.47067024007927566,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2818791946308725,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 25,
+  "number": 71,
+  "score_per_move": 81.33333333333333,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.678184451150849,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.3874999999999997,
+  "colors": 6,
+  "difficulty": 0.5581708031169768,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2859060402684563,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 72,
+  "score_per_move": 80.5,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6239341020674745,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.3583333333333334,
+  "colors": 6,
+  "difficulty": 0.5736162228110565,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2899328859060404,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 73,
+  "score_per_move": 79.66666666666667,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.614357941857145,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.3291666666666666,
+  "colors": 6,
+  "difficulty": 0.6000126503219051,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.2939597315436242,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 74,
+  "score_per_move": 78.83333333333333,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5979921568004188,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 3.3,
+  "colors": 6,
+  "difficulty": 0.6343504118335307,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.297986577181208,
+  "goal_pool": [
+   [
+    "score",
+    0.4
+   ],
+   [
+    "collect",
+    0.6
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 75,
+  "score_per_move": 78.0,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5767027446632109,
+  "unlocked": [
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.1,
+  "force_goal": "combo",
+  "force_holes": false,
+  "goal_amount": 1.302013422818792,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": "Combined goals",
+  "is_intro": true,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 76,
+  "score_per_move": 60.0,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.9079999999999999,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.722781406242962,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3060402684563759,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 77,
+  "score_per_move": 60.027027027027025,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5218755281293634,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.5017425341200847,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3100671140939597,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 25,
+  "number": 78,
+  "score_per_move": 60.054054054054056,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6589196288455474,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.5910567091572452,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3140939597315437,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 79,
+  "score_per_move": 60.08108108108108,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.603544840322508,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6063468941945914,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3181208053691276,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 80,
+  "score_per_move": 60.108108108108105,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5940649255993533,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6328832697004836,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3221476510067114,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 81,
+  "score_per_move": 60.13513513513514,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5776123727857001,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6675718073357132,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3261744966442954,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 25,
+  "number": 82,
+  "score_per_move": 60.16216216216216,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5561054794518578,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7092443645865779,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3302013422818793,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 83,
+  "score_per_move": 60.189189189189186,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5302684939563217,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7572185937570379,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.334228187919463,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 84,
+  "score_per_move": 60.21621621621622,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5005244718706365,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.5297248772577813,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3382550335570471,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 24,
+  "number": 85,
+  "score_per_move": 60.24324324324324,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6415705761001755,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6208526642944011,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.342281879194631,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 86,
+  "score_per_move": 60.270270270270274,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5850713481374713,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6359876146750139,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3463087248322148,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 87,
+  "score_per_move": 60.2972972972973,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5756876789014913,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6626639381759497,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3503355704697988,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 88,
+  "score_per_move": 60.32432432432432,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5591483583309111,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6977032519347831,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3543624161073826,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 89,
+  "score_per_move": 60.351351351351354,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5374239838004344,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.739904572871245,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3583892617449664,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 90,
+  "score_per_move": 60.37837837837838,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5112591648198281,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7885658303680014,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3624161073825505,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 91,
+  "score_per_move": 60.4054054054054,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4810891851718391,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.5546172694923651,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3664429530201343,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 24,
+  "number": 92,
+  "score_per_move": 60.432432432432435,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6261372929147335,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6475586685284447,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3704697986577181,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 93,
+  "score_per_move": 60.45945945945946,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5685136255123643,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6625383842523238,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3744966442953022,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 94,
+  "score_per_move": 60.486486486486484,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5592262017635592,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6893546557483033,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.378523489932886,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 95,
+  "score_per_move": 60.513513513513516,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5426001134360519,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7247447456307405,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3825503355704698,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 96,
+  "score_per_move": 60.54054054054054,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5206582577089409,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7674748302527993,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3865771812080538,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 24,
+  "number": 97,
+  "score_per_move": 60.567567567567565,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4941656052432644,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8168231160758525,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3906040268456377,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 98,
+  "score_per_move": 60.5945945945946,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4635696680329715,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.5764197108238368,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3946308724832215,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 23,
+  "number": 99,
+  "score_per_move": 60.62162162162162,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6126197792892212,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6711747218593758,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.3986577181208055,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 100,
+  "score_per_move": 60.648648648648646,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.553871672447187,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6859992029265213,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4026845637583893,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 101,
+  "score_per_move": 60.67567567567568,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5446804941855568,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7129554224175446,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4067114093959732,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 102,
+  "score_per_move": 60.7027027027027,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5279676381011222,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7486962884235856,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4107382550335572,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 103,
+  "score_per_move": 60.729729729729726,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5058083011773769,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7919551367312412,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.414765100671141,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 104,
+  "score_per_move": 60.75675675675676,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4789878152266304,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8419904508805909,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4187919463087248,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 105,
+  "score_per_move": 60.78378378378378,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4479659204540336,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.5951322012521958,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.422818791946309,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 23,
+  "number": 106,
+  "score_per_move": 60.810810810810814,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.6010180352236385,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6917008242871943,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4268456375838927,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 107,
+  "score_per_move": 60.83783783783784,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5411454889419396,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7063700706976062,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4308724832214765,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 108,
+  "score_per_move": 60.86486486486486,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5320505561674842,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7334662381836732,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4348993288590606,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 109,
+  "score_per_move": 60.891891891891895,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5152509323261226,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7695578803133181,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4389261744966444,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 110,
+  "score_per_move": 60.91891891891892,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4928741142057428,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8133454923065707,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4429530201342282,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 111,
+  "score_per_move": 60.945945945945944,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.46572579476992615,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.864067834782217,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4469798657718123,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 23,
+  "number": 112,
+  "score_per_move": 60.972972972972975,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4342779424350254,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6107547407774425,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.451006711409396,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 22,
+  "number": 113,
+  "score_per_move": 61.0,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5913320607179856,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7091369758119004,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.45503355704698,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 114,
+  "score_per_move": 61.027027027027025,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5303350749966218,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7236509875655787,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.459060402684564,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 115,
+  "score_per_move": 61.054054054054056,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5213363877093412,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7508871030466895,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4630872483221478,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 116,
+  "score_per_move": 61.08108108108108,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5044499961110525,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7873295212999382,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4671140939597316,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 117,
+  "score_per_move": 61.108108108108105,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.48185569679403834,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8316458969787877,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4711409395973156,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 118,
+  "score_per_move": 61.13513513513514,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4543795438731516,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8830552677807306,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4751677852348994,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 119,
+  "score_per_move": 61.16216216216216,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.42250573397594704,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6232873293995765,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4791946308724833,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 22,
+  "number": 120,
+  "score_per_move": 61.189189189189186,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5835618557722625,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.723483176433494,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.483221476510067,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 121,
+  "score_per_move": 61.21621621621622,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5214404306112337,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7378419535304389,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4872483221476511,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 122,
+  "score_per_move": 61.24324324324324,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5125379888111279,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7652180170065933,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.491275167785235,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 123,
+  "score_per_move": 61.270270270270274,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4955648294559121,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8020112113834458,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.495302013422819,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 124,
+  "score_per_move": 61.2972972972973,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4727530489422636,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8468563507478922,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.4993288590604028,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 125,
+  "score_per_move": 61.32432432432432,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.44494906253630684,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8989527498761317,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5033557046979866,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 22,
+  "number": 126,
+  "score_per_move": 61.351351351351354,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.41264929507679826,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6327299671185983,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5073825503355707,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 22,
+  "number": 127,
+  "score_per_move": 61.37837837837838,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.577707420386469,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7347394261519751,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5114093959731543,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 128,
+  "score_per_move": 61.4054054054054,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5144615557857755,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7489429685921865,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5154362416107383,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 129,
+  "score_per_move": 61.432432432432435,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5056553594728443,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7764589800633847,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5194630872483224,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 130,
+  "score_per_move": 61.45945945945946,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4885954323607015,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8136029505638409,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.523489932885906,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 131,
+  "score_per_move": 61.486486486486484,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4655661706504186,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8589768536138842,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.52751677852349,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 132,
+  "score_per_move": 61.513513513513516,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.43743435075939174,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.9117602810684203,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.531543624161074,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 133,
+  "score_per_move": 61.54054054054054,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4047086257375794,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6390826539345075,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5355704697986579,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 21,
+  "number": 134,
+  "score_per_move": 61.567567567567565,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5737687545606054,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7429057249673439,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5395973154362417,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 135,
+  "score_per_move": 61.5945945945946,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5093984505202468,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7569540327508215,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5436241610738257,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 136,
+  "score_per_move": 61.62162162162162,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5006884996944907,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7846099922170634,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5476510067114095,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 137,
+  "score_per_move": 61.648648648648646,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4835418048254207,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8221047388411236,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5516778523489934,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 138,
+  "score_per_move": 61.67567567567568,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.46029506191850333,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8680074055767638,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5557046979865774,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 139,
+  "score_per_move": 61.7027027027027,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.43183540854240643,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.9214778613575965,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.559731543624161,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 140,
+  "score_per_move": 61.729729729729726,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.39868372595829016,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6423453898473043,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.563758389261745,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 21,
+  "number": 141,
+  "score_per_move": 61.75675675675676,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5717458582946713,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7479820728796,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.567785234899329,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 21,
+  "number": 142,
+  "score_per_move": 61.78378378378378,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.506251114814648,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7618751460063441,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5718120805369127,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 20,
+  "number": 143,
+  "score_per_move": 61.810810810810814,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.49763740947606666,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7896710534676298,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5758389261744967,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 20,
+  "number": 144,
+  "score_per_move": 61.83783783783784,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.48040394685006954,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8275165762152936,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5798657718120808,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 20,
+  "number": 145,
+  "score_per_move": 61.86486486486486,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.45693972274651795,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.8739480066365308,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5838926174496646,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 20,
+  "number": 146,
+  "score_per_move": 61.891891891891895,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4281522358853509,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.9281054907436603,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5879194630872484,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": true,
+  "is_release": false,
+  "move_limit": 20,
+  "number": 147,
+  "score_per_move": 61.91891891891892,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.3945745957389306,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.6425181748569884,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.5919463087248324,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": true,
+  "move_limit": 20,
+  "number": 148,
+  "score_per_move": 61.945945945945944,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5716387315886672,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7499684698887438,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.595973154362416,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 20,
+  "number": 149,
+  "score_per_move": 61.972972972972975,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.5050195486689788,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ },
+ {
+  "board_size": 8,
+  "collect_per_move": 2.7,
+  "colors": 7,
+  "difficulty": 0.7637063083587543,
+  "force_goal": null,
+  "force_holes": false,
+  "goal_amount": 1.6,
+  "goal_pool": [
+   [
+    "score",
+    0.3
+   ],
+   [
+    "collect",
+    0.4
+   ],
+   [
+    "combo",
+    0.3
+   ]
+  ],
+  "intro": null,
+  "is_intro": false,
+  "is_pinch": false,
+  "is_release": false,
+  "move_limit": 20,
+  "number": 150,
+  "score_per_move": 62.0,
+  "shaped": true,
+  "specials": [
+   "Line",
+   "Bomb",
+   "Color"
+  ],
+  "target_win_rate": 0.4965020888175723,
+  "unlocked": [
+   "combo_goals",
+   "goal_collect",
+   "holes",
+   "special_bomb",
+   "special_color",
+   "special_line"
+  ]
+ }
+]

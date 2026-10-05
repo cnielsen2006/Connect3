@@ -1,0 +1,120 @@
+/* Play HUD, style K: Pebbles (docs/art/STYLE-K-Pebbles.md section 6, mockup docs/art/img/K-Pebbles.png).
+   Moves and score are plain large numbers on the background, no cards; the goals sit between two thin driftwood lines.
+   Colors come from Theme.uss. The layout is data: board slot, side column and buttons are placed per layout class below. */
+
+.hud {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+}
+
+.hud__board { position: absolute; }
+.hud__side { position: absolute; align-items: stretch; }
+
+.hud__title { font-size: 120px; margin-bottom: 4px; -unity-text-align: middle-left; }
+.hud__level { color: var(--slate); font-size: 40px; margin-bottom: 16px; }
+
+.hud__stats { flex-direction: row; align-items: flex-end; margin-bottom: 20px; }
+.stat { margin-right: 64px; }
+.stat__value { font-size: 150px; -unity-text-align: lower-left; margin: 0; padding: 0; }
+.stat__value--moves { color: var(--ink); }
+.stat__value--score { color: var(--slate); font-size: 108px; }
+.stat__caption { font-size: 32px; color: var(--slate); margin-top: -18px; letter-spacing: 4px; }
+
+.hud__markers { flex-direction: row; margin-bottom: 16px; }
+.marker { flex-direction: row; align-items: center; margin-right: 36px; }
+.marker__text { font-size: 34px; color: var(--slate); margin-left: 6px; }
+.marker--reached .marker__text { color: var(--clay); }
+
+.hud__goals {
+    border-top-width: 3px; border-bottom-width: 3px;
+    border-top-color: var(--driftwood); border-bottom-color: var(--driftwood);
+    padding-top: 10px; padding-bottom: 10px;
+}
+
+.goal { padding-top: 8px; padding-bottom: 8px; }
+.goal__line { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+.goal__text { font-size: 44px; flex-shrink: 1; white-space: normal; }
+.goal__progress { font-size: 44px; color: var(--slate); margin-left: 24px; white-space: nowrap; }
+.goal--done .goal__text { color: var(--sage-dark); }
+.goal--done .goal__progress { color: var(--sage-dark); }
+.hud__buttons { position: absolute; flex-direction: row; }
+.hud__buttons .pebble-button { margin: 0 14px 0 0; }
+
+.hud__popups { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+
+/* A score popup floats over the board; its position, scale and opacity come from the timeline each frame. */
+.popup {
+    position: absolute;
+    translate: -50% -50%;
+    font-size: 150px;
+    color: rgb(122, 84, 62);
+    -unity-font: url("project:/Assets/Cascade/UI/Fonts/DeliusSwashCaps-Regular.ttf");
+    -unity-font-style: bold;
+    -unity-text-outline-width: 5px;
+    -unity-text-outline-color: rgb(250, 246, 238);
+    white-space: nowrap;
+}
+
+/* The combo multiplier badge (PRD 5.4.1): floats over the match, bigger and warmer with each tier. Position, scale and opacity
+   come from the timeline each frame; the size here is the natural size at scale 1. */
+.combo-badge {
+    position: absolute;
+    translate: -50% -50%;
+    font-size: 120px;
+    color: rgb(185, 132, 104);
+    -unity-font: url("project:/Assets/Cascade/UI/Fonts/DeliusSwashCaps-Regular.ttf");
+    -unity-font-style: bold;
+    -unity-text-outline-width: 6px;
+    -unity-text-outline-color: rgb(250, 246, 238);
+    white-space: nowrap;
+}
+.combo-badge--tier0 { color: rgb(123, 135, 148); }
+.combo-badge--tier1 { color: rgb(143, 160, 138); }
+.combo-badge--tier2 { color: rgb(205, 160, 90); }
+.combo-badge--tier3 { color: rgb(200, 120, 80); }
+.combo-badge--tier4 { color: rgb(190, 80, 70); }
+
+/* The multiplier readout in the HUD column while a move's combo is alive (hidden otherwise). */
+.hud__combo { display: none; font-size: 96px; -unity-font-style: bold; margin: 0; padding: 0; -unity-text-align: lower-left; }
+.hud__combo--on { display: flex; }
+.layout--tall .hud__combo { font-size: 72px; }
+
+/* Pebble-dust particles of a combo burst (positioned by the presenter). */
+.spark {
+    position: absolute;
+    width: 22px; height: 22px;
+    translate: -50% -50%;
+    border-radius: 11px;
+    background-color: rgb(205, 180, 141);
+}
+.spark--v1 { width: 14px; height: 14px; border-radius: 7px; background-color: rgb(231, 222, 204); }
+.spark--v2 { width: 18px; height: 12px; border-radius: 6px; background-color: rgb(185, 132, 104); }
+.spark--tier3, .spark--tier4 { background-color: rgb(225, 190, 110); }
+.spark--tier4.spark--v1 { background-color: rgb(250, 235, 190); }
+
+/* ---- pause overlay ---- */
+.pause { align-items: center; justify-content: center; }
+.pause__scrim { position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: var(--scrim); }
+.pause__card { align-items: center; padding: 40px 60px; }
+.pause__title { font-size: 150px; margin-bottom: 40px; }
+
+/* ---- layouts (UiRoot puts one of these classes on the shell root) ---- */
+
+/* wide: board left, side column right (the K mockup) */
+.layout--wide .hud__board { left: 3%; top: 4%; bottom: 4%; right: 38%; }
+.layout--wide .hud__side { right: 4%; top: 6%; width: 31%; }
+.layout--wide .hud__buttons { right: 4%; bottom: 8%; width: 31%; }
+.layout--wide .hud__title { display: flex; }
+.layout--wide .hud__buttons .pebble-button { width: 236px; height: 104px; font-size: 44px; margin-right: 18px; }
+
+/* tall: stats and goals on top, board in the middle, buttons below (phone portrait) */
+.layout--tall .hud__board { left: 2%; right: 2%; top: 32%; bottom: 14%; }
+.layout--tall .hud__side { left: 6%; right: 6%; top: 1%; }
+.layout--tall .hud__buttons { left: 0; right: 0; bottom: 2%; justify-content: center; }
+.layout--tall .hud__title { display: none; }
+.layout--tall .hud__level { margin-top: 12px; }
+.layout--tall .hud__stats { margin-bottom: 8px; }
+.layout--tall .stat__value { font-size: 120px; }
+.layout--tall .stat__value--score { font-size: 90px; }
+.layout--tall .goal__text, .layout--tall .goal__progress { font-size: 40px; }
+.layout--tall .hud__buttons .pebble-button { margin: 0 16px; }

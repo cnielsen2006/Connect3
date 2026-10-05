@@ -1,0 +1,33 @@
+{
+    "name": "Cascade.Tests.Play",
+    "rootNamespace": "Cascade.Tests.Play",
+    "references": [
+        "Cascade.Core",
+        "Cascade.Config",
+        "Cascade.Platform.Abstractions",
+        "Cascade.Gameplay",
+        "Cascade.Generation",
+        "Cascade.Presentation",
+        "Cascade.Persistence",
+        "Cascade.Unity.Platform",
+        "Cascade.Unity.View",
+        "Cascade.App",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "Unity.InputSystem",
+        "Unity.InputSystem.TestFramework"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,58 @@
+.settings { align-items: stretch; justify-content: flex-start; }
+
+.settings__column { width: 1000px; max-width: 92%; align-self: center; margin-top: 90px; }
+
+.setting { padding: 34px 20px; margin: 0; }
+.setting__label { font-size: 56px; margin-bottom: 18px; }
+
+/* ---- toggles: a pebble switch ---- */
+.setting__toggle { flex-direction: row; justify-content: space-between; align-items: center; }
+.setting__toggle > .unity-base-field__input, .setting__toggle .unity-toggle__input { flex-direction: row-reverse; }
+.setting__toggle .unity-toggle__input { flex-grow: 1; justify-content: space-between; align-items: center; margin: 0; padding: 0; }
+.setting__toggle .unity-toggle__text, .setting__toggle .unity-label { font-size: 56px; color: var(--ink); flex-grow: 1; margin: 0; padding: 0; -unity-text-align: middle-left; }
+.setting__toggle .unity-toggle__checkmark {
+    width: 150px; height: 76px;
+    margin: 0 0 0 30px;
+    border-radius: 50%;
+    border-width: 0 0 6px 0;
+    background-image: none;
+    background-color: var(--star-off);
+    border-color: var(--sand);
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0);
+}
+.setting__toggle .unity-toggle__checkmark:checked,
+.setting__toggle:checked .unity-toggle__checkmark {
+    background-color: var(--sage);
+    border-color: var(--sage-dark);
+}
+.setting__toggle:hover .unity-toggle__checkmark { border-color: var(--sand-dark); }
+
+/* ---- slider ---- */
+.setting__slider { margin: 8px 0 0 0; }
+.setting__slider .unity-base-slider__input { height: 80px; }
+.setting__slider .unity-base-slider__tracker {
+    height: 10px; border-radius: 5px;
+    background-color: var(--driftwood);
+    border-width: 0;
+    top: 35px;
+}
+.setting__slider .unity-base-slider__dragger-border { display: none; }
+.setting__slider .unity-base-slider__dragger {
+    width: 76px; height: 60px; border-radius: 52% 48% 55% 45%;
+    background-color: var(--clay);
+    border-width: 0 0 6px 0; border-color: var(--clay-dark);
+    top: 10px;
+}
+.setting__ends { flex-direction: row; justify-content: space-between; margin-top: 4px; }
+.setting__end { font-size: 36px; color: var(--slate); }
+
+.layout--tall .settings__column { margin-top: 60px; }
+
+.setting__knob {
+    position: absolute; top: 8px; left: 8px;
+    width: 56px; height: 56px; border-radius: 50%;
+    background-color: var(--on-dark);
+    transition-property: left; transition-duration: 0.15s;
+}
+.setting__toggle:checked .setting__knob { left: 86px; }
+.setting__toggle .unity-toggle__checkmark { position: relative; }

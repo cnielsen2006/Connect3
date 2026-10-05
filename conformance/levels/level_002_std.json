@@ -1,0 +1,28 @@
+{
+ "level": {
+  "colors": 4,
+  "difficulty": 0.059364443043106174,
+  "generator_version": 2,
+  "goals": [
+   {
+    "colors": [],
+    "kind": "score",
+    "target": 5000
+   }
+  ],
+  "height": 7,
+  "holes": [],
+  "intro": null,
+  "measured_win_rate": 1.0,
+  "move_limit": 30,
+  "number": 2,
+  "seed": "1000005",
+  "specials": [],
+  "star2": 5122,
+  "star3": 5389,
+  "target_win_rate": 0.9331940453132741,
+  "width": 7
+ },
+ "n": 2,
+ "seed": "1000005"
+}

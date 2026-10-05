@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project:/Assets/Cascade/UI/Map.uss" />
+    <ui:VisualElement name="map-root" class="screen-fill map">
+        <ui:VisualElement class="header map__header">
+            <ui:VisualElement class="header__side">
+                <ui:Button name="map-back" class="pebble-button pebble-button--sand pebble-button--tiny" />
+            </ui:VisualElement>
+            <ui:Label name="map-title" class="display-title header__title" picking-mode="Ignore" />
+            <ui:VisualElement class="header__side header__side--right">
+                <ui:Label name="map-stars" class="map__total" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="map-viewport" class="map__viewport">
+            <ui:VisualElement name="map-content" class="map__content" picking-mode="Ignore" />
+            <!-- Layout metrics, read by MapScreen: the distance between two levels, the width of the lane the path wanders in,
+                 how far one wheel line scrolls, and how far a press must move before it is a drag. They are data, so the wide and the tall layout can differ. -->
+            <ui:VisualElement name="map-metric-spacing" class="map__metric map__metric--spacing" picking-mode="Ignore" />
+            <ui:VisualElement name="map-metric-lane" class="map__metric map__metric--lane" picking-mode="Ignore" />
+            <ui:VisualElement name="map-metric-wheel" class="map__metric map__metric--wheel" picking-mode="Ignore" />
+            <ui:VisualElement name="map-metric-slop" class="map__metric map__metric--slop" picking-mode="Ignore" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

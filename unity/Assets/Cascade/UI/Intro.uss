@@ -1,0 +1,35 @@
+/* Tall: one column. Wide: the level and its goals on the left, the new-mechanic tip and the buttons on the right. */
+
+.intro__column { width: 1000px; max-width: 96%; align-items: stretch; flex-direction: column; }
+.intro__main, .intro__side { align-items: stretch; flex-shrink: 0; }
+
+.intro__title { font-size: 140px; margin-bottom: 14px; }
+.intro__header { font-size: 44px; color: var(--slate); -unity-text-align: middle-center; margin-top: 26px; }
+.intro__goals { align-items: center; margin: 8px 0 18px 0; }
+.intro__goal { font-size: 54px; -unity-text-align: middle-center; white-space: normal; padding: 6px 0; }
+.intro__moves { font-size: 54px; -unity-text-align: middle-center; color: var(--slate); margin: 4px 0 24px 0; }
+
+.intro__mechanic {
+    margin: 26px 0 0 0;
+    padding: 22px 36px;
+    border-radius: 42px;
+    background-color: var(--paper);
+    border-width: 0 0 6px 0;
+    border-color: var(--sand);
+    align-items: center;
+}
+.intro__mechanic-headline { font-size: 48px; color: var(--clay); -unity-text-align: middle-center; white-space: normal; }
+.intro__tips { align-items: center; }
+.intro__tip { font-size: 38px; -unity-text-align: middle-center; white-space: normal; margin-top: 8px; }
+
+.intro__dev { font-size: 28px; color: var(--slate); -unity-text-align: middle-center; margin-top: 18px; white-space: normal; }
+
+.intro__buttons { flex-direction: column; align-items: center; margin-top: 36px; }
+.intro__buttons .pebble-button { width: 620px; height: 150px; }
+
+.layout--wide .intro__column { width: 92%; max-width: 1700px; flex-direction: row; align-items: center; }
+.layout--wide .intro__main { flex-grow: 1; flex-basis: 0; margin-right: 70px; }
+.layout--wide .intro__side { flex-grow: 1; flex-basis: 0; }
+.layout--wide .intro__title { font-size: 130px; }
+.layout--wide .intro__buttons { flex-direction: row; justify-content: center; }
+.layout--wide .intro__buttons .pebble-button { width: 330px; height: 124px; font-size: 52px; }

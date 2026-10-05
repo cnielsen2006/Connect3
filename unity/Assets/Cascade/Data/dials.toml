@@ -1,0 +1,110 @@
+[scoring]
+run3 = 60
+run4 = 120
+run5 = 200
+run_extra_per_tile = 40      # each tile beyond 5
+cross = 150                  # each Cross qualifier
+special_tile_cleared = 20    # per tile cleared by a special
+cascade_step = 0.5           # multiplier = 1 + cascade_step * round + group_step * groups_already_scored
+group_step = 0.25            # each further group in the same round
+combo_color_color = 5000
+
+[specials]
+incoming_chance = 0.4
+bomb_radius = 1              # 3x3
+
+[stars]
+two_star_percentile = 50
+three_star_percentile = 85
+min_wins = 3                 # fewer bot wins than this -> use the fallback below
+fallback_two = 1.25          # fallback star2 = fallback_two * median bot score (all runs)
+fallback_three = 1.6         # fallback star3 = fallback_three * median bot score
+
+[input]
+drag_inner_fraction = 0.6    # neighbor's central fraction that counts as "well inside"
+double_click_ms = 300
+touch_inner_fraction = 0.5   # touch version of drag_inner_fraction (fingers are less precise)
+double_tap_ms = 300
+tap_slop_mm = 2.0            # finger movement still counted as a tap, not a drag
+pinch_min_mm = 4.0           # change in finger spread before a pinch starts zooming
+min_touch_target_mm = 9.0    # smallest button on touch devices (PRD §5.3)
+
+[render]
+multisamples = 4             # MSAA samples (0, 2, 4, 8), applied to the URP asset at startup
+target_fps = 0               # 0 = the display's refresh rate; Unity mobile defaults to 30 (TRD §13.9)
+
+[animation]                  # durations in ms; settings.animation_speed multiplies them all
+select_lift = 90
+swap = 180
+swap_reject = 220
+clear = 250
+special_fire = 300
+fall_cells_per_sec = 14
+spawn_drop = 160
+land_squash = 0.2
+settle_wobbles = 1
+wave_stagger = 60
+
+[celebration]                # PRD 5.4.1: tier = how many tier_N thresholds the combo multiplier has reached
+tier_1 = 1.5
+tier_2 = 2.5
+tier_3 = 4.0
+tier_4 = 6.0
+badge_scale_base = 1.0       # badge size at tier 0
+badge_scale_step = 0.35      # extra size per tier
+badge_ms = 700
+group_stagger_ms = 140       # groups scored in one round show their badges this far apart
+particles_per_tier = 10
+camera_punch_per_tier = 0.012  # zoom-in per tier, fraction of the view
+stinger_from_tier = 2
+reduce_effects = 0           # 1 = no particles or camera punch
+
+[camera]
+fit_margin = 0.04            # fraction of board area kept as margin when auto-fitting
+zoom_min = 0.6               # relative to auto-fit
+zoom_max = 3.0
+zoom_step = 1.12             # per wheel notch
+pitch_deg = 25               # K: Pebbles
+
+[audio]
+master_volume = 0.7          # 0-1, multiplies every cue; the sound setting mutes everything
+cascade_pitch_semitones = 1.0  # a clear sounds this many semitones higher per cascade depth
+cue_cooldown_ms = 40         # the same cue is not started again within this time
+
+[pieces]
+variation_yaw_deg = 13
+variation_squash_min = 0.82
+variation_brightness = 0.06
+
+[planner]
+depth = 3                    # dev auto-play Plan mode: moves looked ahead (TRD 7.1)
+width = 6                    # candidate moves played for real at each step of the search
+max_nodes = 400              # budget of played moves per plan (keeps the search small and deterministic)
+win_bonus = 100.0            # leaf value of a won level
+moves_left_weight = 2.0      # ... plus this per move left over
+progress_weight = 50.0       # leaf value of goal progress (mean fraction of the goals met)
+score_weight = 0.001         # leaf value per point
+max_probes = 200             # lines kept for the ghost replay
+probe_ms = 90                # ghost replay: time each explored line is shown
+think_ms = 2200              # ghost replay: longest time spent showing the research
+show_ms = 900                # ghost replay: time the chosen line is shown before the swap
+
+[generator]
+bot_runs = 20                # K
+tune_rounds = 3              # R
+win_rate_tolerance = 0.08
+budget_ms = 1000               # wall-clock cap per level (0 = no cap); see TRD §7
+min_bot_runs = 5             # the budget never cuts a measurement below this many runs
+bot_random_chance = 0.25     # chance the bot plays a random legal move
+bot_weight_goal = 10.0       # bot move value: goal progress (tiles of wanted colors cleared)
+bot_weight_special = 3.0     #   ... specials earned
+bot_weight_points = 0.01     #   ... points
+move_limit_min = 10          # tuner bounds for move_limit
+move_limit_max = 50
+goal_step = 0.1              # tuner: goal size change per step once move_limit is at a bound
+goal_score_round = 50        # score goal targets round to a multiple of this
+collect_min = 6              # smallest collect goal
+collect_two_color_chance = 0.4  # chance a collect goal names two colors (needs >= 5 colors)
+combo_scale = 0.75           # each half of a combo goal is this fraction of a single goal
+holes_chance = 0.8           # chance a level past the holes unlock is shaped (intro always is)
+min_cells = 36               # shaped boards must keep at least this many cells

@@ -1,0 +1,50 @@
+{
+ "level": {
+  "colors": 5,
+  "difficulty": 0.1,
+  "generator_version": 2,
+  "goals": [
+   {
+    "colors": [
+     0
+    ],
+    "kind": "collect",
+    "target": 31
+   }
+  ],
+  "height": 8,
+  "holes": [
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ]
+  ],
+  "intro": "Shaped boards",
+  "measured_win_rate": 0.85,
+  "move_limit": 34,
+  "number": 36,
+  "seed": "1000039",
+  "specials": [
+   "Line",
+   "Bomb"
+  ],
+  "star2": 4180,
+  "star3": 4669,
+  "target_win_rate": 0.9079999999999999,
+  "width": 8
+ },
+ "n": 36,
+ "seed": "1000039"
+}

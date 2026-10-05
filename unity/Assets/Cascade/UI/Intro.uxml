@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project:/Assets/Cascade/UI/Intro.uss" />
+    <ui:VisualElement name="intro-root" class="screen-fill">
+        <ui:VisualElement class="intro__column">
+            <ui:VisualElement class="intro__main">
+                <ui:Label name="intro-title" class="display-title intro__title" picking-mode="Ignore" />
+                <ui:VisualElement class="rule" />
+                <ui:Label name="intro-goals-header" class="intro__header" picking-mode="Ignore" />
+                <ui:VisualElement name="intro-goals" class="intro__goals" picking-mode="Ignore" />
+                <ui:Label name="intro-moves" class="intro__moves" picking-mode="Ignore" />
+                <ui:VisualElement class="rule" />
+            </ui:VisualElement>
+            <ui:VisualElement class="intro__side">
+                <ui:VisualElement name="intro-mechanic" class="intro__mechanic" picking-mode="Ignore">
+                    <ui:Label name="intro-mechanic-headline" class="intro__mechanic-headline" picking-mode="Ignore" />
+                    <ui:VisualElement name="intro-mechanic-tips" class="intro__tips" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:Label name="intro-dev" class="intro__dev" picking-mode="Ignore" />
+                <ui:VisualElement class="intro__buttons">
+                    <ui:Button name="intro-play" class="pebble-button pebble-button--sage" />
+                    <ui:Button name="intro-back" class="pebble-button pebble-button--sand" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

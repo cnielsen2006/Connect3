@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project:/Assets/Cascade/UI/Title.uss" />
+    <ui:VisualElement name="title-root" class="screen-fill title">
+        <ui:VisualElement class="title__head" picking-mode="Ignore">
+            <ui:Label name="title-name" class="display-title title__name" picking-mode="Ignore" />
+            <ui:Label name="title-tagline" class="title__tagline" picking-mode="Ignore" />
+            <ui:VisualElement class="title__pebbles" picking-mode="Ignore">
+                <ui:VisualElement class="title__pebble title__pebble--0" picking-mode="Ignore" />
+                <ui:VisualElement class="title__pebble title__pebble--1" picking-mode="Ignore" />
+                <ui:VisualElement class="title__pebble title__pebble--2" picking-mode="Ignore" />
+                <ui:VisualElement class="title__pebble title__pebble--3" picking-mode="Ignore" />
+                <ui:VisualElement class="title__pebble title__pebble--4" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="title__buttons">
+            <ui:Button name="title-play" class="pebble-button pebble-button--sage" />
+            <ui:Button name="title-settings" class="pebble-button pebble-button--sand" />
+            <ui:Button name="title-quit" class="pebble-button pebble-button--clay" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

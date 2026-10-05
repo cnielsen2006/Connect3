@@ -1,0 +1,17 @@
+.loading__text { font-size: 110px; margin-bottom: 70px; }
+
+.loading__pebbles { flex-direction: row; height: 140px; align-items: flex-end; margin-bottom: 90px; }
+
+/* A calm wave: the screen flips .is-up on one pebble after another; the transition duration below is the pace. */
+.loading__pebble {
+    width: 76px; height: 60px; margin: 0 22px;
+    transition-property: translate, scale;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+.loading__pebble--0 { background-color: rgb(205, 180, 141); border-radius: 52% 48% 55% 45%; }
+.loading__pebble--1 { background-color: rgb(143, 160, 138); border-radius: 46% 54% 48% 52%; }
+.loading__pebble--2 { background-color: rgb(185, 132, 104); border-radius: 55% 45% 52% 48%; }
+.loading__pebble.is-up { translate: 0 -60px; scale: 1.18 1.18; }
+
+.layout--tall .loading__text { font-size: 96px; }

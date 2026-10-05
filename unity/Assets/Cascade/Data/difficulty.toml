@@ -1,0 +1,53 @@
+[meta]
+version = 2
+
+[difficulty]                 # difficulty(n) = clamp(trend + amplitude * wave, 0, 1)
+trend = { curve = "ease_out", points = [[1, 0.05], [150, 0.75]] }
+amplitude = { curve = "linear", points = [[1, 0.10], [150, 0.18]] }
+cycle_length = 7             # P
+ramp_power = 1.6             # K
+release_depth = 0.6          # R
+intro_level_difficulty = 0.1
+easiest_win_rate = 0.97
+hardest_win_rate = 0.35
+
+[params.colors]
+curve = "step"
+points = [[1, 4], [21, 5], [51, 6], [76, 7]]
+
+[params.board_size]
+curve = "step"
+points = [[1, 7], [11, 8]]
+
+[params.move_limit]          # starting guess; the tuner adjusts it
+curve = "linear"
+points = [[1, 30], [150, 20]]
+
+[params.goal_amount]         # multiplier on the goal size; the tuner adjusts it
+curve = "linear"
+points = [[1, 1.0], [150, 1.6]]
+
+[unlocks]
+goal_collect = 11
+special_line = 11
+special_bomb = 21
+holes = 36
+special_color = 51
+combo_goals = 76
+
+[goal_weights]               # weighted pools by band; key = first level of the band
+1  = { score = 1.0 }
+11 = { score = 0.4, collect = 0.6 }
+76 = { score = 0.3, collect = 0.4, combo = 0.3 }
+
+# Extra keys (TRD §6): goal sizing. size = rate * move_limit * goal_amount (* colors share for
+# collect). The rates are what the calibration tool suggests: the per-move rate at
+# which the bot wins a size-1.0 goal at the level's target win rate. They jump at the levels where
+# colors, board_size or holes change what the bot can reach.
+[params.score_per_move]      # points per move used to size a score goal
+curve = "linear"
+points = [[1, 165.0], [10, 170.0], [11, 235.0], [20, 240.0], [21, 152.0], [35, 165.0], [36, 125.0], [50, 115.0], [51, 98.0], [75, 78.0], [76, 60.0], [150, 62.0]]
+
+[params.collect_per_move]    # tiles of ALL colors cleared per move, used to size a collect goal
+curve = "linear"
+points = [[1, 5.5], [10, 5.3], [11, 8.1], [20, 8.1], [21, 5.6], [35, 6.0], [36, 4.8], [50, 4.3], [51, 4.0], [75, 3.3], [76, 2.7], [150, 2.7]]

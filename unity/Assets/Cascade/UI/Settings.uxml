@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project:/Assets/Cascade/UI/Settings.uss" />
+    <ui:VisualElement name="settings-root" class="screen-fill settings">
+        <ui:VisualElement class="header">
+            <ui:VisualElement class="header__side">
+                <ui:Button name="settings-back" class="pebble-button pebble-button--sand pebble-button--tiny" />
+            </ui:VisualElement>
+            <ui:Label name="settings-title" class="display-title header__title" picking-mode="Ignore" />
+            <ui:VisualElement class="header__side header__side--right" />
+        </ui:VisualElement>
+        <ui:VisualElement class="settings__column">
+            <ui:VisualElement class="rule" />
+            <ui:Toggle name="settings-sound" class="setting setting__toggle" />
+            <ui:VisualElement class="rule" />
+            <ui:VisualElement class="setting setting__speed">
+                <ui:Label name="settings-speed-text" class="setting__label" picking-mode="Ignore" />
+                <ui:Slider name="settings-speed" class="setting__slider" />
+                <ui:VisualElement class="setting__ends" picking-mode="Ignore">
+                    <ui:Label name="settings-speed-min" class="setting__end" />
+                    <ui:Label name="settings-speed-max" class="setting__end" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="rule" />
+            <ui:Toggle name="settings-adaptive" class="setting setting__toggle" />
+            <ui:VisualElement class="rule" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,81 @@
+/* Dev settings page: plain and dense, readable at phone size, same palette as the game. */
+
+.dev { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+
+.dev__panel {
+    position: absolute;
+    top: 0; bottom: 0;
+    background-color: rgba(246, 241, 230, 0.97);
+    border-left-width: 4px; border-left-color: var(--driftwood);
+    padding: 20px 28px 20px 28px;
+}
+.layout--wide .dev__panel { right: 0; width: 56%; }
+.layout--tall .dev__panel { left: 0; right: 0; border-left-width: 0; }
+
+.dev__head { flex-direction: row; justify-content: space-between; align-items: center; }
+.dev__title { font-size: 64px; color: var(--clay); -unity-font: url("project:/Assets/Cascade/UI/Fonts/DeliusSwashCaps-Regular.ttf"); }
+.dev__info { font-size: 30px; color: var(--slate); white-space: normal; margin: 6px 0 10px 0; }
+.dev__row { flex-direction: row; align-items: center; margin-bottom: 8px; }
+.dev__row-label { font-size: 32px; color: var(--slate); margin: 0 14px; }
+.dev__message { font-size: 30px; color: var(--clay); min-height: 40px; white-space: normal; }
+.dev__jump { width: 190px; margin: 0 10px; }
+.dev__jump .unity-base-text-field__input { font-size: 34px; }
+
+.dev-button, .dev-button:hover, .dev-button:focus, .dev-button:active {
+    margin: 0 8px 0 0; padding: 4px 18px;
+    min-height: 64px;
+    border-width: 0 0 5px 0;
+    border-radius: 40px;
+    font-size: 32px;
+    background-color: var(--sand-pale);
+    border-color: var(--sand);
+    color: var(--ink);
+    -unity-text-align: middle-center;
+}
+.dev-button--small { min-height: 48px; padding: 2px 14px; font-size: 28px; }
+.dev-button--accent, .dev-button--accent:hover, .dev-button--accent:focus, .dev-button--accent:active {
+    background-color: var(--sage); border-color: var(--sage-dark); color: var(--on-dark);
+}
+
+.dev__scroll { flex-grow: 1; margin-top: 6px; }
+
+.dev-foldout { margin: 4px 0; }
+.dev-foldout > .unity-foldout__toggle .unity-toggle__text { font-size: 38px; color: var(--ink); }
+.dev-foldout--changed > .unity-foldout__toggle .unity-toggle__text { color: var(--clay); }
+.dev-foldout > .unity-foldout__content { margin-left: 6px; }
+
+.dev-field {
+    margin: 8px 0 12px 0; padding: 0 0 8px 0;
+    border-bottom-width: 1px; border-bottom-color: var(--driftwood);
+}
+.dev-field__top { flex-direction: row; align-items: center; justify-content: space-between; }
+.dev-field__name { font-size: 34px; color: var(--ink); }
+.dev-field--changed .dev-field__name { color: var(--clay); }
+.dev-field__flag { font-size: 28px; color: var(--clay); margin-left: 10px; }
+.dev-field__desc { font-size: 26px; color: var(--slate); white-space: normal; }
+.dev-field__control { flex-direction: row; align-items: center; margin-top: 4px; }
+.dev-field__slider { flex-grow: 1; margin: 0 10px 0 0; }
+.dev-field__number { width: 200px; margin: 0 10px 0 0; }
+.dev-field__number .unity-base-text-field__input { font-size: 32px; }
+.dev-field__default { font-size: 26px; color: var(--slate); margin-right: 12px; min-width: 150px; }
+
+.dev-field__slider .unity-base-slider__tracker { background-color: var(--driftwood); height: 8px; border-width: 0; border-radius: 4px; }
+.dev-field__slider .unity-base-slider__dragger { background-color: var(--clay); width: 40px; height: 40px; border-radius: 50%; border-width: 0; }
+.dev-field__slider .unity-base-slider__dragger-border { display: none; }
+
+.dev .unity-base-text-field__input, .dev .unity-text-field__input {
+    background-color: rgba(255, 252, 245, 0.9);
+    border-color: var(--driftwood);
+    border-radius: 14px;
+    color: var(--ink);
+    padding: 2px 10px;
+}
+.dev .unity-scroller--vertical { width: 20px; }
+.dev .unity-scroller__low-button, .dev .unity-scroller__high-button { display: none; }
+.dev-field__slider .unity-base-slider__dragger { width: 36px; height: 36px; }
+
+.dev .unity-text-element, .dev .unity-base-text-field__input .unity-text-element, .dev .unity-label { color: var(--ink); }
+.dev .dev-field__desc, .dev .dev__info, .dev .dev__row-label, .dev .dev-field__default { color: var(--slate); }
+.dev .dev-field--changed .dev-field__name, .dev .dev-field__flag, .dev .dev__message { color: var(--clay); }
+.dev .unity-scroller .unity-base-slider__dragger { background-color: var(--driftwood); border-radius: 8px; border-width: 0; width: 16px; }
+.dev .unity-scroller .unity-base-slider__tracker { background-color: transparent; border-width: 0; }

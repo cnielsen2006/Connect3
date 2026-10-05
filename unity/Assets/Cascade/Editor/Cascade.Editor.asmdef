@@ -1,0 +1,29 @@
+{
+    "name": "Cascade.Editor",
+    "rootNamespace": "Cascade.Editor",
+    "references": [
+        "Cascade.Core",
+        "Cascade.Config",
+        "Cascade.Platform.Abstractions",
+        "Cascade.Gameplay",
+        "Cascade.Generation",
+        "Cascade.Persistence",
+        "Cascade.Presentation",
+        "Cascade.Unity.Platform",
+        "Cascade.Unity.View",
+        "Cascade.App",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false,
+    "excludePlatforms": []
+}

@@ -67,6 +67,15 @@ namespace Cascade.Editor
                     if (EditorApplication.isPlaying) EditorApplication.ExitPlaymode();
                     EditorApplication.update += BuildWhenEdit;
                     return;
+                case "build-skins":
+                    if (EditorApplication.isPlaying) EditorApplication.ExitPlaymode();
+                    Log("building the K, I and J art styles");
+                    EditorApplication.delayCall += () =>
+                    {
+                        try { PebbleMeshBuilder.BuildAll(); Log("skins built"); }
+                        catch (System.Exception e) { Log("skin build failed: " + e); }
+                    };
+                    return;
                 case "stop":
                     EditorApplication.ExitPlaymode();
                     break;

@@ -197,6 +197,10 @@ namespace Cascade.Persistence
                 double v = (double)speed;
                 if (PlayerSettings.IsValidSpeed(v)) settings = settings with { AnimationSpeed = v };
             }
+            var fps = d["target_fps"];
+            if (fps != null && fps.Type == JTokenType.Integer && PlayerSettings.IsValidFps((int)fps)) settings = settings with { TargetFps = (int)fps };
+            var skin = d["skin"];
+            if (skin != null && skin.Type == JTokenType.String && PlayerSettings.IsValidSkin((string?)skin)) settings = settings with { Skin = (string)skin! };
             return settings;
         }
 
@@ -205,6 +209,8 @@ namespace Cascade.Persistence
             ["sound"] = s.Sound,
             ["animation_speed"] = s.AnimationSpeed,
             ["adaptive"] = s.Adaptive,
+            ["target_fps"] = s.TargetFps,
+            ["skin"] = s.Skin,
         };
 
         // -- file helpers ----------------------------------------------------------------------

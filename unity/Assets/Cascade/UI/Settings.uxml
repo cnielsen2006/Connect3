@@ -23,6 +23,11 @@
             <ui:VisualElement class="rule" />
             <ui:Toggle name="settings-adaptive" class="setting setting__toggle" />
             <ui:VisualElement class="rule" />
+            <ui:Toggle name="settings-fps" class="setting setting__toggle" />
+            <ui:VisualElement class="rule" />
+            <ui:Button name="settings-skin" class="pebble-button pebble-button--sand setting__skin" />
+            <ui:VisualElement name="settings-skin-preview" class="skin-preview" picking-mode="Ignore" />
+            <ui:VisualElement class="rule" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

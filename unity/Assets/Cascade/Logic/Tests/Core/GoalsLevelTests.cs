@@ -34,8 +34,8 @@ namespace Cascade.Tests.CoreTests
             Assert.That(goals[0].Describe(), Does.Contain("100"));
             Assert.That(goals[1].Describe(), Does.Contain("Red"));
             Assert.That(Goal.Score(1234567).Describe(), Is.EqualTo("Score 1,234,567 points"));
-            Assert.That(Goal.Collect(12, 0, 1).Describe(), Is.EqualTo("Clear 12 Red / Blue pieces"));
-            Assert.That(Goal.Collect(3, 9).Describe(new[] { "A", "B" }), Is.EqualTo("Clear 3 B pieces")); // 9 % 2 = 1
+            Assert.That(Goal.Collect(12, 0, 1).Describe(), Is.EqualTo("Clear 12 Red / Blue colored pieces"));
+            Assert.That(Goal.Collect(3, 9).Describe(new[] { "A", "B" }), Is.EqualTo("Clear 3 B colored pieces")); // 9 % 2 = 1
         }
 
         [Test]

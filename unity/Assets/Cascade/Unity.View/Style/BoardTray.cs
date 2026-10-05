@@ -53,6 +53,12 @@ namespace Cascade.Unity.View
                 : new[] { mats.Tray() };
         }
 
+        /// <summary>Rebuilds the tray of the current cells (the style's tray dials changed).</summary>
+        public void Rebuild(PieceStyle style)
+        {
+            if (presence != null) Build(style, Cols, Rows, presence);
+        }
+
         void OnDestroy()
         {
             if (mesh == null) return;

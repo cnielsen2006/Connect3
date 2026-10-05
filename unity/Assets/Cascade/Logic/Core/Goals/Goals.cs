@@ -57,7 +57,7 @@ namespace Cascade.Core
             return sum;
         }
 
-        /// <summary>Human-readable text, for example "Score 1,000 points" or "Clear 12 Red / Blue pieces".</summary>
+        /// <summary>Human-readable text, for example "Score 1,000 points" or "Clear 12 Red / Blue colored pieces".</summary>
         public string Describe(IReadOnlyList<string>? colorNames = null)
         {
             if (Kind == GoalKind.Score) return "Score " + Target.ToString("N0", CultureInfo.InvariantCulture) + " points";
@@ -68,7 +68,7 @@ namespace Cascade.Core
                 if (i > 0) sb.Append(" / ");
                 sb.Append(names[MathX.FloorMod(Colors[i], names.Count)]);
             }
-            return sb.Append(" pieces").ToString();
+            return sb.Append(" colored pieces").ToString();
         }
 
         /// <summary>JSON object: <c>{"kind","target","colors"}</c> with the kind as "score" or "collect".</summary>

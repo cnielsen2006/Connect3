@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9313b9f16581d274193074f8378b967b, type: 3}
+  m_Name: J_StudioSet
+  m_EditorClassIdentifier: Cascade.Unity.View::Cascade.Unity.View.PieceStyle
+  skinId: J
+  styleName: 'J: Studio Set'
+  palette:
+    pieces:
+    - name: Rust
+      color:
+        serializedVersion: 2
+        rgba: 4281158051
+      shape: 7
+      heightScale: 1
+      mesh: {fileID: 4300000, guid: 0b6b5bdda04af2643940dc6b0740dcf8, type: 2}
+      haloMesh: {fileID: 4300000, guid: 063a17a2c36617f43b998807a4d70502, type: 2}
+      veinHorizontal: {fileID: 4300000, guid: d623c8e93d13d214795a2652f7800752, type: 2}
+      veinVertical: {fileID: 4300000, guid: d9844df0e1707314a938aa697f661944, type: 2}
+      holeRim: {fileID: 4300000, guid: efa57f277a0f9a74ea5439ff232e5caa, type: 2}
+      holeDisc: {fileID: 4300000, guid: baaa8a031a4bfec4cb920d18fb3b6cf1, type: 2}
+      agate: {fileID: 4300000, guid: 014ffde36cb38604caef0f4c5f77f104, type: 2}
+    - name: Mustard
+      color:
+        serializedVersion: 2
+        rgba: 4280787657
+      shape: 8
+      heightScale: 1.3
+      mesh: {fileID: 4300000, guid: a82bba1492befb3469ce9bef950f623a, type: 2}
+      haloMesh: {fileID: 4300000, guid: f9fbe50b9e8ec0c459a3cd4d7d506016, type: 2}
+      veinHorizontal: {fileID: 4300000, guid: 4019b2978c344e24fa2c264bac46a31f, type: 2}
+      veinVertical: {fileID: 4300000, guid: 93b1cd97cffd63e4a9a8104131b1e1a8, type: 2}
+      holeRim: {fileID: 4300000, guid: 96e903121abcb5745bfb93d9fa9ff547, type: 2}
+      holeDisc: {fileID: 4300000, guid: 14f613bdbef405b4c984626b1020b59b, type: 2}
+      agate: {fileID: 4300000, guid: fd8ce14fc59bf734f8b8dbd0ede4564b, type: 2}
+    - name: Olive
+      color:
+        serializedVersion: 2
+        rgba: 4282022522
+      shape: 9
+      heightScale: 1
+      mesh: {fileID: 4300000, guid: eb5c93863783ce04dae4c1b0f3f2ab25, type: 2}
+      haloMesh: {fileID: 4300000, guid: 036342b75f6934a49bd0275c15d61c23, type: 2}
+      veinHorizontal: {fileID: 4300000, guid: 8c3160e67627c7640be84708da8e378c, type: 2}
+      veinVertical: {fileID: 4300000, guid: 6c6f60b01b1ecea4c9fe57bed55a3676, type: 2}
+      holeRim: {fileID: 4300000, guid: fb76f1e653e15f24b9d7a6ce11bb5ead, type: 2}
+      holeDisc: {fileID: 4300000, guid: 134baef05c5a76449a8c13e76cbf60e2, type: 2}
+      agate: {fileID: 4300000, guid: e7c4c4489b73d6a419439b5a2e7f73ef, type: 2}
+    - name: Teal
+      color:
+        serializedVersion: 2
+        rgba: 4286085695
+      shape: 4
+      heightScale: 0.7
+      mesh: {fileID: 4300000, guid: d66d828efecfeb147b74fb950a1efb34, type: 2}
+      haloMesh: {fileID: 4300000, guid: 5143886a580c9834a9d9be10abdccd2d, type: 2}
+      veinHorizontal: {fileID: 4300000, guid: 4fec44a44d64e1144b761293ffc06140, type: 2}
+      veinVertical: {fileID: 4300000, guid: 7ce52b2732c28b9489d66352afc0c05b, type: 2}
+      holeRim: {fileID: 4300000, guid: 8140b751fc5bee0498b8bb5d38ae9546, type: 2}
+      holeDisc: {fileID: 4300000, guid: e9eae086935388c4dbc02675306f7800, type: 2}
+      agate: {fileID: 4300000, guid: 75ffd9d560a689448abe8def02c01207, type: 2}
+    - name: Aubergine
+      color:
+        serializedVersion: 2
+        rgba: 4284103262
+      shape: 10
+      heightScale: 1
+      mesh: {fileID: 4300000, guid: b4b0b6d7c8782534db3e0a0f6f4d1311, type: 2}
+      haloMesh: {fileID: 4300000, guid: 25bdefcaa5dddf9479c72160d5bd9754, type: 2}
+      veinHorizontal: {fileID: 4300000, guid: 70236f0eb199f1d4aa63ade31e98bfc2, type: 2}
+      veinVertical: {fileID: 4300000, guid: 63b85923ffc87cf4cb79979056750d0d, type: 2}
+      holeRim: {fileID: 4300000, guid: e8b1115ace004274a8e065af48a47645, type: 2}
+      holeDisc: {fileID: 4300000, guid: 1c3df53e604a9364995e5b19aef583a9, type: 2}
+      agate: {fileID: 4300000, guid: c281212e62624aa4dab33cf8c28fad97, type: 2}
+    - name: Bone
+      color:
+        serializedVersion: 2
+        rgba: 4289907672
+      shape: 11
+      heightScale: 1
+      mesh: {fileID: 4300000, guid: 229c6bf65113e2241b6dd52a6d13570c, type: 2}
+      haloMesh: {fileID: 4300000, guid: 1021137e1c85e914eada4211cacd9f3f, type: 2}
+      veinHorizontal: {fileID: 4300000, guid: a55fae5e4d7819f409bbf0d6b85135c7, type: 2}
+      veinVertical: {fileID: 4300000, guid: c66f58421f1f3b648886ed22d436db50, type: 2}
+      holeRim: {fileID: 4300000, guid: 2a08735992292134e9fd16ce96954981, type: 2}
+      holeDisc: {fileID: 4300000, guid: 4234a1876c4f748439d8b263e760361d, type: 2}
+      agate: {fileID: 4300000, guid: 17180253b7e29934b88d06c5ccd19457, type: 2}
+    - name: CharcoalBlue
+      color:
+        serializedVersion: 2
+        rgba: 4283054895
+      shape: 12
+      heightScale: 1
+      mesh: {fileID: 4300000, guid: e84c799c80d4ea344b29768b5696c69e, type: 2}
+      haloMesh: {fileID: 4300000, guid: 10828c92257766d46a879ac676f26f6c, type: 2}
+      veinHorizontal: {fileID: 4300000, guid: 9959d90aad318ff4d9143045e3700d67, type: 2}
+      veinVertical: {fileID: 4300000, guid: 47eedc21b6202b74881c974b1ae0c456, type: 2}
+      holeRim: {fileID: 4300000, guid: da5f561b48936554293d2b2f2e36b850, type: 2}
+      holeDisc: {fileID: 4300000, guid: 49e74535cf7c23f4497d688650692ac4, type: 2}
+      agate: {fileID: 4300000, guid: 2526026438ceb08409a5ff1180663df6, type: 2}
+    bgTop:
+      serializedVersion: 2
+      rgba: 4281350730
+    bgBottom:
+      serializedVersion: 2
+      rgba: 4278782478
+    tray:
+      serializedVersion: 2
+      rgba: 4283399592
+    trayGrain:
+      serializedVersion: 2
+      rgba: 4282806684
+    trayLip:
+      serializedVersion: 2
+      rgba: 4282346127
+    text:
+      serializedVersion: 2
+      rgba: 4292273903
+    accent:
+      serializedVersion: 2
+      rgba: 4280787657
+    vein:
+      serializedVersion: 2
+      rgba: 4289907672
+    hole:
+      serializedVersion: 2
+      rgba: 4278914322
+    vignette: 0.55
+  material:
+    heightRatio: 0.5
+    size: 0.84
+    sheen: 0.05
+    shininess: 10
+    rimStrength: 0.38
+    rimPower: 2.4
+    fleckCount: 3
+    fleckDark: 0.45
+    fleckLight: 0.35
+    fleckOffsetRange: {x: 0.15, y: 0.07}
+    brightnessQuantum: 0.01
+    fleckQuantum: 0.1
+    selectLift: 0.15
+    selectScale: 1.08
+    grainAlpha: 0.35
+    hoverLift: 0.04
+    hoverHighlight: 1.5
+    squashSpread: 0.5
+    sinkDepth: 0.42
+    sinkScale: 0.55
+    bombDarken: 0.42
+    fadeLevels: 8
+    bakedHeightRatio: 0.5
+  specials:
+    veinLength: 0.5
+    veinThickness: 0.085
+    veinHeight: 0.06
+    bombHoleRadius: 0.105
+    bombRimRadius: 0.15
+    bombRimTube: 0.032
+    agateExtent: 0.78
+    shellOffset: 0.006
+    agateBands: 5
+    agateColors: 5
+  fx:
+    shadowSize: 1.12
+    shadowColor: {r: 0, g: 0, b: 0, a: 0.78}
+    shadowY: 0.004
+    haloY: 0.012
+    haloAlpha: 0.9
+    haloColor: {r: 0.98, g: 0.96, b: 0.9, a: 1}
+    rippleColor: {r: 1, g: 1, b: 1, a: 0.8}
+    arrowColor: {r: 1, g: 1, b: 1, a: 0.9}
+    washColor: {r: 1, g: 0.99, b: 0.95, a: 0.6}
+    rippleY: 0.02
+    washY: 0.5
+    washWidth: 0.8
+    arrowY: 0.58
+    arrowLength: 0.9
+  light:
+    ambient: {r: 0.22, g: 0.18, b: 0.16, a: 1}
+    sky: {r: 0.08, g: 0.08, b: 0.1, a: 1}
+    sun: {r: 0.66, g: 0.56, b: 0.42, a: 1}
+    sunSpecular: {r: 0.3, g: 0.26, b: 0.2, a: 1}
+    sunHeading: 40
+    sunPitch: -40
+  camera:
+    pitchDeg: 35
+    fovDeg: 24
+    fitMargin: 0.04
+    near: 0.3
+    far: 80
+    clipToSlot: 1
+  tray:
+    lip: 0.2
+    lipHeight: 0.12
+    depth: 0.25
+    edgeRound: 0.04
+    innerFillet: 0.035
+    edgeShade: 0.74
+    brightness: 1
+    grainTiling: {x: 0.083, y: 0.25}
+    cornerSegments: 6
+    holeFloor:
+      serializedVersion: 2
+      rgba: 4280035898
+  hud:
+    buttonPause:
+      serializedVersion: 2
+      rgba: 4286085695
+    buttonHint:
+      serializedVersion: 2
+      rgba: 4282022522
+    buttonText:
+      serializedVersion: 2
+      rgba: 4294967295
+    titleFont: {fileID: 12800000, guid: 7dace67268cca544f85bb60ed6ca5ddf, type: 3}
+    bodyFont: {fileID: 12800000, guid: 12c23e862f7c92a41b4d5e7d0e07935c, type: 3}
+  art:
+    quad: {fileID: 4300000, guid: bc9b449888b8fb0478c1691523ad5a85, type: 2}
+    arrow: {fileID: 4300000, guid: 8ff40bc812b16f44ca021bd70e41f632, type: 2}
+    ripple: {fileID: 4300000, guid: 0aad12fc33b06ea4e997019ea8061fce, type: 2}
+    haloCircle: {fileID: 4300000, guid: ab3627433beaa524b9e7ff72e374c35d, type: 2}
+    wash: {fileID: 4300000, guid: c44de49db3c790940954bee026ef1a07, type: 2}
+    clay: {fileID: 2100000, guid: 2f277dbd303f783449c1956b55d88b0e, type: 2}
+    veinMaterial: {fileID: 2100000, guid: 6de5f448cf2287d43ad6e03b8ad0f91d, type: 2}
+    holeRimMaterial: {fileID: 2100000, guid: fe3526d64781b4e4b97d540ec6a66130, type: 2}
+    holeDiscMaterial: {fileID: 2100000, guid: 55f918f2d11166f4baec9501ac1df1b6, type: 2}
+    agateMaterial: {fileID: 2100000, guid: a4f4fd7853e0eab4baea7c7242c727a4, type: 2}
+    trayMaterial: {fileID: 2100000, guid: 543c5fc57f85fc74c992e2ac42967141, type: 2}
+    trayHoleMaterial: {fileID: 2100000, guid: 003281f54ddaf3647877e016859ed30d, type: 2}
+    shadow: {fileID: 2100000, guid: 92348f660c490b94faf649044e04f989, type: 2}
+    halo: {fileID: 2100000, guid: 69d14e1894f2fa04c8bc1b254eacab5f, type: 2}
+    rippleMaterial: {fileID: 2100000, guid: 87fa94de70289aa45a7b92d03b8fbc1b, type: 2}
+    arrowMaterial: {fileID: 2100000, guid: c07d9c4d94c9d1640adb5f948544148e, type: 2}
+    background: {fileID: 2100000, guid: 7d63bfed56df45f4d9de829b4a4657a4, type: 2}
+    grain: {fileID: 2100000, guid: 3c6712074453a6c42943096712e7d516, type: 2}

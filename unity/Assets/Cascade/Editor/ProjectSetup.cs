@@ -94,6 +94,7 @@ namespace Cascade.Editor
             so.FindProperty("catalog").objectReferenceValue = catalog;
             so.FindProperty("style").objectReferenceValue = style;
             so.FindProperty("boardCamera").objectReferenceValue = camera;
+            SkinWiring.Assign(so);
             so.ApplyModifiedPropertiesWithoutUndo();
 
             EditorSceneManager.SaveScene(scene, BootScenePath);

@@ -116,3 +116,56 @@
 .header__side { width: 300px; align-items: flex-start; }
 .header__side--right { align-items: flex-end; }
 .header .pebble-button { margin: 0; }
+
+/* ---- skins: the other art styles re-colour the same roles (docs/art/STYLE-I-Claymation.md, STYLE-J-StudioSet.md section 2/6) ----
+   UiRoot.SetSkin adds skin-i or skin-j to the shell. K (no class) is the default above. Role mapping:
+   --clay = accent/title, --sage = Pause button, --sand = Hint button, --slate = secondary, --sand-pale = cards, --ink = text. */
+
+.shell.skin-i {
+    --ink: rgb(59, 45, 36);
+    --slate: rgb(93, 122, 140);
+    --clay: rgb(184, 97, 63);
+    --clay-dark: rgb(122, 61, 38);
+    --sage: rgb(107, 125, 70);
+    --sage-dark: rgb(63, 74, 40);
+    --sand: rgb(233, 220, 198);
+    --sand-pale: rgb(233, 220, 198);
+    --sand-dark: rgb(168, 144, 111);
+    --driftwood: rgb(201, 184, 156);
+    --locked: rgb(201, 184, 156);
+    --star-off: rgb(168, 151, 122);
+    --on-dark: rgb(250, 244, 232);
+    --scrim: rgba(227, 214, 191, 0.94);
+    --paper: rgba(233, 220, 198, 0.9);
+    -unity-font: url("project:/Assets/Cascade/UI/Fonts/ShantellSans-Regular.ttf");
+}
+.skin-i .display-title, .skin-i .popup, .skin-i .combo-badge, .skin-i .pebble-button, .skin-i .dev__title {
+    -unity-font: url("project:/Assets/Cascade/UI/Fonts/ShantellSans-Regular.ttf");
+}
+.skin-i .popup { color: rgb(122, 61, 38); }
+.skin-i .combo-badge { color: rgb(184, 97, 63); }
+
+.shell.skin-j {
+    --ink: rgb(239, 230, 214);
+    --slate: rgb(63, 122, 120);
+    --clay: rgb(201, 162, 39);
+    --clay-dark: rgb(154, 123, 24);
+    --sage: rgb(63, 122, 120);
+    --sage-dark: rgb(40, 84, 82);
+    --sand: rgb(122, 122, 58);
+    --sand-pale: rgb(74, 58, 48);
+    --sand-dark: rgb(84, 84, 38);
+    --driftwood: rgb(122, 96, 72);
+    --locked: rgb(70, 56, 48);
+    --star-off: rgb(98, 82, 68);
+    --on-dark: rgb(250, 244, 232);
+    --scrim: rgba(24, 18, 15, 0.93);
+    --paper: rgba(46, 36, 30, 0.9);
+    -unity-font: url("project:/Assets/Cascade/UI/Fonts/PatrickHand-Regular.ttf");
+}
+.skin-j .display-title, .skin-j .popup, .skin-j .combo-badge, .skin-j .dev__title {
+    -unity-font: url("project:/Assets/Cascade/UI/Fonts/PatrickHandSC-Regular.ttf");
+}
+.skin-j .pebble-button { -unity-font: url("project:/Assets/Cascade/UI/Fonts/PatrickHand-Regular.ttf"); }
+.skin-j .popup { color: rgb(242, 217, 120); }
+.skin-j .combo-badge { color: rgb(201, 162, 39); }

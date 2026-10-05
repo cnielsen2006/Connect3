@@ -17,25 +17,35 @@ namespace Cascade.Editor
     {
         const string Root = "Assets/Cascade";
         public const string StylePath = Root + "/Styles/K_Pebbles.asset";
-        const string MeshDir = Root + "/Art/Meshes";
-        const string TexDir = Root + "/Art/Textures";
-        const string MatDir = Root + "/Art/Materials";
+        const string StyleDir = Root + "/Styles";
+        const string MeshRoot = Root + "/Art/Meshes";
+        const string TexRoot = Root + "/Art/Textures";
+        const string MatRoot = Root + "/Art/Materials";
         const string ShaderDir = Root + "/Art/Shaders";
         const string RendererPath = Root + "/Settings/Cascade_URP_Renderer.asset";
         const string FontDir = Root + "/UI/Fonts";
 
-        static readonly string[] Names = { "Sand", "Sage", "Clay", "Slate", "Charcoal", "Shell", "Seaweed" };
-        static readonly uint[] Colors = { 0xcdb48d, 0x8fa08a, 0xb98468, 0x7b8794, 0x4f4a46, 0xece4d6, 0x4e5e3a };
-        static readonly PebbleShape[] Shapes =
-        {
-            PebbleShape.Oval, PebbleShape.Leaf, PebbleShape.RoundedSquare, PebbleShape.Capsule,
-            PebbleShape.Disc, PebbleShape.Scallop, PebbleShape.Kidney,
-        };
+        // the skin being built: its asset folders and definition (set by Build)
+        static SkinDef skin = SkinDefs.K;
+        static string MeshDir => skin.Sub == "" ? MeshRoot : MeshRoot + "/" + skin.Sub;
+        static string TexDir => skin.Sub == "" ? TexRoot : TexRoot + "/" + skin.Sub;
+        static string MatDir => skin.Sub == "" ? MatRoot : MatRoot + "/" + skin.Sub;
 
+        /// <summary>Builds every skin (K, I, J) and wires them into the Boot scene.</summary>
         [MenuItem("Cascade/Build Pebble Assets")]
         public static void BuildAll()
         {
-            Folder(Root + "/Styles"); Folder(MeshDir); Folder(MeshDir + "/Specials"); Folder(TexDir); Folder(MatDir);
+            foreach (var def in SkinDefs.All) Build(def);
+            PebbleGeometry.Wobble = 0f;
+            SkinWiring.WireBootScene();
+        }
+
+        /// <summary>Builds one skin's meshes, textures, materials and style asset (idempotent).</summary>
+        public static void Build(SkinDef def)
+        {
+            skin = def;
+            PebbleGeometry.Wobble = def.Wobble;
+            Folder(StyleDir); Folder(MeshDir); Folder(MeshDir + "/Specials"); Folder(TexDir); Folder(MatDir);
 
             var style = LoadOrCreateStyle();
             var a = style.art;
@@ -51,14 +61,15 @@ namespace Cascade.Editor
             for (int i = 0; i < style.palette.pieces.Length; i++)
             {
                 var sw = style.palette.pieces[i];
-                sw.mesh = Save(PebbleGeometry.Pebble(sw.shape, h), MeshDir + "/Pebble_" + sw.name + ".asset");
+                float hs = h * sw.heightScale;
+                sw.mesh = Save(PebbleGeometry.Pebble(sw.shape, hs), MeshDir + "/Pebble_" + sw.name + ".asset");
                 sw.haloMesh = Save(PebbleGeometry.HaloFor(PebbleGeometry.Outline(sw.shape), "Halo_" + sw.name), MeshDir + "/Halo_" + sw.name + ".asset");
                 string sd = MeshDir + "/Specials";
-                sw.veinHorizontal = Save(PebbleGeometry.Vein(style, sw.shape, h, false), sd + "/VeinH_" + sw.name + ".asset");
-                sw.veinVertical = Save(PebbleGeometry.Vein(style, sw.shape, h, true), sd + "/VeinV_" + sw.name + ".asset");
-                sw.holeRim = Save(PebbleGeometry.HoleRim(style, sw.shape, h), sd + "/HoleRim_" + sw.name + ".asset");
-                sw.holeDisc = Save(PebbleGeometry.HoleDisc(style, sw.shape, h), sd + "/HoleDisc_" + sw.name + ".asset");
-                sw.agate = Save(PebbleGeometry.Agate(style, sw.shape, h), sd + "/Agate_" + sw.name + ".asset");
+                sw.veinHorizontal = Save(PebbleGeometry.Vein(style, sw.shape, hs, false), sd + "/VeinH_" + sw.name + ".asset");
+                sw.veinVertical = Save(PebbleGeometry.Vein(style, sw.shape, hs, true), sd + "/VeinV_" + sw.name + ".asset");
+                sw.holeRim = Save(PebbleGeometry.HoleRim(style, sw.shape, hs), sd + "/HoleRim_" + sw.name + ".asset");
+                sw.holeDisc = Save(PebbleGeometry.HoleDisc(style, sw.shape, hs), sd + "/HoleDisc_" + sw.name + ".asset");
+                sw.agate = Save(PebbleGeometry.Agate(style, sw.shape, hs), sd + "/Agate_" + sw.name + ".asset");
             }
             a.haloCircle = Save(PebbleGeometry.HaloCircle(), MeshDir + "/Halo_Circle.asset");
             a.quad = Save(PebbleGeometry.Quad(), MeshDir + "/Quad.asset");
@@ -110,12 +121,12 @@ namespace Cascade.Editor
                 mt.SetColor("_TopColor", Rgb(style.palette.bgTop));
                 mt.SetColor("_BottomColor", Rgb(style.palette.bgBottom));
             });
-            a.grain = Mat("Grain", LoadShader(ShaderDir + "/Grain.shader"), mt =>
-                mt.SetFloat("_GrainAlpha", m.grainAlpha));
+            // one Grain material for all skins: the renderer feature draws it, StyleApplier sets its strength from the active style
+            a.grain = SharedGrain(m.grainAlpha);
 
             // ---- fonts (UI Toolkit reads the TTFs; see StyleApplier) ----
-            style.hud.bodyFont = AssetDatabase.LoadAssetAtPath<Font>(FontDir + "/Delius-Regular.ttf");
-            style.hud.titleFont = AssetDatabase.LoadAssetAtPath<Font>(FontDir + "/DeliusSwashCaps-Regular.ttf");
+            style.hud.bodyFont = AssetDatabase.LoadAssetAtPath<Font>(FontDir + "/" + skin.BodyFont);
+            style.hud.titleFont = AssetDatabase.LoadAssetAtPath<Font>(FontDir + "/" + skin.TitleFont);
 
             EditorUtility.SetDirty(style);
             AssetDatabase.SaveAssets();
@@ -123,31 +134,50 @@ namespace Cascade.Editor
             EnsureGrainFeature(a.grain);
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
-            Debug.Log("[Cascade] Pebble assets built: " + StylePath);
+            Debug.Log("[Cascade] " + skin.StyleName + " assets built: " + StyleDir + "/" + skin.StyleFile);
         }
 
         // ---- style asset ----
 
         static PieceStyle LoadOrCreateStyle()
         {
-            var style = AssetDatabase.LoadAssetAtPath<PieceStyle>(StylePath);
+            string path = StyleDir + "/" + skin.StyleFile;
+            var style = AssetDatabase.LoadAssetAtPath<PieceStyle>(path);
             if (style == null)
             {
                 style = ScriptableObject.CreateInstance<PieceStyle>();
-                AssetDatabase.CreateAsset(style, StylePath);
+                skin.Configure(style);
+                AssetDatabase.CreateAsset(style, path);
             }
             if (style.palette.pieces.Length == 0)
             {
-                style.palette.pieces = new PieceSwatch[Names.Length];
-                for (int i = 0; i < Names.Length; i++)
+                int n = skin.Names.Length;
+                style.palette.pieces = new PieceSwatch[n];
+                for (int i = 0; i < n; i++)
                     style.palette.pieces[i] = new PieceSwatch
                     {
-                        name = Names[i],
-                        color = new Color32((byte)(Colors[i] >> 16), (byte)(Colors[i] >> 8), (byte)Colors[i], 255),
-                        shape = Shapes[i],
+                        name = skin.Names[i],
+                        color = new Color32((byte)(skin.Colors[i] >> 16), (byte)(skin.Colors[i] >> 8), (byte)skin.Colors[i], 255),
+                        shape = skin.Shapes[i],
+                        heightScale = skin.HeightScale != null ? skin.HeightScale[i] : 1f,
                     };
             }
             return style;
+        }
+
+        static Material SharedGrain(float alpha)
+        {
+            string path = MatRoot + "/Grain.mat";
+            var mt = AssetDatabase.LoadAssetAtPath<Material>(path);
+            if (mt == null)
+            {
+                mt = new Material(LoadShader(ShaderDir + "/Grain.shader")) { name = "Grain" };
+                AssetDatabase.CreateAsset(mt, path);
+                mt.SetFloat("_GrainAlpha", alpha);
+            }
+            mt.shader = LoadShader(ShaderDir + "/Grain.shader");
+            EditorUtility.SetDirty(mt);
+            return mt;
         }
 
         // ---- asset helpers ----

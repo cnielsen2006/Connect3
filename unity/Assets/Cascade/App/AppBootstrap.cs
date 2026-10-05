@@ -32,6 +32,8 @@ namespace Cascade.App
     {
         [SerializeField] DataCatalog catalog = null!;
         [SerializeField] PieceStyle style = null!;
+        [Tooltip("Every art style (K, I, J); the player's skin setting picks one at start-up, falling back to 'style'.")]
+        [SerializeField] PieceStyle[] skins = System.Array.Empty<PieceStyle>();
         [SerializeField] Camera boardCamera = null!;
 
         // ---- the graph, public so the dev page and tests can reach it ----
@@ -87,7 +89,6 @@ namespace Cascade.App
             DataDir = Options.ResolveDataDir();
             Storage = new FileStorage(DataDir);
             Dials = DialRegistry.Load(catalog, Host, Storage);
-            UnityHost.ApplyFrameRate(Dials.Render.TargetFps);
             ApplyMsaa();
             Profile = Profile.Load(catalog, Storage);
             Levels = new GeneratingLevelSource(Dials, Profile, new SystemStopwatch(), Host.Dev);
@@ -97,6 +98,8 @@ namespace Cascade.App
             Sink = new SaveSink(Saves);
             Progress = new PlayerProgress(Saves.LoadSave(), Seeds);
             Live = new LiveSettings(Saves.LoadSettings(), Dials);
+            ApplyFrameRate();
+            style = PickSkin(Live.Player.Skin);
 
             var checks = StackChecks.Run(catalog);
             foreach (var c in checks) Debug.Log($"[Cascade] {(c.Ok ? "OK" : "FAIL")} {c.Name}: {c.Detail}");
@@ -121,9 +124,12 @@ namespace Cascade.App
 
             var doc = GetComponent<UIDocument>();
             Ui = new UiRoot(doc.rootVisualElement, Flow, Models, Models.Title.Title, new TouchSizing(Dials, Host), doc.panelSettings);
+            Ui.SetSkin(style.skinId);
+            Ui.Settings.SetPreview(style);
             Applier = new GameObject("Style").AddComponent<StyleApplier>();
             Applier.transform.SetParent(transform, false);
             Applier.Apply(style, boardCamera);
+            Applier.Refreshed += ApplyDials; // an edit of the style asset reaches the camera fit and the timings too
             Sound = gameObject.AddComponent<SoundPlayer>();
             Sound.Init(Dials, () => Live.Player.Sound);
             Stage = new PlayStage(transform, style, boardCamera, Ui.Hud, Dials, () => { var s = Lifecycle.Current; return new Vector2Int(s.Width, s.Height); }, Sound);
@@ -151,6 +157,29 @@ namespace Cascade.App
             return names;
         }
 
+        PieceStyle PickSkin(string id)
+        {
+            foreach (var s in skins)
+                if (s != null && s.skinId == id) return s;
+            return style;
+        }
+
+        /// <summary>The player picked another art style in Settings: it applies at once (UI colours, backdrop, light, board, camera).</summary>
+        void ApplySkin()
+        {
+            var next = PickSkin(Live.Player.Skin);
+            if (next == style) return;
+            style = next;
+            Ui.SetSkin(style.skinId);
+            Ui.Settings.SetPreview(style);
+            Applier.Apply(style, boardCamera);
+            Stage.SetStyle(style, Live.Timing);
+            ApplyDials();
+        }
+
+        /// <summary>The player's 30/60 choice; a non-zero <c>render.target_fps</c> dial (dev or device override) wins.</summary>
+        void ApplyFrameRate() => UnityHost.ApplyFrameRate(Dials.Render.TargetFps > 0 ? Dials.Render.TargetFps : Live.Player.TargetFps);
+
         void ApplyMsaa()
         {
             var urp = UniversalRenderPipeline.asset;
@@ -171,6 +200,7 @@ namespace Cascade.App
             Game.LoadFailed += message => Debug.LogError("[Cascade] level could not be prepared: " + message);
             Dials.Changed += OnDialChanged;
             Live.TimingChanged += _ => ApplyDials();
+            Live.PlayerChanged += _ => { ApplyFrameRate(); ApplySkin(); };
             Ui.Hud.HintPressed += OnHint;
 
             var c = Stage.Controller;
@@ -227,7 +257,7 @@ namespace Cascade.App
         {
             if (change.Section == "render")
             {
-                UnityHost.ApplyFrameRate(Dials.Render.TargetFps);
+                ApplyFrameRate();
                 ApplyMsaa();
             }
             ApplyDials();

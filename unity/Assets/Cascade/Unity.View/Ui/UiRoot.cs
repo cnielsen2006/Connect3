@@ -101,6 +101,12 @@ namespace Cascade.Unity.View
             return page;
         }
 
+        /// <summary>Re-colours the HUD for a skin: adds <c>skin-&lt;id&gt;</c> to the shell (no class for K; see Theme.uss).</summary>
+        public void SetSkin(string skinId)
+        {
+            foreach (var id in new[] { "i", "j" }) shell.EnableInClassList("skin-" + id, id == skinId.ToLowerInvariant());
+        }
+
         /// <summary>The root element that carries the layout class.</summary>
         public VisualElement Shell => shell;
 

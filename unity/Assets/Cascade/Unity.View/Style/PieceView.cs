@@ -57,6 +57,21 @@ namespace Cascade.Unity.View
             ApplyPose();
         }
 
+        /// <summary>The style asset was edited: re-reads meshes, materials and pose values.</summary>
+        public void Restyle()
+        {
+            if (Style == null || !built) return;
+            shadowLevel = haloLevel = -1;
+            shadow!.localPosition = new Vector3(0f, Style.fx.shadowY, 0f);
+            veinRenderer!.sharedMaterial = Style.art.veinMaterial;
+            holeRimRenderer!.sharedMaterial = Style.art.holeRimMaterial;
+            holeDiscRenderer!.sharedMaterial = Style.art.holeDiscMaterial;
+            RefreshMesh();
+            RefreshLook();
+            RefreshSpecial();
+            ApplyPose();
+        }
+
         public void SetColor(int color)
         {
             if (Style == null) return;

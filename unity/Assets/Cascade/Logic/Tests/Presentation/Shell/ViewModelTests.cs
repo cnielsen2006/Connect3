@@ -264,7 +264,7 @@ namespace Cascade.Tests.PresentationTests
             fx.Flow.Play();
             fx.Flow.DevJump(12);
             fx.Runner.RunAll();
-            Assert.That(vm.GoalLines.Single(), Is.EqualTo("Clear 12 Red / Green pieces"));
+            Assert.That(vm.GoalLines.Single(), Is.EqualTo("Clear 12 Red / Green colored pieces"));
             Assert.That(vm.MovesText, Is.EqualTo("1 move"));
         }
 
@@ -309,7 +309,7 @@ namespace Cascade.Tests.PresentationTests
             Assert.That((hud.LevelTitle, hud.MovesText, hud.ScoreText), Is.EqualTo(("Level 1", "2", "0")));
             Assert.That(hud.Goals.Select(g => g.ProgressText), Is.EqualTo(new[] { "0/1,000,000", "0/500" }));
             Assert.That(hud.Goals[0].Text, Is.EqualTo("Score 1,000,000 points"));
-            Assert.That(hud.Goals[1].Text, Is.EqualTo("Clear 500 Red / Blue pieces"));
+            Assert.That(hud.Goals[1].Text, Is.EqualTo("Clear 500 Red / Blue colored pieces"));
             Assert.That((hud.MovesLabel, hud.ScoreLabel, hud.HintLabel, hud.PauseLabel), Is.EqualTo(("MOVES", "SCORE", "Hint", "Pause")));
 
             int changed = 0;

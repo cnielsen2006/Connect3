@@ -1,3 +1,5 @@
+using System;
+
 namespace Cascade.Gameplay
 {
     /// <summary>
@@ -20,6 +22,24 @@ namespace Cascade.Gameplay
 
         /// <summary>Adaptive difficulty on or off (stored; no effect until U8).</summary>
         public bool Adaptive { get; init; } = true;
+
+        /// <summary>Frame-rate cap choices the player can pick (the settings page offers 30 or 60).</summary>
+        public const int LowFps = 30, HighFps = 60;
+
+        /// <summary>The frame-rate cap: <see cref="LowFps"/> (saves battery) or <see cref="HighFps"/>.</summary>
+        public int TargetFps { get; init; } = HighFps;
+
+        /// <summary>Art style ids, in the order the settings page cycles them (docs/art: K Pebbles, I Claymation, J Studio Set).</summary>
+        public static readonly string[] Skins = { "K", "I", "J" };
+
+        /// <summary>The art style (one of <see cref="Skins"/>). It applies at once.</summary>
+        public string Skin { get; init; } = "K";
+
+        /// <summary>True if <paramref name="skin"/> is a known art style id.</summary>
+        public static bool IsValidSkin(string? skin) => skin != null && Array.IndexOf(Skins, skin) >= 0;
+
+        /// <summary>True if <paramref name="fps"/> is a frame rate the player may choose.</summary>
+        public static bool IsValidFps(int fps) => fps == LowFps || fps == HighFps;
 
         /// <summary>True if <paramref name="speed"/> is a valid <see cref="AnimationSpeed"/>.</summary>
         public static bool IsValidSpeed(double speed) =>

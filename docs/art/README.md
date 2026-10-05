@@ -1,6 +1,6 @@
 # Cascade Art Style Candidates
 
-**v1 implements K: Pebbles** (PRD §5.4). I and J stay documented as alternatives.
+**K: Pebbles is the default skin** (PRD §5.4). I and J are also built as skins, selectable in Settings (applies at once).
 
 These are three candidate directions for the 3D claymation look described in
 [PRD §2.8](../PRD.md). I ("Claymation") is the parent direction; J and K are variations on it.

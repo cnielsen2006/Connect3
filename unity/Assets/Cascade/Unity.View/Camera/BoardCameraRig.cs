@@ -66,6 +66,13 @@ namespace Cascade.Unity.View
             if (board != null) board.Params = parameters;
         }
 
+        /// <summary>The player switched art style: its fov, tray lip and depth and slot clipping apply from now on.</summary>
+        public void SetStyle(PieceStyle pieceStyle, PresentationCameraParams parameters)
+        {
+            style = pieceStyle;
+            SetParams(parameters);
+        }
+
         /// <summary>A camera dial changed.</summary>
         public void SetParams(PresentationCameraParams parameters)
         {

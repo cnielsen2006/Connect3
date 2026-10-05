@@ -21,16 +21,37 @@ namespace Cascade.Unity.View
 
         static readonly int TopColorId = Shader.PropertyToID("_TopColor");
         static readonly int BottomColorId = Shader.PropertyToID("_BottomColor");
+        static readonly int VignetteId = Shader.PropertyToID("_Vignette");
         static readonly int GrainAlphaId = Shader.PropertyToID("_GrainAlpha");
+
+        /// <summary>Raised after the style asset was edited and the scene-level look (light, backdrop, camera, grain, materials) was re-applied.</summary>
+        public event System.Action? Refreshed;
+
+        float? pitchOverride;
 
         public void Apply(PieceStyle style, Camera camera, float? pitchDegOverride = null)
         {
+            if (Style != null) Style.Changed -= OnStyleChanged;
             Style = style;
             Camera = camera;
+            pitchOverride = pitchDegOverride;
+            style.Changed += OnStyleChanged;
             ApplyLight();
             ApplyBackdrop();
             ApplyCamera(pitchDegOverride);
             SetGrainAlpha(style.material.grainAlpha);
+        }
+
+        /// <summary>The style asset was edited (inspector): push every value into the running scene, no restart needed.</summary>
+        void OnStyleChanged()
+        {
+            if (Style == null || Camera == null) return;
+            Style.Materials.Refresh();
+            ApplyLight();
+            ApplyBackdrop();
+            ApplyCamera(pitchOverride);
+            SetGrainAlpha(Style.material.grainAlpha);
+            Refreshed?.Invoke();
         }
 
         // ---- camera ----
@@ -155,6 +176,7 @@ namespace Cascade.Unity.View
             {
                 backdropMaterial.SetColor(TopColorId, (Color)(Color32)Style.palette.bgTop);
                 backdropMaterial.SetColor(BottomColorId, (Color)(Color32)Style.palette.bgBottom);
+                backdropMaterial.SetFloat(VignetteId, Style.palette.vignette);
                 backdrop.sharedMaterial = backdropMaterial;
             }
         }
@@ -184,6 +206,7 @@ namespace Cascade.Unity.View
 
         void OnDestroy()
         {
+            if (Style != null) Style.Changed -= OnStyleChanged;
             if (backdropMaterial == null) return;
             if (Application.isPlaying) Destroy(backdropMaterial); else DestroyImmediate(backdropMaterial);
         }

@@ -3,8 +3,11 @@ using UnityEngine;
 
 namespace Cascade.Unity.View
 {
-    /// <summary>The seven pebble silhouettes of style K (STYLE-K-Pebbles.md section 3).</summary>
-    public enum PebbleShape { Oval, Leaf, RoundedSquare, Capsule, Disc, Scallop, Kidney }
+    /// <summary>
+    /// The silhouettes of the styles: the seven pebbles of K (STYLE-K-Pebbles.md section 3), then the clay lumps shared by
+    /// I and J (STYLE-I-Claymation.md and STYLE-J-StudioSet.md section 3; their "puck" is <see cref="Disc"/> at a lower height).
+    /// </summary>
+    public enum PebbleShape { Oval, Leaf, RoundedSquare, Capsule, Disc, Scallop, Kidney, Cube, Dome, Triangle, Teardrop, Star, Diamond }
 
     /// <summary>What a piece looks like on top of its base pebble. Local to the view; the Core port maps onto it.</summary>
     public enum PieceSpecial { None, LineHorizontal, LineVertical, Bomb, Color }
@@ -15,6 +18,8 @@ namespace Cascade.Unity.View
         public string name = "";
         public Color32 color = new Color32(255, 255, 255, 255);
         public PebbleShape shape;
+        [Tooltip("Height of this silhouette relative to the style's heightRatio (a dome is taller, a puck flatter).")]
+        public float heightScale = 1f;
         public Mesh? mesh;
         public Mesh? haloMesh;
         [Header("Special overlays draped over this silhouette")]
@@ -38,6 +43,8 @@ namespace Cascade.Unity.View
         public Color32 accent = new Color32(0xb9, 0x84, 0x68, 255);
         public Color32 vein = new Color32(0xfb, 0xf7, 0xee, 255);
         public Color32 hole = new Color32(0x2c, 0x28, 0x25, 255);
+        [Range(0, 1), Tooltip("Darkens the backdrop towards the screen edges (a spotlight on the board); 0 = none.")]
+        public float vignette;
     }
 
     [Serializable]
@@ -198,6 +205,8 @@ namespace Cascade.Unity.View
     [CreateAssetMenu(menuName = "Cascade/Piece Style", fileName = "PieceStyle")]
     public sealed class PieceStyle : ScriptableObject
     {
+        [Tooltip("Short id of the skin: K, I or J (the player's skin setting, the HUD class skin-i / skin-j).")]
+        public string skinId = "K";
         public string styleName = "K: Pebbles";
         public PaletteParams palette = new PaletteParams();
         public MaterialParams material = new MaterialParams();
@@ -219,6 +228,14 @@ namespace Cascade.Unity.View
         static readonly int SunDirId = Shader.PropertyToID("_CascadeSunDir");
 
         public int PieceCount => palette.pieces.Length;
+
+        /// <summary>
+        /// Raised when any value of the asset is edited (inspector, undo, a script in the Editor), so a running scene follows
+        /// the edit at once instead of at the next start. Subscribers must unsubscribe when destroyed: the asset outlives them.
+        /// </summary>
+        public event Action? Changed;
+
+        void OnValidate() => Changed?.Invoke();
 
         int Wrap(int i)
         {

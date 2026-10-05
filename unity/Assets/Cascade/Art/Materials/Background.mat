@@ -24,7 +24,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _Vignette: 0
     m_Colors:
     - _BottomColor: {r: 0.8745098, g: 0.83137256, b: 0.75686276, a: 1}
     - _TopColor: {r: 0.9372549, g: 0.9098039, b: 0.85882354, a: 1}

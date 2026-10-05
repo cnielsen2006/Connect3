@@ -56,3 +56,12 @@
 }
 .setting__toggle:checked .setting__knob { left: 86px; }
 .setting__toggle .unity-toggle__checkmark { position: relative; }
+
+.setting__skin { width: auto; align-self: stretch; margin: 24px 0 12px 0; }
+
+.skin-preview {
+    flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap;
+    align-self: stretch; margin: 0 0 24px 0; padding: 20px 16px;
+    border-radius: 24px;
+}
+.skin-preview__piece { width: 72px; height: 72px; margin: 8px; border-radius: 50%; }

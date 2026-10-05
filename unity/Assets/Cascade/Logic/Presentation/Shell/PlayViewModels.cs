@@ -232,6 +232,13 @@ namespace Cascade.Presentation.Shell
         public bool Sound => _settings.Player.Sound;
         public double AnimationSpeed => _settings.Player.AnimationSpeed;
         public bool Adaptive => _settings.Player.Adaptive;
+        public int TargetFps => _settings.Player.TargetFps;
+        public string Skin => _settings.Player.Skin;
+
+        static string SkinName(string id) => id == "I" ? "Claymation" : id == "J" ? "Studio Set" : "Pebbles";
+
+        /// <summary>"Style: Claymation": the art style applies at once.</summary>
+        public string SkinText => "Style: " + SkinName(Skin);
 
         /// <summary>"Animation speed x1.50".</summary>
         public string SpeedText => "Animation speed x" + Fmt.Fixed(AnimationSpeed, 2);
@@ -241,6 +248,9 @@ namespace Cascade.Presentation.Shell
 
         /// <summary>"Adaptive difficulty: on".</summary>
         public string AdaptiveText => "Adaptive difficulty: " + (Adaptive ? "on" : "off");
+
+        /// <summary>"Smooth 60 fps: on" (off = 30 fps, easier on the battery).</summary>
+        public string FpsText => "Smooth 60 fps: " + (TargetFps == PlayerSettings.HighFps ? "on" : "off");
 
         /// <summary>Sets the speed, clamped to the allowed range and rounded to 2 decimals.</summary>
         public void SetAnimationSpeed(double speed)
@@ -254,6 +264,14 @@ namespace Cascade.Presentation.Shell
         public void ToggleSound() => SetSound(!Sound);
         public void SetAdaptive(bool on) => Apply(_settings.Player with { Adaptive = on });
         public void ToggleAdaptive() => SetAdaptive(!Adaptive);
+        /// <summary>Switches to the next art style (K, I, J, K...).</summary>
+        public void CycleSkin()
+        {
+            int i = Array.IndexOf(PlayerSettings.Skins, Skin);
+            Apply(_settings.Player with { Skin = PlayerSettings.Skins[(i + 1) % PlayerSettings.Skins.Length] });
+        }
+
+        public void SetHighFps(bool on) => Apply(_settings.Player with { TargetFps = on ? PlayerSettings.HighFps : PlayerSettings.LowFps });
 
         public bool Back() => _flow.ToTitle();
 

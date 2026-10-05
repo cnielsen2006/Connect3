@@ -18,7 +18,16 @@ namespace Cascade.App
     {
         readonly GameObject root;
         readonly DialRegistry dials;
-        readonly PieceStyle style;
+        PieceStyle style;
+
+        /// <summary>The player switched art style: board, effects and camera follow at once.</summary>
+        public void SetStyle(PieceStyle pieceStyle, TimingParams timing)
+        {
+            style = pieceStyle;
+            View.SetStyle(pieceStyle);
+            Player.SetStyle(pieceStyle);
+            Rig.SetStyle(pieceStyle, BoardCameraRig.ParamsFrom(pieceStyle, dials));
+        }
 
         public PlayStage(Transform parent, PieceStyle pieceStyle, Camera camera, HudScreen hud, DialRegistry dialRegistry, Func<Vector2Int> screenSize, SoundPlayer? sound = null)
         {

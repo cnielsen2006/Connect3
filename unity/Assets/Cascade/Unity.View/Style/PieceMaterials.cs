@@ -44,18 +44,83 @@ namespace Cascade.Unity.View
 
             var tmpl = style.art.clay ?? throw new InvalidOperationException("PieceStyle.art.clay missing.");
             mat = Copy(tmpl, "Clay_" + ci + (bomb ? "_bomb" : "") + "_" + qb + "_" + qx + "_" + qy);
-            Color32 c = style.PieceColor(ci);
+            var spec = new ClaySpec(ci, bomb, qb, qx, qy);
+            ConfigureClay(mat, spec);
+            clay[key] = mat;
+            claySpecs[key] = spec;
+            return mat;
+        }
+
+        readonly struct ClaySpec
+        {
+            public readonly int Color, Qb, Qx, Qy;
+            public readonly bool Bomb;
+            public ClaySpec(int color, bool bomb, int qb, int qx, int qy) { Color = color; Bomb = bomb; Qb = qb; Qx = qx; Qy = qy; }
+        }
+
+        readonly Dictionary<long, ClaySpec> claySpecs = new Dictionary<long, ClaySpec>();
+
+        void ConfigureClay(Material mat, ClaySpec s)
+        {
+            var m = style.material;
+            Color32 c = style.PieceColor(s.Color);
             mat.SetColor(BaseColorId, new Color(c.r / 255f, c.g / 255f, c.b / 255f, 1f));
-            float b = (1f + qb * m.brightnessQuantum) * (bomb ? m.bombDarken : 1f);
+            float b = (1f + s.Qb * m.brightnessQuantum) * (s.Bomb ? m.bombDarken : 1f);
             mat.SetFloat(BrightnessId, b);
             mat.SetFloat("_Sheen", m.sheen);
             mat.SetFloat("_Shininess", m.shininess);
             mat.SetFloat("_RimStrength", m.rimStrength);
             mat.SetFloat("_RimPower", m.rimPower);
-            mat.SetVector(FleckParamsId, new Vector4(qx * m.fleckQuantum * m.fleckOffsetRange.x,
-                qy * m.fleckQuantum * m.fleckOffsetRange.y, m.fleckDark, m.fleckLight));
-            clay[key] = mat;
-            return mat;
+            mat.SetVector(FleckParamsId, new Vector4(s.Qx * m.fleckQuantum * m.fleckOffsetRange.x,
+                s.Qy * m.fleckQuantum * m.fleckOffsetRange.y, m.fleckDark, m.fleckLight));
+        }
+
+        /// <summary>
+        /// Re-applies the style's current values to the materials already handed out, in place (renderers keep their references).
+        /// Called when the style asset is edited while the scene runs, so a change shows at once. Template materials are re-read too.
+        /// </summary>
+        public void Refresh()
+        {
+            if (!Application.isPlaying) return;
+            foreach (var kv in clay)
+            {
+                if (style.art.clay != null) kv.Value.CopyPropertiesFromMaterial(style.art.clay);
+                ConfigureClay(kv.Value, claySpecs[kv.Key]);
+            }
+            foreach (var kv in agate)
+            {
+                if (style.art.agateMaterial != null) { kv.Value.CopyPropertiesFromMaterial(style.art.agateMaterial); kv.Value.SetTexture(BandTexId, ramps[kv.Key]); }
+                FillRamp(ramps[kv.Key], kv.Key);
+            }
+            RefreshLevels(shadowLevels, style.art.shadow, style.fx.shadowColor);
+            Color halo = style.fx.haloColor;
+            halo.a *= style.fx.haloAlpha;
+            RefreshLevels(haloLevels, style.art.halo, halo);
+            RefreshLevels(washLevels, style.art.halo, style.fx.washColor);
+            RefreshLevels(rippleLevels, style.art.rippleMaterial, style.fx.rippleColor);
+            if (tray != null)
+            {
+                if (style.art.trayMaterial != null) tray.CopyPropertiesFromMaterial(style.art.trayMaterial);
+                ConfigureTray(tray);
+            }
+            if (trayHole != null)
+            {
+                if (style.art.trayHoleMaterial != null) trayHole.CopyPropertiesFromMaterial(style.art.trayHoleMaterial);
+                ConfigureTrayHole(trayHole);
+            }
+        }
+
+        void RefreshLevels(Material?[] cache, Material? template, Color color)
+        {
+            for (int level = 0; level < cache.Length; level++)
+            {
+                var m = cache[level];
+                if (m == null) continue;
+                if (template != null) m.CopyPropertiesFromMaterial(template);
+                Color c = color;
+                c.a *= (level + 1f) / cache.Length;
+                m.SetColor(ColorId, c);
+            }
         }
 
         /// <summary>Banded agate material showing the first <paramref name="colors"/> palette colours.</summary>
@@ -65,20 +130,26 @@ namespace Cascade.Unity.View
             if (agate.TryGetValue(colors, out var mat)) return mat;
             var tmpl = style.art.agateMaterial ?? throw new InvalidOperationException("PieceStyle.art.agateMaterial missing.");
             mat = Copy(tmpl, "Agate_" + colors);
-            int bands = Mathf.Max(1, Mathf.Max(style.specials.agateBands, colors)); // every active colour gets a band
-            var tex = new Texture2D(bands, 1, TextureFormat.RGBA32, false, false)
+            var tex = new Texture2D(1, 1, TextureFormat.RGBA32, false, false)
             {
                 filterMode = FilterMode.Point,
                 wrapMode = TextureWrapMode.Clamp,
                 hideFlags = HideFlags.HideAndDontSave,
                 name = "AgateRamp_" + colors,
             };
-            for (int i = 0; i < bands; i++) tex.SetPixel(i, 0, style.PieceColor(i % colors));
-            tex.Apply(false, true);
+            FillRamp(tex, colors);
             ramps[colors] = tex;
             mat.SetTexture(BandTexId, tex);
             agate[colors] = mat;
             return mat;
+        }
+
+        void FillRamp(Texture2D tex, int colors)
+        {
+            int bands = Mathf.Max(1, Mathf.Max(style.specials.agateBands, colors)); // every active colour gets a band
+            if (tex.width != bands) tex.Reinitialize(bands, 1);
+            for (int i = 0; i < bands; i++) tex.SetPixel(i, 0, style.PieceColor(i % colors));
+            tex.Apply(false, false);
         }
 
         Material Level(ref Material?[] cache, Material? template, Color color, int level, string name)
@@ -115,11 +186,22 @@ namespace Cascade.Unity.View
         public Material Tray()
         {
             if (tray != null) return tray;
-            var t = style.tray;
             tray = Copy(style.art.trayMaterial ?? throw new InvalidOperationException("PieceStyle.art.trayMaterial missing."), "Tray");
-            tray.SetVector("_GrainTiling", new Vector4(t.grainTiling.x, t.grainTiling.y, 0f, 0f));
-            tray.SetFloat(BrightnessId, t.brightness);
+            ConfigureTray(tray);
             return tray;
+        }
+
+        void ConfigureTray(Material m)
+        {
+            var t = style.tray;
+            m.SetVector("_GrainTiling", new Vector4(t.grainTiling.x, t.grainTiling.y, 0f, 0f));
+            m.SetFloat(BrightnessId, t.brightness);
+        }
+
+        void ConfigureTrayHole(Material m)
+        {
+            Color32 c = style.tray.holeFloor;
+            m.SetColor(BaseColorId, new Color(c.r / 255f, c.g / 255f, c.b / 255f, 1f));
         }
 
         /// <summary>Dark material of the floor visible through holes in the tray.</summary>
@@ -127,8 +209,7 @@ namespace Cascade.Unity.View
         {
             if (trayHole != null) return trayHole;
             trayHole = Copy(style.art.trayHoleMaterial ?? throw new InvalidOperationException("PieceStyle.art.trayHoleMaterial missing."), "TrayHole");
-            Color32 c = style.tray.holeFloor;
-            trayHole.SetColor(BaseColorId, new Color(c.r / 255f, c.g / 255f, c.b / 255f, 1f));
+            ConfigureTrayHole(trayHole);
             return trayHole;
         }
 
@@ -148,7 +229,7 @@ namespace Cascade.Unity.View
             if (tray != null) Destroy(tray);
             if (trayHole != null) Destroy(trayHole);
             tray = trayHole = null;
-            clay.Clear(); agate.Clear(); ramps.Clear();
+            clay.Clear(); claySpecs.Clear(); agate.Clear(); ramps.Clear();
             shadowLevels = Array.Empty<Material?>();
             haloLevels = Array.Empty<Material?>();
             rippleLevels = Array.Empty<Material?>();

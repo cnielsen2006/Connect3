@@ -72,6 +72,8 @@ namespace Cascade.Unity.View
         /// <summary>A move's board has settled and the view was synced to it (raised after the per-move callback).</summary>
         public event Action? Settled;
 
+        public void SetStyle(PieceStyle style) => fx?.SetStyle(style);
+
         public void Init(BoardView boardView, FxPresenter presenter, SoundPlayer? soundPlayer = null)
         {
             board = boardView;

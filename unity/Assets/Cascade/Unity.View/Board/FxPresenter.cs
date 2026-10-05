@@ -23,7 +23,7 @@ namespace Cascade.Unity.View
             public readonly List<VisualElement> Sparks = new List<VisualElement>();
         }
 
-        readonly PieceStyle style;
+        PieceStyle style;
         readonly Transform parent;
         readonly VisualElement? popupLayer;
         readonly Func<Vector3, Vector2?>? projector;
@@ -41,6 +41,9 @@ namespace Cascade.Unity.View
         }
 
         public int ActiveCount => active.Count;
+
+        /// <summary>The player switched art style: effects started from now on use it (running ones finish as they are).</summary>
+        public void SetStyle(PieceStyle pieceStyle) => style = pieceStyle;
 
         public void Begin(ShowFx fx)
         {

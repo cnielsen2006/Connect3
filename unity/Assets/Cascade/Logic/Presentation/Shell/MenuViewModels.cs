@@ -253,7 +253,7 @@ namespace Cascade.Presentation.Shell
 
         public string GoalsHeader => "Goals";
 
-        /// <summary>One line per goal, for example "Score 1,000 points" or "Clear 12 Red / Blue pieces".</summary>
+        /// <summary>One line per goal, for example "Score 1,000 points" or "Clear 12 Red / Blue colored pieces".</summary>
         public IReadOnlyList<string> GoalLines
         {
             get

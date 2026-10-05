@@ -216,6 +216,19 @@ namespace Cascade.Tests.Persistence
         }
 
         [Test]
+        public void Fps_and_skin_settings_round_trip_and_bad_values_fall_back()
+        {
+            var storage = new MemoryStorage();
+            var svc = new SaveService(storage);
+            Assert.That(svc.LoadSettings().TargetFps, Is.EqualTo(60));
+            Assert.That(svc.LoadSettings().Skin, Is.EqualTo("K"));
+            svc.WriteSettings(new PlayerSettings { TargetFps = 30, Skin = "J" });
+            Assert.That(svc.LoadSettings(), Is.EqualTo(new PlayerSettings { TargetFps = 30, Skin = "J" }));
+            storage.PutText("settings.json", "{\"target_fps\": 45, \"skin\": \"Z\"}");
+            Assert.That(svc.LoadSettings(), Is.EqualTo(new PlayerSettings()));
+        }
+
+        [Test]
         public void Settings_defaults_round_trip_and_tolerance()
         {
             var storage = new MemoryStorage();
@@ -224,7 +237,7 @@ namespace Cascade.Tests.Persistence
             svc.WriteSettings(new PlayerSettings { Sound = false, AnimationSpeed = 2.0, Adaptive = false });
             Assert.That(svc.LoadSettings(), Is.EqualTo(new PlayerSettings { Sound = false, AnimationSpeed = 2.0, Adaptive = false }));
             var raw = JObject.Parse(storage.GetText("settings.json")!);
-            Assert.That(raw.Properties().Select(p => p.Name).ToArray(), Is.EqualTo(new[] { "sound", "animation_speed", "adaptive" }));
+            Assert.That(raw.Properties().Select(p => p.Name).ToArray(), Is.EqualTo(new[] { "sound", "animation_speed", "adaptive", "target_fps", "skin" }));
 
             storage.PutText("settings.json", "{\"sound\": \"yes\", \"animation_speed\": -3, \"adaptive\": false}");
             // bad fields fall back one by one

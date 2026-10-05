@@ -17,7 +17,25 @@ namespace Cascade.Editor
 
         // ---- silhouettes (2D, x right, y = +Z), roughly inside a 1x1 box, centred ----
 
+        /// <summary>Hand-pressed irregularity (fraction of the radius) the builder bakes into every outline of the style being built; 0 for K.</summary>
+        public static float Wobble;
+
         public static List<Vector2> Outline(PebbleShape shape, int n = OutlinePoints)
+        {
+            var pts = BaseOutline(shape, n);
+            if (Wobble <= 0f) return pts;
+            // low-frequency, seeded per shape, closed: a sum of whole-number harmonics of the angle
+            float p2 = (int)shape * 1.7f, p3 = (int)shape * 2.9f + 1f;
+            for (int i = 0; i < pts.Count; i++)
+            {
+                float t = 2f * Mathf.PI * i / pts.Count;
+                float k = 1f + Wobble * (0.6f * Mathf.Sin(2f * t + p2) + 0.4f * Mathf.Sin(3f * t + p3));
+                pts[i] *= k;
+            }
+            return pts;
+        }
+
+        static List<Vector2> BaseOutline(PebbleShape shape, int n)
         {
             if (shape == PebbleShape.Capsule) return Capsule(0.25f, 0.25f, n);
             var pts = new List<Vector2>(n);
@@ -49,6 +67,44 @@ namespace Cascade.Editor
                     case PebbleShape.Disc:
                         pts.Add(new Vector2(0.45f * c, 0.45f * s));
                         break;
+                    case PebbleShape.Cube:
+                    {
+                        // a squat, puffy cube: a squarer superellipse than the rounded square
+                        const float e = 3f;
+                        pts.Add(new Vector2(0.43f * Mathf.Sign(c) * Mathf.Pow(Mathf.Abs(c), 2f / e),
+                                            0.43f * Mathf.Sign(s) * Mathf.Pow(Mathf.Abs(s), 2f / e)));
+                        break;
+                    }
+                    case PebbleShape.Dome:
+                        pts.Add(new Vector2(0.42f * c, 0.42f * s));
+                        break;
+                    case PebbleShape.Triangle:
+                    {
+                        // a triangle with a vertex up the screen, corners rounded by pulling towards a circle
+                        float a = Mathf.Repeat(t - 0.5f * Mathf.PI + Mathf.PI / 3f, 2f * Mathf.PI / 3f) - Mathf.PI / 3f;
+                        float r = Mathf.Lerp(0.26f / Mathf.Cos(a), 0.38f, 0.35f);
+                        pts.Add(new Vector2(r * c, r * s - 0.04f));
+                        break;
+                    }
+                    case PebbleShape.Teardrop:
+                    {
+                        // round end at -X, point at +X
+                        pts.Add(new Vector2(0.5f * c, 0.42f * s * Mathf.Sin(0.5f * t)));
+                        break;
+                    }
+                    case PebbleShape.Star:
+                    {
+                        float r = 0.38f * (1f + 0.22f * Mathf.Cos(5f * (t - 0.5f * Mathf.PI)));
+                        pts.Add(new Vector2(r * c, r * s));
+                        break;
+                    }
+                    case PebbleShape.Diamond:
+                    {
+                        const float e = 1.6f;
+                        pts.Add(new Vector2(0.48f * Mathf.Sign(c) * Mathf.Pow(Mathf.Abs(c), 2f / e),
+                                            0.48f * Mathf.Sign(s) * Mathf.Pow(Mathf.Abs(s), 2f / e)));
+                        break;
+                    }
                     case PebbleShape.Scallop:
                     {
                         // eight gentle lobes, like a scalloped shell edge

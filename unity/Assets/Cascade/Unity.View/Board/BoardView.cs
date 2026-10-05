@@ -42,7 +42,9 @@ namespace Cascade.Unity.View
 
         public void Init(PieceStyle pieceStyle)
         {
+            if (style != null) style.Changed -= OnStyleChanged;
             style = pieceStyle;
+            style.Changed += OnStyleChanged;
             if (piecesRoot == null)
             {
                 piecesRoot = Child("Pieces");
@@ -54,6 +56,44 @@ namespace Cascade.Unity.View
                 tray = trayGo.AddComponent<BoardTray>();
             }
             pool = new PiecePool(pieceStyle, poolRoot!);
+        }
+
+        /// <summary>
+        /// The player switched art style: every piece is rebuilt in the new style (keeping its colour, special, pose and place),
+        /// the tray is rebuilt, and the old pool of parked pieces is dropped.
+        /// </summary>
+        public void SetStyle(PieceStyle pieceStyle)
+        {
+            if (pieceStyle == style) return;
+            var old = style;
+            Init(pieceStyle); // new pool, subscription moved
+            for (int i = poolRoot!.childCount - 1; i >= 0; i--) Destroy(poolRoot.GetChild(i).gameObject);
+            foreach (var v in pieces.Values)
+            {
+                var special = v.Special; int agate = v.AgateColors, color = v.ColorIndex;
+                float sel = v.SelectT, hover = v.Hover; var basePos = v.BasePosition; var look = v.Look;
+                v.Init(pieceStyle, color, look);
+                if (special != PieceSpecial.None) v.SetSpecial(special, agate);
+                v.SelectT = sel; v.Hover = hover; v.BasePosition = basePos;
+                v.ApplyPose();
+            }
+            if (arrow != null) { Destroy(arrow.gameObject); arrow = null; }
+            if (tray != null && Geometry != null) tray.Rebuild(pieceStyle);
+            old?.ReleaseRuntime();
+        }
+
+        /// <summary>The style asset was edited while running: the tray and every piece follow at once. (Materials refresh themselves in StyleApplier.)</summary>
+        void OnStyleChanged()
+        {
+            if (style == null || !Application.isPlaying) return;
+            style.Materials.Refresh(); // idempotent; makes the board correct even without a StyleApplier
+            if (tray != null && Geometry != null) tray.Rebuild(style);
+            foreach (var view in pieces.Values) view.Restyle();
+        }
+
+        void OnDestroy()
+        {
+            if (style != null) style.Changed -= OnStyleChanged;
         }
 
         Transform Child(string name)

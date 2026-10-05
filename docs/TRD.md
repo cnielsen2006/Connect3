@@ -527,7 +527,7 @@ Clarifications (fixed behavior):
 - **Goal pool:** the band with the largest key <= n; a kind whose unlock is not reached yet
   (`collect`, `combo`) is dropped from it.
 - **Goal semantics:** a *collect* goal counts tiles of its color(s) cleared by any means (a match
-  or a special's blast) and sums over its colors (up to two colors from 5 colors up). A *combo* is
+  or a special's blast) and sums over its colors (up to two colors from 5 colors up). Chain-reaction and special-wave clears count too (`ChainCreditTests`). The goal text reads "Clear 12 Red / Blue colored pieces". A *combo* is
   one score goal and one collect goal, both required, each sized `combo_scale` x a single goal.
 - **Goal sizing:** score target = `score_per_move(n) * move_limit * goal_amount`, rounded to
   `goal_score_round`; collect target = `collect_per_move(n) * move_limit * goal_amount * k /
@@ -657,7 +657,7 @@ Behavior (`Persistence.SaveService`,
 - Loading never throws. A missing file gives defaults; an unreadable or malformed `save.json`
   (bad JSON, wrong types, unknown `save_version`) is moved to `save.json.corrupt` and defaults are
   used. `settings.json` is tolerant per field (a bad field keeps its default).
-- `settings.json`: `{ "sound": true, "animation_speed": 1.0, "adaptive": true }`.
+- `settings.json`: `{ "sound": true, "animation_speed": 1.0, "adaptive": true, "target_fps": 60, "skin": "K" }`. `target_fps` is 30 or 60 (default 60); a non-zero `render.target_fps` dial overrides it. `skin` is `K`, `I` or `J` and applies at once.
 - **Seeds:** `current_seed` belongs to `current_level` only. `StartLevel` reuses it for retries
   (drawing and storing one if absent or from another `generator_version`); replaying an earlier
   level uses a fresh, unsaved seed. `RecordWin` keeps the best stars, and when the won level was
@@ -843,6 +843,7 @@ the S23 120 fps check (§13.10) is still to do on the device.
 ### 12.3 Fixed behavior
 - **Dev mode:** F1 opens the dev settings page in Editor and Development desktop builds; on a
   phone a three-finger tap does (§13.8). Without that condition (a release player) neither exists, and the dev overlay is removed from the UI tree.
+- **Frame rate and skin:** the settings page has a "Smooth 60 fps" toggle (off = 30 fps, for battery) and an art-style button that cycles K, I, J. `AppBootstrap` picks the `PieceStyle` whose `skinId` matches `skin` at start-up and adds `skin-i` / `skin-j` to the shell so `Theme.uss` re-colours the HUD. The I and J assets are built by `Cascade/Build Pebble Assets` from `SkinDefs`; the J key-light rim, per-piece rim tints and the optional 12 fps "on twos" mode of STYLE-J are not done.
 - **Animation speed:** the player setting `animation_speed` divides every duration and the fall
   speed multiplies by it (2.0 = twice as fast). Range 0.5-3.0.
 - **Timeline:** `TimelinePlanner` lays the events out on one timeline. Swaps run first; wave 0 of

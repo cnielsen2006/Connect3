@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9313b9f16581d274193074f8378b967b, type: 3}
   m_Name: K_Pebbles
   m_EditorClassIdentifier: Cascade.Unity.View::Cascade.Unity.View.PieceStyle
+  skinId: K
   styleName: 'K: Pebbles'
   palette:
     pieces:
@@ -20,6 +21,7 @@ MonoBehaviour:
         serializedVersion: 2
         rgba: 4287476941
       shape: 0
+      heightScale: 1
       mesh: {fileID: 4300000, guid: e07fa69fd6c7bd045a3dfc3d2d602935, type: 2}
       haloMesh: {fileID: 4300000, guid: 19970f756ce99ee4c9511ae62158dad0, type: 2}
       veinHorizontal: {fileID: 4300000, guid: 954cae560d7188440ba980b4819c9420, type: 2}
@@ -32,6 +34,7 @@ MonoBehaviour:
         serializedVersion: 2
         rgba: 4287275151
       shape: 1
+      heightScale: 1
       mesh: {fileID: 4300000, guid: 78ebda857237b9841b3c9ca66c97f072, type: 2}
       haloMesh: {fileID: 4300000, guid: 948526f056647544a931e0727e74b047, type: 2}
       veinHorizontal: {fileID: 4300000, guid: 7e3d73e9a0931624098c7311ade1fd35, type: 2}
@@ -44,6 +47,7 @@ MonoBehaviour:
         serializedVersion: 2
         rgba: 4285039801
       shape: 2
+      heightScale: 1
       mesh: {fileID: 4300000, guid: 2b1035dc7d8d6424596392431917a37d, type: 2}
       haloMesh: {fileID: 4300000, guid: 58ce55100aa39f24e8634facb5a61781, type: 2}
       veinHorizontal: {fileID: 4300000, guid: 5369cba1cc6bcc746848be918a667a6e, type: 2}
@@ -56,6 +60,7 @@ MonoBehaviour:
         serializedVersion: 2
         rgba: 4287924091
       shape: 3
+      heightScale: 1
       mesh: {fileID: 4300000, guid: dd0047c2811c3c14d85cd0cdd18b9da6, type: 2}
       haloMesh: {fileID: 4300000, guid: ece976beb65551a489a544de07b61f6a, type: 2}
       veinHorizontal: {fileID: 4300000, guid: bc30c11ff9ffcfd4ca8c971d13f66a74, type: 2}
@@ -68,6 +73,7 @@ MonoBehaviour:
         serializedVersion: 2
         rgba: 4282796623
       shape: 4
+      heightScale: 1
       mesh: {fileID: 4300000, guid: f829fbfa65f3ee149962a0190bcfab88, type: 2}
       haloMesh: {fileID: 4300000, guid: fb67b23bce410954c8d1523cdfef1447, type: 2}
       veinHorizontal: {fileID: 4300000, guid: c95764d579abef64cb54f0fbba4ac2c7, type: 2}
@@ -80,6 +86,7 @@ MonoBehaviour:
         serializedVersion: 2
         rgba: 4292273388
       shape: 5
+      heightScale: 1
       mesh: {fileID: 4300000, guid: 8ed4655168bc65d499ff8e45f6f48dc1, type: 2}
       haloMesh: {fileID: 4300000, guid: 7b5c414bcfe93b946a78b57825da7d40, type: 2}
       veinHorizontal: {fileID: 4300000, guid: 4d8159e16985bc04d8f3b4b3cb7bc0ad, type: 2}
@@ -92,6 +99,7 @@ MonoBehaviour:
         serializedVersion: 2
         rgba: 4282015310
       shape: 6
+      heightScale: 1
       mesh: {fileID: 4300000, guid: 325919708f67b4b41bc1595de6858429, type: 2}
       haloMesh: {fileID: 4300000, guid: 927d25653d1dd5249a51e5de76104752, type: 2}
       veinHorizontal: {fileID: 4300000, guid: 235b961621efa2449bf809a9aa07fbe9, type: 2}
@@ -126,6 +134,7 @@ MonoBehaviour:
     hole:
       serializedVersion: 2
       rgba: 4280625196
+    vignette: 0
   material:
     heightRatio: 0.45
     size: 0.84
@@ -144,6 +153,7 @@ MonoBehaviour:
     grainAlpha: 0.16
     hoverLift: 0.04
     hoverHighlight: 1.5
+    squashSpread: 0.5
     sinkDepth: 0.42
     sinkScale: 0.55
     bombDarken: 0.42

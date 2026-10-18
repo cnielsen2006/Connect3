@@ -1,7 +1,40 @@
 # Cascade
 
-A match-3 puzzle game whose levels are generated on the fly from a tunable difficulty curve,
-instead of being authored or pre-generated in advance.
+<p align="center">
+  <img src="docs/screenshots/play.png" alt="Cascade mid-game: a board of clay pebbles with a +120 score pop and a x2 combo" width="720">
+</p>
+
+**A calm match-3 puzzle game for Windows and Android, with levels generated on the fly from a tunable difficulty curve instead of being authored or pre-generated in advance.**
+
+| | |
+|---|---|
+| **100% local** | Runs entirely on your device. No servers, no accounts, no sign-in, no internet needed. The game code contains no networking. |
+| **No ads** | None. No ad SDK is in the project. |
+| **No costs** | No purchases, no premium tier, no coins or gems, no timers that make you wait. No in-app purchase SDK is in the project. |
+| **No tracking** | No analytics, no telemetry. Your progress is a small save file on your own device. |
+
+<p align="center">
+  <img src="docs/screenshots/title.png" alt="Title screen" width="440">
+  <img src="docs/screenshots/portrait.png" alt="Portrait layout on a phone" width="155">
+</p>
+
+Development APKs (the only kind built so far) carry Android's `INTERNET` permission, which Unity adds to
+development builds for its profiler. The game does not use it, and the project leaves Unity's
+"force internet permission" setting off.
+
+## Make it better
+
+This is a hobby project and it is far from finished. Ideas that would help most:
+
+- **Test on real devices.** The Galaxy S23 checks are still open: the 120 fps target and the Vulkan
+  path (see [Status](#status)), plus the rest of the [TRD 13.11](docs/TRD.md) Android checklist.
+- **Try the difficulty dials.** Levels come from a tunable curve, so feedback on how a level feels
+  (too easy, too hard, too long) is the most useful thing a player can send.
+- **Art and layout.** The [candidate looks](docs/art/README.md) (I, J, K) are all in the project.
+  Small layout glitches on odd window sizes are welcome fixes.
+- Before changing generation or rules code, run the logic tests (`dotnet test tools/Cascade.Tests.Headless`).
+
+The project has no license file yet, so until one is added the usual default applies: all rights reserved.
 
 ## Status
 

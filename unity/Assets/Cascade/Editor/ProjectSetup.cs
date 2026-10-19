@@ -32,6 +32,8 @@ namespace Cascade.Editor
             EnsureUrp();
             EnsurePanelSettings();
             EnsureBootScene();
+            IconSetup.Apply();
+            IconSetup.ApplySplash();
             EditorBuildSettings.scenes = new[] { new EditorBuildSettingsScene(BootScenePath, true) };
             AssetDatabase.SaveAssets();
         }

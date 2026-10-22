@@ -28,7 +28,7 @@ namespace Cascade.Presentation.Shell
         public string SettingsLabel => "Settings";
         public string QuitLabel => "Quit";
 
-        /// <summary>False on Android: there is no Quit button, the system Back leaves the app.</summary>
+        /// <summary>False on Android (the system Back leaves the app) and on Web (a tab cannot quit itself): no Quit button.</summary>
         public bool QuitVisible => _flow.QuitAvailable;
 
         public bool Play() => _flow.Play();

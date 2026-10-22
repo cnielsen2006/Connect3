@@ -2,7 +2,7 @@ using System;
 
 namespace Cascade.Platform.Abstractions
 {
-    public enum PlatformKind { Desktop, Android }
+    public enum PlatformKind { Desktop, Android, Web }
 
     /// <summary>What the host is. The only place a platform question is answered (TRD §2.3).</summary>
     public sealed record HostInfo(

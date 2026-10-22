@@ -43,12 +43,25 @@ namespace Cascade.Editor
             catch (IOException) { }
         }
 
+        static System.Action pendingBuild;
+
         /// <summary>A build cannot start while in (or leaving) play mode, so wait for edit mode first.</summary>
         static void BuildWhenEdit()
         {
             if (EditorApplication.isPlayingOrWillChangePlaymode || EditorApplication.isCompiling || EditorApplication.isUpdating) return;
             EditorApplication.update -= BuildWhenEdit;
-            BuildScript.BuildAndroidDevForTool();
+            var build = pendingBuild;
+            pendingBuild = null;
+            build?.Invoke();
+        }
+
+        static void QueueBuild(string what, System.Action build)
+        {
+            Log("building " + what);
+            if (EditorApplication.isPlaying) EditorApplication.ExitPlaymode();
+            pendingBuild = build;
+            EditorApplication.update -= BuildWhenEdit;
+            EditorApplication.update += BuildWhenEdit;
         }
 
         static void Run(string command)
@@ -63,9 +76,13 @@ namespace Cascade.Editor
                     EditorApplication.delayCall += EditorApplication.EnterPlaymode;
                     return;
                 case "build-android":
-                    Log("building the Android dev APK");
-                    if (EditorApplication.isPlaying) EditorApplication.ExitPlaymode();
-                    EditorApplication.update += BuildWhenEdit;
+                    QueueBuild("the Android dev APK", BuildScript.BuildAndroidDevForTool);
+                    return;
+                case "build-webgl":
+                    QueueBuild("the WebGL dev build", () => BuildScript.BuildWebGLForTool(dev: true));
+                    return;
+                case "build-webgl-release":
+                    QueueBuild("the WebGL release build", () => BuildScript.BuildWebGLForTool(dev: false));
                     return;
                 case "build-skins":
                     if (EditorApplication.isPlaying) EditorApplication.ExitPlaymode();

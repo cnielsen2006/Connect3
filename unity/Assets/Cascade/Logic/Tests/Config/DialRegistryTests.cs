@@ -201,6 +201,7 @@ namespace Cascade.Tests.Config
         {
             Assert.That(DialRegistry.PlatformFileName(PlatformKind.Android), Is.EqualTo("dials.android.toml"));
             Assert.That(DialRegistry.PlatformFileName(PlatformKind.Desktop), Is.EqualTo("dials.desktop.toml"));
+            Assert.That(DialRegistry.PlatformFileName(PlatformKind.Web), Is.EqualTo("dials.web.toml"));
         }
 
         // ---- change notifications, reset

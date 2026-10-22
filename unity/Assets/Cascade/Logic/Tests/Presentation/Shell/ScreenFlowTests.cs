@@ -13,6 +13,7 @@ namespace Cascade.Tests.PresentationTests
         static readonly HostInfo DesktopRelease = new HostInfo(PlatformKind.Desktop, true, true, false, false, 96f);
         static readonly HostInfo Android = new HostInfo(PlatformKind.Android, false, false, true, false, 420f);
         static readonly HostInfo AndroidDev = new HostInfo(PlatformKind.Android, false, false, true, true, 420f);
+        static readonly HostInfo Web = new HostInfo(PlatformKind.Web, true, true, false, false, 96f);
 
         /// <summary>Levels 1 to 5 are unlocked.</summary>
         static ScreenFlow Make(HostInfo? host = null) => new ScreenFlow(host ?? Desktop, n => n <= 5);
@@ -184,9 +185,22 @@ namespace Cascade.Tests.PresentationTests
         }
 
         [Test]
+        public void A_browser_tab_has_no_quit_button_and_back_on_the_title_does_nothing()
+        {
+            var f = Make(Web);
+            int leave = 0;
+            f.LeaveAppRequested += () => leave++;
+            Assert.That(f.QuitAvailable, Is.False);
+            Assert.That(f.Quit(), Is.False, "a tab cannot quit itself");
+            Assert.That(f.BackPressed(), Is.False);
+            Assert.That(leave, Is.EqualTo(0));
+            Assert.That(f.Current, Is.EqualTo(ScreenId.Title));
+        }
+
+        [Test]
         public void Back_elsewhere_never_leaves_the_app()
         {
-            foreach (var host in new[] { Desktop, Android })
+            foreach (var host in new[] { Desktop, Android, Web })
                 foreach (var state in new[] { "Map", "Loading", "Intro", "Play", "Paused", "ResultWin", "Settings" })
                 {
                     var f = At(state, host);

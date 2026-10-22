@@ -54,7 +54,7 @@ namespace Cascade.Presentation.Shell
     /// <para><b>BackPressed</b> (Android Back, Esc): closes Dev if open; Play: pause, or resume if already
     /// paused; Loading, Intro and Result go to Map, Map to Title, Settings to Title; Title:
     /// <see cref="LeaveAppRequested"/> on Android, nothing on desktop (desktop has a Quit button instead,
-    /// <see cref="QuitAvailable"/>).</para>
+    /// <see cref="QuitAvailable"/>) and nothing in a browser (the tab is closed by the player).</para>
     /// </summary>
     public sealed class ScreenFlow
     {
@@ -88,8 +88,8 @@ namespace Cascade.Presentation.Shell
         /// <summary>True when board input should be accepted: Play, not paused, no dev overlay.</summary>
         public bool InputEnabled => Current == ScreenId.Play && !Paused && !DevOpen;
 
-        /// <summary>Desktop shows a Quit button on the title; Android does not (the system Back leaves the app).</summary>
-        public bool QuitAvailable => _host.Kind != PlatformKind.Android;
+        /// <summary>Desktop shows a Quit button on the title; Android does not (the system Back leaves the app); a browser tab cannot quit itself, so Web has neither.</summary>
+        public bool QuitAvailable => _host.Kind == PlatformKind.Desktop;
 
         /// <summary>Dev builds only (<see cref="HostInfo.Dev"/>).</summary>
         public bool DevAvailable => _host.Dev;

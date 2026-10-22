@@ -50,6 +50,42 @@
       "command": "./.vscode/android.ps1 -Target emulator -SkipBuild"
     },
     {
+      "name": "WebGL: build dev and serve on LAN",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/webgl.ps1 -Action BuildServe"
+    },
+    {
+      "name": "WebGL: serve on LAN (last dev build)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/webgl.ps1 -Action Serve"
+    },
+    {
+      "name": "WebGL: build release and serve on LAN",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/webgl.ps1 -Action BuildServe -Release"
+    },
+    {
+      "name": "WebGL: serve on LAN (last release build)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/webgl.ps1 -Action Serve -Release"
+    },
+    {
+      "name": "WebGL: build dev only",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/webgl.ps1 -Action Build"
+    },
+    {
+      "name": "WebGL: build release only",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "./.vscode/webgl.ps1 -Action Build -Release"
+    },
+    {
       "name": "Tests: logic (dotnet test)",
       "type": "node-terminal",
       "request": "launch",

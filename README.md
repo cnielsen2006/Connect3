@@ -53,7 +53,11 @@ dotnet test tools/Cascade.Tests.Headless          # logic tests, no Unity needed
 #   `cascade.exe -level 40 -seed 7` starts at level 40; `-autoplay 10` plays 10 hint moves, checks the view and quits; `-screen title|map|settings|dev` opens a page; `-datadir PATH` chooses the save folder, `-level`/`-autoplay` runs use a scratch folder; `-shot PATH` saves a screenshot of the window and quits; `-showfps` shows a frame-rate readout in dev builds)
 # PlayMode tests (real mouse events, screenshots in Builds/shots): Unity -batchmode -projectPath unity -runTests -testPlatform PlayMode -testResults Builds/playmode.xml
 # APK: Builds/Android/cascade-<version>-<hash>-dev.apk (sideload with adb install -r)
+# WebGL (a browser playtest build, TRD 13.12): ... -buildTarget WebGL -executeMethod Cascade.Editor.BuildScript.BuildWebGL [-dev]  (Builds/WebGL/dev or /release)
+dotnet run --project tools/Cascade.Tools -- serve                  # serve Builds/WebGL/dev on the LAN (http://<this PC>:28420/); the URLs are printed
 ```
+
+In VS Code, the "WebGL: ..." launch configs (`.vscode/webgl.ps1`) build and serve in one step; open the printed LAN address on a phone on the same network.
 
 See [TRD §14](docs/TRD.md) for the dev environment, the command-line builds and the repo layout.
 Build output goes to `Builds/`, which is ignored by the repo.

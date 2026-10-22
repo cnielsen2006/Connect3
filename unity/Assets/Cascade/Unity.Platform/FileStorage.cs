@@ -27,8 +27,15 @@ namespace Cascade.Unity.Platform
             var p = PathOf(name);
             var tmp = p + ".tmp";
             File.WriteAllBytes(tmp, bytes);
+#if UNITY_WEBGL && !UNITY_EDITOR
+            // File.Replace is not available on the WebGL file system (in-memory, mirrored to IndexedDB by the page template's
+            // autoSyncPersistentDataPath); a plain delete + move is as atomic as that file system gets.
+            if (File.Exists(p)) File.Delete(p);
+            File.Move(tmp, p);
+#else
             if (File.Exists(p)) File.Replace(tmp, p, null);
             else File.Move(tmp, p);
+#endif
         }
 
         public void Move(string name, string newName)

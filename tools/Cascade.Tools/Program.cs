@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace Cascade.Tools
 {
-    /// <summary>Headless tools of the Cascade logic (TRD §1): report, calibrate, verify, deadlock-check, text.</summary>
+    /// <summary>Headless tools of the Cascade logic (TRD §1): report, calibrate, verify, deadlock-check, text, serve.</summary>
     public static class Program
     {
         const string Usage = @"Cascade.Tools - headless tools that run the same logic Unity runs
@@ -20,6 +20,9 @@ namespace Cascade.Tools
         Rewrite golden/, levels/ and bot/ from the C# logic (only after a deliberate rule change).
   deadlock-check [--levels 10000] [--moves 30] [--full]
         MRD section 5: generate levels and play random moves; no board may ever deadlock.
+  serve [folder] [--port 28420] [--bind 0.0.0.0]
+        Static web server for the WebGL build (default folder Builds/WebGL/dev) on every network interface, with the gzip
+        Content-Encoding Unity needs; prints the LAN URLs to open on a phone.
   text [--level 1] [--seed 1] [--script ""x,y x,y; ...""]
         A small terminal view of the rules: print the board, play swaps (interactive without --script).
 
@@ -50,6 +53,7 @@ Options for every command:
                     case "export": return ExportCommand.Run(args);
                     case "deadlock-check": return DeadlockCommand.Run(args);
                     case "text": return TextCommand.Run(args);
+                    case "serve": return ServeCommand.Run(args);
                     default:
                         Console.Error.WriteLine("unknown command '" + argv[0] + "'");
                         Console.Error.Write(Usage);

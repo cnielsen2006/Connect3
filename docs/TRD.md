@@ -155,6 +155,16 @@ built around a topology graph, with the classic grid as one preset
 - `Topology.Lines`: ordered sequences of cells along which matches are found. On a grid these are
   rows and columns, split at holes. `Topology.LineThrough(cell, axis)` is what a Line piece clears.
 - `Topology.Area(cell, radius)`: the cells a Bomb hits.
+- *Diagonals (PRD §2.6.1, built):* `Topology.Grid(w, h, holes, diagonals)` adds the four diagonal
+  cells to `Neighbors` (after the orthogonal ones) and both diagonals to `Lines` (axes 2 `\` and
+  3 `/`), with no change to the rules; with the flag off the topology is exactly the old one.
+  `Level.Diagonals` (JSON `diagonals`, missing = false) selects it, and the generator sets it from
+  `generator.diagonal_chance` (the stream is only drawn when that is strictly between 0 and 1).
+  `Validator.EveryCellMatchable` checks every cell lies on a line of at least 3 cells.
+  Line pieces stay on axes 0 and 1.
+- *Aspirational (PRD §2.6.1, not built):* `Flow` and `Source` expose a read-only `Peek(source, depth)` of the pieces they
+  will emit next, which requires incoming tiles (and their earned specials) to be drawn ahead of
+  time from the source's RNG stream.
 - `Topology.Links`: directed non-adjacent edges (funnels, pipes, portals, layer drops). Empty in v1.
 
 **Flow:**
@@ -441,6 +451,7 @@ collect_min = 6              # smallest collect goal
 collect_two_color_chance = 0.4  # chance a collect goal names two colors (needs >= 5 colors)
 combo_scale = 0.75           # each half of a combo goal is this fraction of a single goal
 holes_chance = 0.8           # chance a level past the holes unlock is shaped (the intro always is)
+diagonal_chance = 1.0        # chance a level allows diagonal matches and swaps (1 = always)
 min_cells = 36               # shaped boards must keep at least this many cells
 ```
 
@@ -901,7 +912,8 @@ Sound follows the same split as animation: the plan is pure, the playing is the 
 ## 13. Android and platform builds
 
 Android is a first-class target ([ADR-006](adr/ADR-006-unity-engine.md)); Windows and macOS
-standalone builds come from the same project and revision. There is **no separate mobile
+standalone builds come from the same project and revision, and a **WebGL** build (§13.12) lets a
+phone or another PC on the LAN playtest the same game in a browser. There is **no separate mobile
 codebase**: the only per-platform code is in `Cascade.Unity.Platform` and the platform dial files.
 
 ### 13.1 Toolchain and build
@@ -952,7 +964,7 @@ One place answers "where am I running?" so nothing else checks `Application.plat
 
 ```csharp
 public sealed record HostInfo(
-    PlatformKind Kind,      // Desktop | Android (Ios later)
+    PlatformKind Kind,      // Desktop | Android | Web (Ios later)
     bool HasMouse, bool HasKeyboard, bool HasTouch,
     bool Dev,               // Editor or Development build; see 13.8
     float ScreenDpi);
@@ -1055,10 +1067,79 @@ reflow and re-fit path.
 10. A 9×9 level in portrait: every cell can be tapped accurately without zooming.
 11. The Player conformance test run (§9.1) passes on this device.
 
+### 13.12 WebGL (LAN playtests)
+A browser build of the same project, for playtesting on any device without installing anything. It is
+a playtest target, not a release channel: the performance work and the store checks stay on Android
+and Windows.
+
+- **Toolchain:** the Unity WebGL Build Support module. WebGL is IL2CPP only, graphics API **WebGL 2**
+  (OpenGL ES 3), **no threads** (see Host and Level generation below), Managed Stripping Level Medium as on Android.
+- **Build:** `Unity -batchmode -nographics -quit -projectPath unity -buildTarget WebGL -executeMethod
+  Cascade.Editor.BuildScript.BuildWebGL [-dev] -logFile Builds/build-webgl.log`. It writes
+  `Builds/WebGL/dev` (with `-dev`: Development Build, no compression, full exception stack traces)
+  or `Builds/WebGL/release` (gzip, data caching, explicitly thrown exceptions only), emptying that
+  folder first. Unity names the files after the folder (`dev.wasm`, `release.wasm.gz`). The editor
+  menu has `Cascade > Build WebGL (dev)` and `(release)`.
+- **Compression is gzip, not Brotli.** Browsers only send `Accept-Encoding: br` over HTTPS and
+  `localhost`, and the LAN server is plain HTTP. gzip builds need `Content-Encoding: gzip` and the
+  MIME type of the file inside the `.gz` (a wrong type makes `WebAssembly.instantiateStreaming`
+  fail); the server below does both, so decompression fallback is off.
+- **Page template:** `Assets/WebGLTemplates/Cascade/index.html` (not Unity's Default): a canvas
+  filling the whole window or screen, a small loading bar in the K: Pebbles colors, no browser menu
+  on right-click (the right button pans the board), `touch-action: none`, a viewport that cannot be
+  pinch-zoomed (the board has its own pinch), and `autoSyncPersistentDataPath: true` so every write
+  to `Application.persistentDataPath` is mirrored to IndexedDB.
+- **Host:** `UnityHost` reports `PlatformKind.Web` for `RuntimePlatform.WebGLPlayer`. The input
+  flags still come from the Input System, so a phone browser behaves as a touch device (§13.5) and
+  a desktop browser as mouse and keyboard. `Web` has no platform dial file unless `dials.web.toml`
+  is added (§13.4 tolerates a missing one), no Quit button (`ScreenFlow.QuitAvailable` is true only
+  on Desktop: a tab cannot quit itself) and Back/Esc on the title does nothing.
+- **Frame rate:** the browser's `requestAnimationFrame` loop paces the game at the display refresh
+  rate. `UnityHost.ApplyFrameRate` leaves `Application.targetFrameRate` at -1 on Web, because any
+  other value switches Unity to a timer-based loop with worse pacing; `render.target_fps` is ignored.
+- **Level generation has no background thread.** On WebGL the `await Awaitable.BackgroundThreadAsync()`
+  / `MainThreadAsync()` hop **never resumes** (verified in a browser build: the loading screen stayed up
+  forever). `UnityJobRunner` therefore skips both on WebGL: it awaits one frame so the loading screen is
+  drawn, then runs the job inline on the main thread. `generator.budget_ms` still bounds it (§7), so
+  the page freezes for at most about that long while a level is tuned (not yet measured in the
+  browser: WebAssembly is slower than native, and the dev build is unoptimised). Pre-generating the
+  next level during the result screen (§12.3) costs a short freeze there instead of being free. If
+  this is too visible, add a
+  `dials.web.toml` with a smaller `generator.budget_ms` (levels then differ from Android's for the
+  same `(n, seed)`, the accepted trade-off of §13.9).
+- **Saves:** `FileStorage` writes the new file and then replaces the old one with delete + move on
+  Web (`File.Replace` is not available there). The data lives in the browser's IndexedDB for the
+  page's **origin** (scheme, host and port), so `http://localhost:28420` and `http://192.168.x.x:28420`
+  have separate saves, and clearing site data erases them. There is no `OnApplicationQuit` in a
+  tab, which is fine: saving is already done on pause (§13.6), and the page template syncs every
+  write.
+- **LAN server:** `dotnet run --project tools/Cascade.Tools -- serve [folder] [--port 28420] [--bind
+  0.0.0.0]` (default folder `Builds/WebGL/dev`) is a Kestrel static server on every network
+  interface. It sets `Content-Encoding` and the MIME type for Unity's `.gz`/`.br` files, sends
+  `Cache-Control: no-cache` (revalidate by ETag, so a rebuild shows up on reload), logs each request,
+  and prints the URLs to open: `localhost` and one per connected adapter (virtual adapters such as
+  VMware are marked). The first run may need a Windows Firewall rule for the port (the command
+  prints the `netsh` line); both devices must be on the same network.
+- **VS Code:** `.vscode/webgl.ps1` (`-Action Build|Serve|BuildServe [-Release] [-Port n]`) is behind
+  six launch configs, "WebGL: build dev and serve on LAN" and so on. Like `android.ps1` it builds in
+  the open Unity editor when there is one (the `build-webgl` / `build-webgl-release` commands of
+  `EditorCommands`) and in batch mode otherwise.
+- **Verified (Chrome on Windows, `localhost`):** both builds boot; `Web ... OpenGLES3` is logged;
+  Tomlyn and Newtonsoft work in the stripped IL2CPP player; Play, the map, level generation, the
+  intro and a level start; a mouse drag swaps (a move was spent, the score and board updated);
+  Hint works; the canvas follows window resizes and the device pixel ratio; `save.json` and
+  `settings.json` reach IndexedDB and a reload returns the same level seed. Sizes: dev 123 MB
+  (uncompressed), release 20 MB (gzip). **Not yet verified:** a phone browser (touch, pinch, safe
+  area, rotation), Safari/iOS, Firefox, a win saved across a reload, sound, and performance.
+- **Web checklist (manual):** the title loads and Play works; no Quit button; swap by drag and by
+  click (mouse) or by touch on a phone; wheel or pinch zoom, pan, double-click or double-tap reset;
+  reload the page mid-game: the map is at the same level (a saved win survives); resize the
+  window and rotate the phone: the layout reflows; a level starts without the page appearing hung.
+
 ## 14. Dev environment
 
 Tools: Unity Hub with the Unity 6 version from `ProjectVersion.txt` (modules: Android Build
-Support with OpenJDK/SDK/NDK, Windows Build Support (IL2CPP)); .NET 8 SDK for `tools/`; Android
+Support with OpenJDK/SDK/NDK, Windows Build Support (IL2CPP), WebGL Build Support); .NET 8 SDK for `tools/`; Android
 platform-tools (`adb`) on PATH; a code editor with Unity support.
 
 ```powershell
@@ -1068,6 +1149,7 @@ dotnet run --project tools/Cascade.Tools -- report 1 100        # difficulty rep
 dotnet run --project tools/Cascade.Tools -- calibrate           # suggested rate curves
 dotnet run --project tools/Cascade.Tools -- text                # terminal view of the rules
 dotnet run --project tools/Cascade.Tools -- verify conformance  # §9.2 fixtures
+dotnet run --project tools/Cascade.Tools -- serve               # WebGL build on the LAN (§13.12)
 
 # Unity: open unity/ in the Hub; run tests in Window > General > Test Runner, or:
 Unity -batchmode -nographics -projectPath unity -runTests -testPlatform EditMode -testResults Builds/editmode.xml
@@ -1075,6 +1157,8 @@ Unity -batchmode -nographics -projectPath unity -runTests -testPlatform EditMode
 # builds (all output under Builds/)
 Unity -batchmode -nographics -quit -projectPath unity -buildTarget Android `
   -executeMethod Cascade.Editor.BuildScript.BuildAndroid -dev -install -logFile Builds/build.log
+Unity -batchmode -nographics -quit -projectPath unity -buildTarget WebGL `
+  -executeMethod Cascade.Editor.BuildScript.BuildWebGL -dev -logFile Builds/build-webgl.log
 ```
 
 **Ignore file.** The repo's ignore file excludes everything generated, and `Builds/` is the one

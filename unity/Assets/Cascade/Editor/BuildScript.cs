@@ -13,6 +13,7 @@ namespace Cascade.Editor
     /// The one way to build (TRD §13.1):
     /// Unity -batchmode -nographics -quit -projectPath unity -buildTarget Android
     ///   -executeMethod Cascade.Editor.BuildScript.BuildAndroid [-dev] [-install] -logFile Builds/build.log
+    /// (BuildWindows and BuildWebGL [-dev] take the same arguments with their own -buildTarget; WebGL writes Builds/WebGL/dev or /release.)
     /// Sets every setting itself, so a fresh checkout builds the same on any machine.
     /// </summary>
     public static class BuildScript
@@ -34,19 +35,32 @@ namespace Cascade.Editor
         [MenuItem("Cascade/Build Android (dev)")]
         public static void BuildAndroidDevMenu() => BuildAndroidCore(dev: true, install: false);
 
+        [MenuItem("Cascade/Build WebGL (dev)")]
+        public static void BuildWebGLDevMenu() => BuildWebGLCore(dev: true);
+
+        [MenuItem("Cascade/Build WebGL (release)")]
+        public static void BuildWebGLReleaseMenu() => BuildWebGLCore(dev: false);
+
         /// <summary>
         /// Builds the dev APK inside the running editor (for <c>.vscode/android.ps1</c> via <see cref="EditorCommands"/>) and records the
         /// outcome in <c>Library/cascade-build.txt</c> ("ok" or "failed") for the calling script to read.
         /// </summary>
-        internal static void BuildAndroidDevForTool()
+        internal static void BuildAndroidDevForTool() => RunForTool(() => BuildAndroidCore(dev: true, install: false));
+
+        /// <summary>The same for the WebGL build (<c>.vscode/webgl.ps1</c>).</summary>
+        internal static void BuildWebGLForTool(bool dev) => RunForTool(() => BuildWebGLCore(dev));
+
+        static void RunForTool(Func<bool> build)
         {
             var ok = false;
-            try { ok = BuildAndroidCore(dev: true, install: false); }
+            try { ok = build(); }
             catch (Exception e) { Debug.LogException(e); }
             File.WriteAllText(Path.Combine(Directory.GetCurrentDirectory(), "Library", "cascade-build.txt"), ok ? "ok" : "failed");
         }
 
         public static void BuildAndroid() => Exit(BuildAndroidCore(HasFlag("-dev"), HasFlag("-install")));
+
+        public static void BuildWebGL() => Exit(BuildWebGLCore(HasFlag("-dev")));
 
         public static void BuildWindows() =>
             Exit(BuildDesktop(BuildTarget.StandaloneWindows64, "Windows", "cascade.exe", HasFlag("-dev")));
@@ -108,6 +122,35 @@ namespace Cascade.Editor
                 PlayerSettings.Android.keyaliasName = "";
                 PlayerSettings.Android.keyaliasPass = "";
             }
+        }
+
+        /// <summary>
+        /// WebGL (TRD 13.12): Builds/WebGL/dev (Development Build, no compression, full exception stack traces) or Builds/WebGL/release
+        /// (gzip, data caching). The files are served by <c>Cascade.Tools serve</c>, which sends the Content-Encoding the gzip build needs;
+        /// Brotli is not used because browsers only accept it over HTTPS, and the LAN server is plain HTTP.
+        /// </summary>
+        static bool BuildWebGLCore(bool dev)
+        {
+            ApplyCommonSettings(dev);
+            var target = NamedBuildTarget.WebGL;
+            PlayerSettings.SetManagedStrippingLevel(target, ManagedStrippingLevel.Medium);
+            PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.WebGL, false);
+            PlayerSettings.SetGraphicsAPIs(BuildTarget.WebGL, new[] { UnityEngine.Rendering.GraphicsDeviceType.OpenGLES3 }); // WebGL 2
+            PlayerSettings.WebGL.template = "PROJECT:Cascade";   // Assets/WebGLTemplates/Cascade
+            PlayerSettings.WebGL.compressionFormat = dev ? WebGLCompressionFormat.Disabled : WebGLCompressionFormat.Gzip;
+            PlayerSettings.WebGL.decompressionFallback = false;
+            PlayerSettings.WebGL.dataCaching = !dev;
+            PlayerSettings.WebGL.nameFilesAsHashes = false;
+            PlayerSettings.WebGL.exceptionSupport = dev
+                ? WebGLExceptionSupport.FullWithStacktrace
+                : WebGLExceptionSupport.ExplicitlyThrownExceptionsOnly;
+
+            var dir = Path.Combine(BuildsDir, "WebGL", dev ? "dev" : "release");
+            if (Directory.Exists(dir)) Directory.Delete(dir, true);   // no stale files from an earlier build
+            Directory.CreateDirectory(dir);
+            var ok = Build(BuildTarget.WebGL, dir, dev);
+            if (ok) Debug.Log($"[Cascade] WebGL: {dir}");
+            return ok;
         }
 
         static bool BuildDesktop(BuildTarget buildTarget, string folder, string exeName, bool dev)
